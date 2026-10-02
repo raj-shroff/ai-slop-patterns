@@ -24,6 +24,8 @@ python scripts/docx_to_markdown.py docs/references/AI-Writing-Signs-and-Rules.do
 
 This overwrites the Markdown output. Use it only if Word is intentionally being promoted to the source of truth again; otherwise edit Markdown directly. The converter checks paragraph text preservation and requires all 138 unique catalog anchors before writing.
 
-## Before site implementation
+## Website build
 
-Use the canonical entries for navigation and examples. Retain the source-item concordance for traceability. Do not treat all headings as user-facing patterns: source sections, rules, fixtures and evidence notes also have headings. Hosting configuration should follow the selected framework and deployment target.
+`npm run build` extracts the 138 anchored entries and 21 source records into `dist/data.js`. It fails on missing fields, incorrect counts or duplicate URL slugs. The source-item concordance remains in the downloadable reference for traceability. Other headings, rule fixtures and evidence notes do not become pattern pages. The app escapes source text instead of rendering raw Markdown HTML.
+
+Use `src/catalog.cjs` to adjust category assignments, display titles and search aliases. Keep explanations, examples, guidance and qualifications in this Markdown file. IDs are only internal mapping keys; visitors see readable titles and URL slugs. Run `npm test` after content changes, then rebuild. If adding entries beyond the present 138, update the explicit build and test coverage checks intentionally.

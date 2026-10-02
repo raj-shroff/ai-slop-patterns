@@ -1,0 +1,14 @@
+{
+  "name": "ai-writing-patterns",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A local-first browser of AI writing patterns",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "dev": "node scripts/serve.cjs",
+    "start": "node scripts/serve.cjs",
+    "test": "node tests/content-search.test.cjs"
+  },
+  "engines": { "node": ">=18" }
+}

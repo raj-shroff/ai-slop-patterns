@@ -1,5 +1,13 @@
 # Attribution and reuse
 
+## Application code
+
+The application code, build scripts, search implementation and original project documentation are licensed under the MIT License in `LICENSE`, copyright 2026 raj-shroff. This is the repository's software license.
+
+## Reference content
+
+The MIT grant does not replace the licenses of the reference content in `content/`, the reference documents in `docs/references/`, their generated copies in `dist/data.js` and `dist/downloads/`, or other third-party material. Their existing attribution and reuse terms remain in force.
+
 The reference contains material adapted from Wikipedia's **Signs of AI writing** page and the **vale-signs-of-ai-writing** repository. The original reference identifies this adapted material as licensed under Creative Commons Attribution-ShareAlike 4.0. Preserve its attribution, license references and record of changes when publishing or adapting it.
 
 - Wikipedia source: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
@@ -9,4 +17,4 @@ The reference contains material adapted from Wikipedia's **Signs of AI writing**
 
 The expanded reference cites other papers, repositories and articles. Those sources retain their respective rights and license terms. The source register and master Markdown record provenance and the limits of the extraction. A repository's software license does not necessarily cover its linked papers, datasets or third-party quotations.
 
-The present conversion changes document structure into Markdown and adds stable anchors. It does not remove source attribution or assert ownership over the cited material. No blanket software license has been selected for the future application.
+The conversion changes document structure into Markdown and adds stable anchors. The website groups the entries, shortens selected display titles and presents examples separately from source notes. These changes do not remove source attribution or assert ownership over the cited material. The Sources page carries the content attribution and license links.
