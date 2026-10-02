@@ -1,0 +1,28 @@
+# Local research, source checkouts, and review output
+/working/
+/sources/
+/output/
+
+# Dependencies and generated site files
+node_modules/
+dist/
+build/
+.next/
+.astro/
+.vercel/
+coverage/
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+__pycache__/
+*.py[cod]
+.venv/
+.idea/
+.vscode/
+*.log
