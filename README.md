@@ -4,7 +4,7 @@ A static website for browsing writing patterns, examples and editing guidance. I
 
 ## Open locally
 
-On Windows, double-click **Launch AI Writing Patterns.cmd**. It builds the current Markdown and opens the site in your default browser. Node.js 18 or later is needed to rebuild. Once built, `dist/index.html` works directly without Node, a server or an internet connection. The `dist` folder is portable.
+Run `npm run build` to generate the site. Node.js 18 or later is needed to rebuild. Once built, `dist/index.html` works directly without Node, a server or an internet connection. The `dist` folder is portable.
 
 For development:
 
@@ -25,7 +25,6 @@ npm run build
 - [Word reference](docs/references/AI-Writing-Signs-and-Rules.docx): the Word master, synchronized from the current Markdown.
 - [Source register](docs/references/AI-Writing-Source-Register.xlsx): original snapshot with 21 sources and 253 source-item mappings. The Markdown register now includes two additional Graphite articles.
 - [Content conventions](docs/content-conventions.md): structure, identifiers and conversion procedure.
-- [Screen designs](docs/design/screen-review.md): the proposed category, pattern and example screens.
 
 Edit the master Markdown for future content work. Run `scripts/markdown_to_docx.py` with the bundled Python runtime after Markdown edits to synchronize the Word master. The script checks all paragraph and table-cell text against the Markdown.
 
@@ -52,7 +51,7 @@ No deployment has been performed. Hash routes support refresh and direct links o
 
 ## Local repository
 
-The default branch is `main`. Local research, earlier exports, temporary files, dependencies and credentials are excluded through `.gitignore`. Only the curated content, reference documents, current screen designs and project utilities belong in the repository.
+The default branch is `main`. Local research, earlier exports, temporary files, dependencies and credentials are excluded through `.gitignore`. Only the curated content, reference documents and project utilities belong in the repository.
 
 After creating an empty repository on GitHub, connect and push it:
 

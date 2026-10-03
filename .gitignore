@@ -4,6 +4,13 @@
 /output/
 /.codex-remote-attachments/
 
+# Local launchers, design drafts, and retired checker material
+/Launch*.cmd
+/docs/design/
+/docs/checker-*.md
+/tests/fixtures/checker-*.json
+/tests/fixtures/facebook-essay.txt
+
 # Dependencies and generated site files
 node_modules/
 dist/
