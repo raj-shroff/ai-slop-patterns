@@ -2,6 +2,7 @@ const fs=require('node:fs');
 const path=require('node:path');
 const crypto=require('node:crypto');
 const {categories,category,overrides,concepts}=require('../src/catalog.cjs');
+const stableSlugs=require('../src/entry-slugs.json');
 const root=path.resolve(__dirname,'..');
 const md=fs.readFileSync(path.join(root,'content/ai-writing-signs-and-rules.md'),'utf8').replace(/\r\n/g,'\n');
 const blocks=[...md.matchAll(/<a id="p(\d{3})"><\/a>\s*\n### P\d{3}\s+(?:—\s+)?([^\n]+)\n([\s\S]*?)(?=\n<a id=|\n## |$)/g)];
@@ -14,7 +15,7 @@ const entries=blocks.map(m=>{
  const field=(label)=>{const found=body.match(new RegExp('\\*\\*'+label+':\\*\\* ([\\s\\S]*?)(?=\\n\\n|$)'));if(!found)throw Error(`Missing ${label} in ${id}`);return clean(found[1]);};
  const description=clean(body.split('**Illustrative example:**')[0].split('\n\n').map(s=>s.trim()).filter(s=>s&&!s.startsWith('Source:')&&!s.startsWith('Source records:')).join(' '));
  const additionalExamples=[...body.matchAll(/^- \*\*([^\n]+?):\*\* (.+)$/gm)].map(m=>({label:clean(m[1]),example:clean(m[2])}));
- return {additionalExamples,slug:slug(titleMap[id]),title:titleMap[id],category:category(id),description,example:field('Illustrative example'),guidance:field('Editing guidance'),limit:field('Limit'),kind:id>=68&&id<=78?'Unreliable indicator':id>=79&&id<=84?'Historical pattern':category(id)==='context'?'Context matters':'',concepts:concepts.filter(c=>c.ids.includes(id)).map(c=>c.name)};
+ return {additionalExamples,slug:stableSlugs[id]||slug(titleMap[id]),title:titleMap[id],category:category(id),description,example:field('Illustrative example'),guidance:field('Editing guidance'),limit:field('Limit'),kind:id>=68&&id<=78?'Unreliable indicator':id>=79&&id<=84?'Historical pattern':category(id)==='context'?'Context matters':'',concepts:concepts.filter(c=>c.ids.includes(id)).map(c=>c.name)};
 });
 if(new Set(entries.map(e=>e.slug)).size!==143)throw Error('Duplicate slugs');
 const sourceText=md.split('## Expanded source register and reading scope')[1]?.split('## Attribution')[0];

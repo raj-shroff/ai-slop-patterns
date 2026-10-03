@@ -89,7 +89,7 @@ Ordinary facts are inflated into claims about legacy, broader trends, public deb
 
 <a id="p002"></a>
 
-### P002 Canned notability and media coverage
+### P002 Name-dropping media coverage
 
 Source: Wikipedia PDF pp. 4. Related Vale rules: none directly implemented.
 
@@ -97,7 +97,7 @@ The prose advertises the existence, independence, availability, or type of cover
 
 **Illustrative example:** The founder has been profiled by independent regional media and maintains an active social media presence.
 
-**Editing guidance:** Summarize the actual reporting and attribute specific findings. Keep a notability argument separate from article prose.
+**Editing guidance:** Report what the sources found. Listing publications or calling them independent does not establish the claims in the text.
 
 **Limit:** Press releases and human biographies also list coverage. Check the phrasing and focus, not the mere presence of media references.
 
@@ -309,13 +309,13 @@ A list or broad topic title is defined as if it names a single independent entit
 
 Source: Wikipedia PDF pp. 12. Related Vale rule: Lists.
 
-Adjectives, phrases, or examples repeatedly arrive in threes, making thin analysis appear comprehensive. The pattern can be conspicuous in short edit summaries.
+Adjectives, phrases or examples repeatedly arrive in threes, making a thin explanation appear comprehensive.
 
 **Illustrative example:** The program promotes clarity, confidence, and connection through learning, leadership, and legacy.
 
 **Editing guidance:** Keep the items that the evidence requires; vary structure according to meaning.
 
-**Limit:** Three real categories can be the right structure. The repository Lists rule detects ordered first-second-third language, not this broader rhetorical pattern.
+**Limit:** Three real categories can be the right structure. Review whether the items add distinct information.
 
 
 ## Style and formatting
@@ -341,9 +341,9 @@ The article repeats its own title as a heading above its content, as if the writ
 
 Source: Wikipedia PDF pp. 13. Related Vale rules: none directly implemented.
 
-Main words in section headings are capitalized systematically, contrary to Wikipedia's usual sentence-case conventions.
+Every main word in a heading is capitalized even when the surrounding document uses sentence case.
 
-**Illustrative example:** History And Cultural Significance
+**Illustrative example:** A report uses “History And Cultural Significance” between headings written in sentence case.
 
 **Editing guidance:** Use the capitalization convention of the destination publication.
 
@@ -386,13 +386,13 @@ Keywords or selected phrases are repeatedly bolded in a key-takeaways style unre
 
 Source: Wikipedia PDF pp. 14–15. Related Vale rules: none directly implemented.
 
-Each item begins with a short bold label followed by a colon and a description. Variants omit the colon, use literal bullets or explicit numbers in wikitext, or lose line breaks after pasting.
+Each list item begins with a short label followed by a colon and a description. The same labels recur even when they add little information.
 
 **Illustrative example:** Benefits: Faster processing. Challenges: Limited access. Outlook: Continued growth.
 
 **Editing guidance:** Choose prose or a list based on the information, and use the platform's real list syntax.
 
-**Limit:** A glossary or scannable reference can legitimately use labeled lists. Bold Keep or Delete votes in Wikipedia discussions are a separate convention.
+**Limit:** Labels are useful in glossaries, instructions and reference lists. Their presence alone is not a writing problem.
 
 
 <a id="p021"></a>
@@ -416,9 +416,9 @@ Dashes repeatedly add emphatic asides or contrasts, often surrounded by spaces. 
 
 Source: Wikipedia PDF pp. 16. Related Vale rules: none directly implemented.
 
-Emoji decorate headings, bullets, talk-page comments, or edit summaries rather than adding substantive information.
+Emoji are added to headings or bullets where they do not explain the content or fit the document’s tone.
 
-**Illustrative example:** A rocket emoji precedes Future prospects in an encyclopedia contribution.
+**Illustrative example:** 🚀 Future prospects: Continued innovation promises a bright future.
 
 **Editing guidance:** Remove decorative symbols where the destination's style excludes them.
 
@@ -431,9 +431,9 @@ Emoji decorate headings, bullets, talk-page comments, or edit summaries rather t
 
 Source: Wikipedia PDF pp. 16. Related Vale rules: none directly implemented.
 
-Small tables repeat information better expressed as prose or an infobox. Markdown table syntax may be inserted into a wikitable and render incorrectly.
+A table separates a few simple facts into cells without making them easier to compare. Formatting copied from another tool may also display incorrectly.
 
-**Illustrative example:** A two-row table says Name: Harbor Center and Type: Museum, surrounded by broken pipe syntax.
+**Illustrative example:** A table has only two rows: “Name: Harbor Center” and “Type: Museum.” A sentence would convey the same information.
 
 **Editing guidance:** Use a table for meaningful comparisons; use prose for a simple fact and validate markup.
 
@@ -461,9 +461,9 @@ Directional quotes and apostrophes, or inconsistent mixing of straight and curly
 
 Source: Wikipedia PDF pp. 17. Related Vale rules: none directly implemented.
 
-Sections begin at level 3 rather than level 2, possibly during Markdown-to-wikitext conversion.
+The document jumps from its main title to a deeply nested subheading without the intermediate section.
 
-**Illustrative example:** The first article section uses === History === instead of == History ==.
+**Illustrative example:** A report goes from Heading 1, “Annual report,” directly to Heading 3, “Revenue,” with no Heading 2 section.
 
 **Editing guidance:** Restore a logical heading hierarchy and preview the rendered page.
 
@@ -472,17 +472,17 @@ Sections begin at level 3 rather than level 2, possibly during Markdown-to-wikit
 
 <a id="p026"></a>
 
-### P026 Repeated level 1 headings
+### P026 Section headings formatted as page titles
 
 Source: Wikipedia PDF pp. 17. Related Vale rules: none directly implemented.
 
-Article-body sections use top-level headings normally reserved for the page title in MediaWiki.
+Several sections use the top-level title format instead of a consistent hierarchy of section headings.
 
-**Illustrative example:** An article body repeatedly uses = History = and = Sources =.
+**Illustrative example:** “History,” “Results” and “Sources” are each formatted as the main title of the same report.
 
 **Editing guidance:** Use the destination's section levels and maintain one coherent hierarchy.
 
-**Limit:** Level 1 can be valid elsewhere. This observation is about Wikipedia formatting.
+**Limit:** Some document formats allow multiple top-level headings. Check the intended structure before treating this as an error.
 
 
 <a id="p027"></a>
@@ -508,7 +508,7 @@ Horizontal separators are inserted mechanically between sections, often reflecti
 
 Source: Wikipedia PDF pp. 18–19. Related Vale rule: ChatbotCommunication.
 
-Replies, offers to continue, praise, submission advice, or user-facing instructions are pasted into article text or HTML comments. The output may discuss Wikipedia conventions instead of being article content.
+The finished text still includes the assistant’s reply to the user: greetings, offers to continue, praise, or instructions about submitting the draft.
 
 **Illustrative example:** Certainly! Here is your draft. Delete this note before submitting.
 
@@ -529,7 +529,7 @@ Text refers to training cutoffs, unavailable search results, sparse documentatio
 
 **Editing guidance:** Describe the specific evidence gap without inventing its cause. Verify the claim or remove the speculation.
 
-**Limit:** A carefully scoped limitation statement is good practice. The repository detects older cutoff phrases and misses many retrieval-era forms.
+**Limit:** A carefully scoped limitation statement is good practice. A statement about missing information should accurately describe what was checked.
 
 
 <a id="p030"></a>
@@ -538,43 +538,43 @@ Text refers to training cutoffs, unavailable search results, sparse documentatio
 
 Source: Wikipedia PDF pp. 20–21. Related Vale rule: Placeholders.
 
-Names, dates, citation fields, links, and infobox content are left as prompts to the user. Examples include [YEAR], 2025-xx-xx, and comments asking for a photo or a source.
+The finished document still contains blank fields or instructions to the writer, such as [YEAR], [INSERT SOURCE], or a note asking for a photograph.
 
 **Illustrative example:** The organization was founded in [YEAR]. Access date: 2025-xx-xx.
 
 **Editing guidance:** Complete fields from evidence, remove inapplicable placeholders, and check embedded comments.
 
-**Limit:** Legitimate article templates contain boilerplate instructions. Compare an infobox comment with the standard template before attributing it to AI.
+**Limit:** Placeholders belong in unfinished drafts and reusable forms. The problem is leaving them in text presented as complete.
 
 
 ## Markup and tool artifacts
 
 <a id="p031"></a>
 
-### P031 Markdown pasted into wikitext
+### P031 Formatting code pasted into the wrong editor
 
 Source: Wikipedia PDF pp. 21–24. Related Vale rules: none directly implemented.
 
-Markdown headings, links, emphasis, breaks, and numbered lists are pasted into MediaWiki. Fenced wikitext blocks mixed with faulty wiki syntax are more distinctive than Markdown by itself.
+Formatting instructions appear as ordinary text because the destination does not support the format used by the writing tool. Markdown is a plain-text format that uses symbols for headings, emphasis and links.
 
-**Illustrative example:** ## History followed by **Background** and a fenced wikitext block in an article.
+**Illustrative example:** A published page displays “## History” and “[Read the report](report.html)” instead of a heading and a clickable link.
 
 **Editing guidance:** Translate to the destination's markup and preview the result; inspect the claims as well as syntax.
 
-**Limit:** Markdown is widely used by humans. A newcomer may reasonably assume a wiki supports it.
+**Limit:** People also paste text into incompatible editors. Visible formatting code does not establish AI authorship.
 
 
 <a id="p032"></a>
 
-### P032 Broken wikitext and submission code
+### P032 Broken publishing code
 
 Source: Wikipedia PDF pp. 24. Related Vale rules: none directly implemented.
 
-Templates or article-submission markup contain garbled syntax, sometimes with implausible date fragments or malformed categories.
+Copied text contains damaged instructions for a publishing system, such as incomplete labels, repeated dates or error messages inside a submission field.
 
-**Illustrative example:** An AfC category contains a long concatenation of timestamps and error tokens.
+**Illustrative example:** A submission’s review-date field contains “2025-04-012025-04-01ERROR” instead of one date.
 
-**Editing guidance:** Validate the template against its documented syntax and repair the actual submission state.
+**Editing guidance:** Compare the field with the publishing system’s documented format and check the rendered result.
 
 **Limit:** Bad markup can come from human errors or tools. Not every unexplained HTML fragment is characteristic of AI.
 
@@ -591,7 +591,7 @@ Internal reference identifiers leak into prose: contentReference, oaicite, oai_c
 
 **Editing guidance:** Recover and verify the underlying source, then create a valid citation. Treat the artifact as evidence of a tool-mediated passage, not a reason to skip factual review.
 
-**Limit:** Quoted examples and technical documentation can contain these strings intentionally. The repository covers only part of this family.
+**Limit:** Quoted examples and technical documentation can contain these strings intentionally. Check whether a marker was accidentally copied or deliberately included as an example.
 
 
 <a id="p034"></a>
@@ -671,32 +671,32 @@ A document includes :::writing{variant="document" id="12345"} and sometimes clos
 
 <a id="p039"></a>
 
-### P039 Nonexistent or misplaced categories
+### P039 Invented or incorrect category labels
 
 Source: Wikipedia PDF pp. 27–28. Related Vale rules: none directly implemented.
 
-Categories are invented, obsolete, redirects, or broken by missing punctuation and words. Earlier revisions may retain evidence that later repairs removed.
+The text assigns a page to a publishing category that does not exist or does not fit its subject.
 
-**Illustrative example:** [[Category:American hip hop musicians]] where the intended category requires hip-hop.
+**Illustrative example:** A profile of a musician is assigned to “American architecture,” even though the profile contains no connection to architecture.
 
-**Editing guidance:** Check that the category exists and fits the subject; inspect revision history if relevant.
+**Editing guidance:** Check the available category labels and choose one that fits the content.
 
-**Limit:** New or returning editors make the same mistakes. A red link is corroborating context at most.
+**Limit:** People also select the wrong category. This is a publishing error, not proof of AI use.
 
 
 <a id="p040"></a>
 
-### P040 Invented templates and parameters
+### P040 Invented form fields
 
 Source: Wikipedia PDF pp. 28–29. Related Vale rules: none directly implemented.
 
-Plausible-sounding infoboxes do not exist; unsupported parameters silently do nothing; obsolete templates may be reused.
+Generated publishing instructions refer to a form or field that the destination system does not support.
 
-**Illustrative example:** {{Infobox ancient population}} is used with invented field names.
+**Illustrative example:** An instruction says to enter a date in “historical_population_year,” but the form has no field with that name.
 
-**Editing guidance:** Check template existence and parameter documentation, then preview the result.
+**Editing guidance:** Check the actual form or its documentation before following the instruction.
 
-**Limit:** Template mistakes and old examples can be human. Wikipedia: Signs of AI writing's lang-?? example is a historical observation, not a current template inventory.
+**Limit:** Outdated instructions and human mistakes can produce the same error.
 
 
 ## Citations and source checking
@@ -743,7 +743,7 @@ A DOI or other identifier resolves, but its title, authors, date, or subject dif
 
 **Editing guidance:** Compare full metadata and read the supporting passage. Check chronological impossibilities as well.
 
-**Limit:** Wikipedia: Signs of AI writing notes historical VisualEditor PMID errors that predate these AI patterns; a mismatch is a citation defect, not automatic proof of AI.
+**Limit:** Citation tools and people can attach the wrong identifier. A mismatch is a citation defect, not proof of AI authorship.
 
 
 <a id="p044"></a>
@@ -810,32 +810,32 @@ A reference is defined in a references section but never used inline, or an inli
 
 <a id="p048"></a>
 
-### P048 Misquoted policy and invented shortcuts
+### P048 Invented rules and misquoted policies
 
 Source: Wikipedia PDF pp. 33. Related Vale rules: none directly implemented.
 
-A comment cites nonexistent project shortcuts or misstates a policy as authoritative support.
+The text claims that a rule or policy supports its position, but the rule does not exist or says something different.
 
-**Illustrative example:** The comment invokes WP:SOURCECERTAINTY as if it were an established rule.
+**Illustrative example:** “Company policy requires customer complaints to be deleted after 30 days.” In this fictional example, the company has no such policy.
 
-**Editing guidance:** Open the actual policy and quote its relevant meaning accurately.
+**Editing guidance:** Find the policy being cited and check what it actually requires.
 
 **Limit:** People misremember policy. Check the substance before making claims about the writer.
 
 
 <a id="p049"></a>
 
-### P049 Transcluding banners while mentioning them
+### P049 Publishing a warning instead of discussing it
 
 Source: Wikipedia PDF pp. 33. Related Vale rules: none directly implemented.
 
-A comment renders a maintenance banner when it intended merely to refer to the template.
+In a publishing system, a writer accidentally inserts a live warning notice while trying to discuss the wording of that notice.
 
-**Illustrative example:** A discussion inserts {{citation needed}} as a live banner instead of naming the template.
+**Illustrative example:** A reviewer writes about the “citation needed” label, but the editor inserts an actual missing-source warning into the article.
 
-**Editing guidance:** Use appropriate escaped or linked template references when discussing markup.
+**Editing guidance:** Quote the label as ordinary text instead of inserting the publishing command.
 
-**Limit:** New editors can misunderstand transclusion without using AI.
+**Limit:** This requires a publishing system with reusable notices. It is not a general prose pattern, and people can make the same mistake.
 
 
 <a id="p050"></a>
@@ -861,7 +861,7 @@ Source: Wikipedia PDF pp. 33. Related Vale rules: none directly implemented.
 
 The response downplays AI involvement by listing policies supposedly satisfied or insisting the words represent the writer's own thoughts.
 
-**Illustrative example:** The text reflects my views and fully adheres to neutrality, verifiability, and all Wikipedia standards.
+**Illustrative example:** These are entirely my own views, and the report fully complies with every requirement for accuracy and originality.
 
 **Editing guidance:** Explain the actual contribution and evidence; follow applicable disclosure practices.
 
@@ -904,11 +904,11 @@ The comment characterizes concerns as unsupported speculation and demands concre
 
 Source: Wikipedia PDF pp. 33–34. Related Vale rule: ChatbotCommunication.
 
-A response urges reviewers to focus exclusively on improving content rather than whether AI helped create it. Wikipedia: Signs of AI writing also lists formal salutation formulas used in canned messages.
+Asked how a passage was produced, the response redirects the conversation toward improving the text without answering the question.
 
-**Illustrative example:** Let us focus on improving the article rather than its origin. Dear Wikipedia Editorial Team, I hope this message finds you well.
+**Illustrative example:** Let us focus on improving the report rather than discussing how it was written.
 
-**Editing guidance:** Address the actual editing issue and any applicable provenance requirement without using a script.
+**Editing guidance:** Answer the question about how the text was produced, then address any requested edits.
 
 **Limit:** Content-focused discussion and polite openings are legitimate. Evaluate the surrounding pattern.
 
@@ -917,17 +917,17 @@ A response urges reviewers to focus exclusively on improving content rather than
 
 <a id="p055"></a>
 
-### P055 Templated general edit summaries
+### P055 Generic descriptions of revisions
 
 Source: Wikipedia PDF pp. 34–35. Related Vale rules: none directly implemented.
 
-Summaries follow repetitive formulas; older ones may include first-person explanation, Markdown, emoji, or chatbot preambles, while newer ones describe an elaborate procedure.
+A revision note lists broad improvements without identifying what actually changed.
 
-**Illustrative example:** Concise edit summary: Improved clarity, flow, readability, and encyclopedic style.
+**Illustrative example:** Improved clarity, flow, readability and overall quality.
 
 **Editing guidance:** Describe the concrete change and its purpose in proportion to the edit.
 
-**Limit:** Long or formal summaries can be human. Common local abbreviations and a consistent editing history provide useful context.
+**Limit:** A brief summary can be appropriate. The issue is whether it helps the reader understand the revision.
 
 
 <a id="p056"></a>
@@ -936,9 +936,9 @@ Summaries follow repetitive formulas; older ones may include first-person explan
 
 Source: Wikipedia PDF pp. 35–36. Related Vale rules: none directly implemented.
 
-The summary stacks broad claims about neutrality, verifiability, attribution, or compliance, sometimes explaining that these are Wikipedia rules.
+A revision note claims broad compliance with rules or standards without identifying the requirement or showing how it was met.
 
-**Illustrative example:** Refined the article to ensure full compliance with Wikipedia standards for neutrality and clarity.
+**Illustrative example:** Updated the report to ensure full compliance with all relevant standards for accuracy and clarity.
 
 **Editing guidance:** Name the specific change and relevant policy only when useful.
 
@@ -977,26 +977,26 @@ The summary stresses sourced, verified, independent, secondary, or peer-reviewed
 
 <a id="p059"></a>
 
-### P059 Excessive markup implementation detail
+### P059 Excessive formatting detail in revision notes
 
 Source: Wikipedia PDF pp. 38. Related Vale rules: none directly implemented.
 
-Summaries itemize template names, parameter keys, punctuation, inline citations, and internal links at unusual length.
+A note about a revision lists tiny formatting operations at a length that obscures the substantive change.
 
-**Illustrative example:** Corrected image_size, integrated template fields, and refined inline-reference parameter syntax.
+**Illustrative example:** Adjusted the third heading’s font size, moved two commas, replaced three link labels and realigned the final table cell.
 
 **Editing guidance:** Include only technical details needed to review the change.
 
-**Limit:** Experienced technical editors may legitimately describe exact parameters. Compare detail with the edit's purpose.
+**Limit:** A technical review may need this detail. Include it when it helps someone check the work.
 
 
 <a id="p060"></a>
 
-### P060 Formulaic references to AfC feedback
+### P060 Vague claims of addressing feedback
 
 Source: Wikipedia PDF pp. 38. Related Vale rules: none directly implemented.
 
-After a draft decline, the summary announces that it addresses reviewer feedback without explaining the actual correction.
+A response to a reviewer says the feedback has been addressed without identifying the concern or explaining the correction.
 
 **Illustrative example:** Addressed reviewer feedback by improving sourcing, formatting, and neutrality.
 
@@ -1015,7 +1015,7 @@ Source: Wikipedia PDF pp. 39. Related Vale rules: none directly implemented.
 
 Grammar, register, or English variety changes sharply relative to the writer's history, or changes track successive model styles. Wikipedia: Signs of AI writing gives American-English defaults as one possible mismatch.
 
-**Illustrative example:** An editor's short informal posts suddenly become long, uniformly polished encyclopedia passages.
+**Illustrative example:** A writer’s normally brief, informal updates suddenly become long reports with uniformly formal phrasing.
 
 **Editing guidance:** Compare comparable genres and dated revisions; seek an ordinary explanation before inferring tool use.
 
@@ -1028,28 +1028,28 @@ Grammar, register, or English variety changes sharply relative to the writer's h
 
 Source: Wikipedia PDF pp. 39–40. Related Vale rules: none directly implemented.
 
-A draft includes a reviewer-facing statement declaring neutrality, source quality, notability, and policy compliance instead of letting the article and evidence demonstrate them.
+A finished document includes a note to the reviewer declaring that the work meets every requirement instead of providing the evidence needed to check it.
 
-**Illustrative example:** Reviewer note: This draft meets every biography and sourcing requirement.
+**Illustrative example:** Reviewer note: This report meets every requirement for originality, accuracy and adequate sourcing.
 
-**Editing guidance:** Keep submission communication separate from article prose and substantiate the actual criteria.
+**Editing guidance:** Keep submission notes separate from the document and address the actual review criteria.
 
-**Limit:** Do not treat the source's categorical deletion rhetoric as a general instruction. Apply the relevant review process and evidence.
+**Limit:** A required cover note is legitimate. A declaration of compliance does not establish whether the requirements were met.
 
 
 <a id="p063"></a>
 
-### P063 Preplaced maintenance and declined submission templates
+### P063 Review labels added before review
 
 Source: Wikipedia PDF pp. 40. Related Vale rules: none directly implemented.
 
-A new draft already contains a blank declined-AfC state, or implausible maintenance or protection tags. History may show the creator inserted the state.
+A draft arrives with a status such as “reviewed” or “rejected” even though the corresponding review has not happened. The label may have been copied from an example.
 
-**Illustrative example:** The creator adds {{AfC submission|d}} and later asks why nobody supplied decline feedback.
+**Illustrative example:** A new draft says “Rejected by reviewer” before anyone has reviewed it.
 
-**Editing guidance:** Inspect revision history and repair the template state using the proper workflow.
+**Editing guidance:** Check the review history and use the actual status of the document.
 
-**Limit:** Some maintenance tags are valid on creation. Confirm who inserted the template and why.
+**Limit:** Some systems add status labels automatically. Check how the label was inserted before drawing a conclusion.
 
 
 <a id="p064"></a>
@@ -1126,13 +1126,13 @@ Wikipedia: Signs of AI writing discusses research reporting pro-authoritarian te
 
 Source: Wikipedia PDF pp. 42–43. Related Vale rules: none directly implemented.
 
-Wikipedia: Signs of AI writing uses November 30, 2022 as a practical historical boundary for ordinary Wikipedia contributions. Revision tools can establish when a passage first appeared.
+A dated copy shows that the text existed before the particular chatbot was available. This can rule out that chatbot as the source of the original passage.
 
 **Illustrative example:** A supposedly AI-like paragraph is verifiably present in a 2018 revision.
 
-**Editing guidance:** Check the actual insertion date with revision history, Who Wrote That, or WikiBlame.
+**Editing guidance:** Check an archived copy, publication date or document version history.
 
-**Limit:** The source's claim that AI can be ruled out is too absolute in general: text-generation systems existed earlier. An early date strongly counters attribution to later chatbots.
+**Limit:** Earlier text-generation tools existed. A date predating one chatbot does not prove that no automated writing tool was involved.
 
 
 <a id="p069"></a>
@@ -1156,7 +1156,7 @@ A writer can give a coherent account of a mistake, supply the real source, or ex
 
 Source: Wikipedia PDF pp. 43. Related Vale rules: none directly implemented.
 
-Wikipedia: Signs of AI writing lists simple is/has clauses; wrote, moved, used, tried, died; definitive statements; hedges such as perhaps and tends to; and isolated wordiness as relatively common in human Wikipedia prose.
+Ordinary verbs such as is, has, wrote and used, and qualifications such as perhaps or tends to, occur in both human and generated writing. They are not useful authorship tests by themselves.
 
 **Illustrative example:** The report says there is a delay and that the team used a temporary pump.
 
@@ -1237,7 +1237,7 @@ Words such as however or consequently occur routinely in human writing. Formulai
 
 **Editing guidance:** Keep a transition that accurately expresses the relationship.
 
-**Limit:** The repository's Transitions rule flags individual matches; Wikipedia: Signs of AI writing explicitly warns against this inference in isolation.
+**Limit:** A single transition is not evidence of AI authorship. Check whether the connection between the statements makes sense.
 
 
 <a id="p076"></a>
@@ -1246,7 +1246,7 @@ Words such as however or consequently occur routinely in human writing. Formulai
 
 Source: Wikipedia PDF pp. 44. Related Vale rules: none directly implemented.
 
-Unsourced Wikipedia content long predates LLMs, and modern generated text may include citations.
+People wrote unsupported claims long before modern chatbots, and generated text can include citations. Missing references alone do not identify the author.
 
 **Illustrative example:** A paragraph contains no references.
 
@@ -1261,11 +1261,11 @@ Unsourced Wikipedia content long predates LLMs, and modern generated text may in
 
 Source: Wikipedia PDF pp. 44. Related Vale rules: none directly implemented.
 
-Unexpected spans, misplaced italic markers, or other odd syntax may come from browser extensions, translation tools, or VisualEditor rather than the listed AI artifacts.
+Unexpected formatting commands, misplaced italic markers or stray code can come from a browser extension, translation tool or document editor.
 
 **Illustrative example:** A misplaced italic marker splits the last letter of a book title.
 
-**Editing guidance:** Inspect the editor/tool history and fix the rendering defect.
+**Editing guidance:** Check how the text was copied or converted and fix the formatting error.
 
 **Limit:** Distinguish a recognizable tool artifact from an arbitrary formatting error.
 
@@ -1276,9 +1276,9 @@ Unexpected spans, misplaced italic markers, or other odd syntax may come from br
 
 Source: Wikipedia PDF pp. 44. Related Vale rules: none directly implemented.
 
-Valid complex templates can result from a visual editor, previewing, or ordinary experience.
+Correctly formatted documents can result from templates, visual editing tools or ordinary experience.
 
-**Illustrative example:** A new editor submits a correctly formatted infobox.
+**Illustrative example:** A first-time contributor submits a report with a correctly formatted table and working references.
 
 **Editing guidance:** Assess content and source quality directly.
 
@@ -1299,7 +1299,7 @@ Especially in the source's 2022–2024 period, text tells an imagined reader wha
 
 **Editing guidance:** State the actual limitation or difference and provide the relevant context.
 
-**Limit:** An explicit qualification may be necessary. The historical status should remain visible in the app.
+**Limit:** An explicit qualification may be necessary. This observation concerns earlier chatbot output and should not be assumed to apply to every current model.
 
 
 <a id="p080"></a>
@@ -1385,13 +1385,13 @@ A passage repeatedly renames the same entity or idea, possibly reflecting older 
 
 Source: Repository configuration; see the rule register. Related Vale rule: AspectOveruse.
 
-AspectOveruse flags a fixed set of broad phrases: multifaceted, various aspects, different aspects, multiple aspects, key aspects, important aspects, various facets, and many dimensions.
+Broad phrases such as “various aspects,” “many dimensions” or “multifaceted” stand in for naming the actual issues.
 
 **Illustrative example:** We need to examine the various aspects of the design.
 
 **Editing guidance:** Name the actual components or questions when possible.
 
-**Limit:** The rule triggers on existence, despite its overuse label. Some uses are accurate and helpful.
+**Limit:** Some broad descriptions are useful. The problem is leaving the relevant details unspecified.
 
 
 <a id="p086"></a>
@@ -1400,13 +1400,13 @@ AspectOveruse flags a fixed set of broad phrases: multifaceted, various aspects,
 
 Source: Repository configuration; see the rule register. Related Vale rule: Enumeration.
 
-Enumeration flags one of the most, among the most, some of the most, one of the first, among the earliest, and some of the earliest.
+Phrases such as “one of the most” or “among the earliest” imply a ranking without naming the comparison group.
 
 **Illustrative example:** The device was one of the first of its kind.
 
 **Editing guidance:** Specify a supported comparison, scope, and date, or avoid the ranking.
 
-**Limit:** Wikipedia: Signs of AI writing also describes some superlative and definitive constructions as relatively human-associated. A qualifier can prevent an overclaim.
+**Limit:** A qualified ranking can be accurate. Check its scope and supporting evidence.
 
 
 <a id="p087"></a>
@@ -1415,13 +1415,13 @@ Enumeration flags one of the most, among the most, some of the most, one of the 
 
 Source: Repository configuration; see the rule register. Related Vale rule: Hedging.
 
-Hedging counts a fixed alternation of 15 phrases, mixing caveats with certainty assertions. Its configured maximum is two; the file does not explicitly set scope or ignorecase.
+Phrases such as “it is worth noting,” “clearly” and “without a doubt” repeatedly announce importance or certainty instead of supplying evidence.
 
 **Illustrative example:** It is worth noting the result. Clearly, it matters. Without a doubt, it will endure.
 
 **Editing guidance:** Delete empty preambles, state uncertainty accurately, and avoid unsupported certainty.
 
-**Limit:** The rule's name does not describe every token. Three case-matching listed occurrences exceed its configured maximum; runtime parsing and defaults still matter.
+**Limit:** An introductory phrase can help a reader. Review whether repeated assertions of certainty are supported.
 
 
 <a id="p088"></a>
@@ -1430,13 +1430,13 @@ Hedging counts a fixed alternation of 15 phrases, mixing caveats with certainty 
 
 Source: Repository configuration; see the rule register. Related Vale rule: Intensifiers.
 
-Intensifiers flags 12 tokens or phrases including notably, significantly, particularly, and highly significant.
+Words such as “notably,” “particularly” and “exceptionally” add emphasis without necessarily explaining the size or importance of a result.
 
 **Illustrative example:** The performance was exceptionally strong.
 
 **Editing guidance:** Replace unsupported emphasis with a measure or a precise description.
 
-**Limit:** Significantly can be a technical statistical term. Wikipedia: Signs of AI writing does not endorse treating each intensifier as AI evidence.
+**Limit:** An intensifier may be precise in context. “Statistically significant,” for example, has a technical meaning.
 
 **Additional examples:**
 
@@ -1458,13 +1458,13 @@ Source records: S22 and S23; supplied variants merged into this entry.
 
 Source: Repository configuration; see the rule register. Related Vale rule: Passive.
 
-Passive combines forms of be with eight words: founded, known, considered, established, recognized, created, regarded, developed. It explicitly ignores case.
+Sentences repeatedly place the action before the person responsible, using forms such as “was developed,” “is considered” and “was established.”
 
 **Illustrative example:** The system was developed by the team.
 
 **Editing guidance:** Choose active or passive voice based on emphasis, agency, and clarity.
 
-**Limit:** This is a limited pattern, not a full grammar parser. Passive voice is legitimate and is not a standalone sign of AI writing.
+**Limit:** Passive voice is often useful. Review whether it obscures responsibility rather than treating it as an authorship signal.
 
 
 <a id="p090"></a>
@@ -1473,13 +1473,13 @@ Passive combines forms of be with eight words: founded, known, considered, estab
 
 Source: Repository configuration; see the rule register. Related Vale rule: ScareQuotes.
 
-ScareQuotes matches so-called followed by a straight single- or double-quoted span. Its raw pattern can accept mismatched opening and closing quote types.
+The phrase “so-called” is followed by quotation marks that add another layer of skepticism without explaining the criticism.
 
 **Illustrative example:** The company uses a so-called 'innovative' approach.
 
 **Editing guidance:** Explain the criticism and attribution directly, or retain accurately justified distancing.
 
-**Limit:** Scare quotes can communicate skepticism legitimately. This pattern does not cover all quotation practices or curly quotation marks.
+**Limit:** Quotation marks can legitimately signal a disputed term. Make the basis for the skepticism clear.
 
 
 <a id="p091"></a>
@@ -1488,13 +1488,13 @@ ScareQuotes matches so-called followed by a straight single- or double-quoted sp
 
 Source: Repository configuration; see the rule register. Related Vale rule: ColonOveruse.
 
-ColonOveruse flags a colon before including, such as, for example, notably, specifically, or particularly. It has no frequency threshold.
+A colon appears before an introductory phrase such as “including,” “such as” or “for example,” interrupting a sentence that could run directly into the examples.
 
 **Illustrative example:** The service has benefits: including faster processing.
 
 **Editing guidance:** Write The benefits include faster processing, or introduce a proper list after the colon.
 
-**Limit:** This is a narrow construction check, not a count of colons or a general prohibition on them.
+**Limit:** Colons are useful for introducing lists and explanations. Check the sentence rather than banning the punctuation.
 
 
 <a id="p092"></a>
@@ -1503,13 +1503,13 @@ ColonOveruse flags a colon before including, such as, for example, notably, spec
 
 Source: Repository configuration; see the rule register. Related Vale rule: Lists.
 
-Lists looks for first or firstly, then second or secondly, then third or thirdly in that order within a paragraph. It explicitly ignores case and requires separators after the first two words.
+A paragraph marches through “first,” “second” and “third” even when its points do not need to be presented as a sequence.
 
 **Illustrative example:** First, gather material; second, prepare it; third, assemble the parts.
 
 **Editing guidance:** Keep ordered instructions when the sequence matters; otherwise avoid a mechanical outline.
 
-**Limit:** The rule is not a detector for every list, every three-item phrase, or words spread across separate paragraphs.
+**Limit:** Ordered steps are appropriate for instructions and structured arguments. The wording alone does not identify AI use.
 
 
 ## PDF phrase inventory
