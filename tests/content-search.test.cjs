@@ -3,9 +3,9 @@ const data=require('../scripts/build.cjs');
 const {createSearch}=require('../src/search.js');
 const search=createSearch(data.entries,data.concepts);
 test('all Markdown entries are complete, unique and have valid navigation categories',()=>{
- assert.equal(data.entries.length,138);assert.equal(new Set(data.entries.map(e=>e.slug)).size,138);
+ assert.equal(data.entries.length,143);assert.equal(new Set(data.entries.map(e=>e.slug)).size,143);
  for(const e of data.entries){for(const key of ['title','description','example','guidance','limit'])assert.ok(e[key]?.length>0,`${e.slug}: ${key}`);assert.ok(data.categories.some(c=>c.slug===e.category));assert.doesNotMatch(JSON.stringify(e),/\b[PS]\d{3}\b/);assert.doesNotMatch(e.description,/Source records:|Source:|Related Vale rule/);}
- assert.equal(data.sources.length,21);assert.ok(data.sources.every(s=>new URL(s.url).protocol==='https:'));
+ assert.equal(data.sources.length,23);assert.ok(data.sources.every(s=>new URL(s.url).protocol==='https:'));
  assert.equal(data.entries.filter(e=>e.kind==='Unreliable indicator').length,11);
  assert.equal(data.entries.filter(e=>e.kind==='Historical pattern').length,6);
 });
@@ -32,6 +32,18 @@ test('category filters and deterministic ranking',()=>{
 });
 test('each title finds its own entry',()=>{for(const e of data.entries)assert.ok(search(e.title).slice(0,3).some(r=>r.entry.slug===e.slug),e.slug);});
 test('build is self-contained and works without module fetches',()=>{
- const ctx={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../dist/data.js'),'utf8'),ctx);assert.equal(ctx.window.PATTERNS.entries.length,138);
+ const ctx={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../dist/data.js'),'utf8'),ctx);assert.equal(ctx.window.PATTERNS.entries.length,143);
  for(const file of ['index.html','app.js','search.js','styles.css']){const s=fs.readFileSync(path.join(__dirname,'../dist',file),'utf8');assert.doesNotMatch(s,/\bfetch\(|XMLHttpRequest|@import|https:\/\/.*(?:\.css|\.js)/);}
 });
+
+test('all supplied additions are preserved as searchable examples',()=>{
+ const examples=data.entries.flatMap(e=>e.additionalExamples);
+ assert.equal(examples.length,47);assert.equal(new Set(examples.map(v=>v.label)).size,47);
+ for(const e of data.entries)for(const v of e.additionalExamples)assert.ok(search(v.example).some(r=>r.entry.slug===e.slug),v.label);
+ for(const [q,slug] of [['without sacrificing','promises-without-tradeoffs'],['can help you','stock-helpfulness-claims'],['does not establish','repeated-qualification-and-reassurance'],['this matters','repeated-importance-flags'],['perhaps the most','unsupported-superlatives']])assert.equal(search(q)[0].entry.slug,slug);
+});
+
+ test('published content does not expose document preparation notes',()=>{
+ const visible=JSON.stringify(data);
+ assert.doesNotMatch(visible,/\bPDF\b|supplied snapshot|source-snapshot|reconstructed from the visible list|confirmed by user/i);
+ });

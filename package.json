@@ -8,7 +8,9 @@
     "build": "node scripts/build.cjs",
     "dev": "node scripts/serve.cjs",
     "start": "node scripts/serve.cjs",
-    "test": "node tests/content-search.test.cjs"
+    "test": "node tests/content-search.test.cjs && node tests/library.test.cjs"
   },
-  "engines": { "node": ">=18" }
+  "engines": {
+    "node": ">=18"
+  }
 }

@@ -2,7 +2,7 @@
 
 A reference for reviewing prose and preparing examples
 
-Updated 2 October 2026 | 138 entries | 21 source records
+Updated 2 October 2026 | 143 entries | 23 source records
 
 This reference brings together the signs described in the supplied Wikipedia PDF and every rule in the vale-signs-of-ai-writing repository. It explains what each pattern looks like, supplies an illustrative example, and records the limits of the observation. The technical appendix preserves the exact rule files and all repository fixtures.
 
@@ -26,7 +26,7 @@ All examples labeled Illustrative example were written or adapted for this refer
 
 Primary text: Wikipedia contributors, Wikipedia:Signs of AI writing, user-supplied PDF printed 2 October 2026 at 2:12 AM. PDF page numbers below refer to its 47 physical pages, which match the printed page numbers 1 through 47. The user confirmed that the omitted pages 48 through 51 contain references.
 
-Source page and contributor history: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing and https://en.wikipedia.org/w/index.php?title=Wikipedia:Signs_of_AI_writing&action=history . The PDF snapshot, rather than a changing live page, governs this extraction. Model-era and research observations are reported as claims in that snapshot.
+Source page and contributor history: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing and https://en.wikipedia.org/w/index.php?title=Wikipedia:Signs_of_AI_writing&action=history . Wikipedia: Signs of AI writing snapshot, rather than a changing live page, governs this extraction. Model-era and research observations are reported as claims in that snapshot.
 
 Repository: ammil-industries/vale-signs-of-ai-writing, commit 305467bafd0e491c4c00e0196ef551e64eefc9c4. Source: https://github.com/ammil-industries/vale-signs-of-ai-writing/tree/305467bafd0e491c4c00e0196ef551e64eefc9c4 .
 
@@ -62,7 +62,7 @@ The catalog contains 92 entries. This includes overlapping subtypes, context, co
 
 ## Foundations for interpreting signs
 
-The PDF warns against relying solely on AI detectors or on intuition. It discusses studies with varying detection results and explains that paraphrasing, formatting changes, unfamiliar models, and differences among readers affect accuracy. Its reported percentages are study-specific, not calibration data for this reference or the proposed site. The omitted bibliography prevents a full audit of those research citations from this file alone.
+Wikipedia: Signs of AI writing warns against relying solely on AI detectors or on intuition. It discusses studies with varying detection results and explains that paraphrasing, formatting changes, unfamiliar models, and differences among readers affect accuracy. Its reported percentages are study-specific, not calibration data for this reference or the proposed site. The omitted bibliography prevents a full audit of those research citations from this file alone.
 
 Look for a combination of concrete observations and inspect their causes. Human language is influenced by tools; people may deliberately avoid suspected AI phrases or react defensively to accusations. Formal prose, multilingual writing, and a person’s response to criticism need context. Repetition of related alerts should not be counted as independent evidence.
 
@@ -86,6 +86,7 @@ Ordinary facts are inflated into claims about legacy, broader trends, public deb
 
 **Limit:** A supported account of significance is appropriate. Symbolism is a phrase matcher, not a test of historical importance.
 
+
 <a id="p002"></a>
 
 ### P002 Canned notability and media coverage
@@ -99,6 +100,7 @@ The prose advertises the existence, independence, availability, or type of cover
 **Editing guidance:** Summarize the actual reporting and attribute specific findings. Keep a notability argument separate from article prose.
 
 **Limit:** Press releases and human biographies also list coverage. Check the phrasing and focus, not the mere presence of media references.
+
 
 <a id="p003"></a>
 
@@ -114,6 +116,7 @@ A sentence appends an unsupported interpretation, often an -ing clause about hig
 
 **Limit:** A participial clause can state a real causal result. Verify the relationship rather than banning -ing words.
 
+
 <a id="p004"></a>
 
 ### P004 Promotional language
@@ -127,6 +130,7 @@ Travel-guide or press-release language replaces neutral description. Cultural he
 **Editing guidance:** Replace praise with concrete, relevant facts. Compare the original and revised text for newly introduced promotion.
 
 **Limit:** Human advertising also uses these phrases. Older model output may be more overtly superlative than newer output.
+
 
 <a id="p005"></a>
 
@@ -142,6 +146,7 @@ The text says a person is connected with, associated with, or linked to an activ
 
 **Limit:** Use qualified wording when the evidence really is uncertain; do not turn a loose association into an invented position.
 
+
 <a id="p006"></a>
 
 ### P006 Vague attribution and exaggerated consensus
@@ -155,6 +160,7 @@ Unnamed experts, observers, industry reports, or critics supposedly support a cl
 **Editing guidance:** Identify who said what, how many sources support it, and whether the claim represents opinion or evidence.
 
 **Limit:** Some generalizations are well supported. A plural attribution needs plural evidence; such as is misleading only when it implies unsupported additional examples.
+
 
 <a id="p007"></a>
 
@@ -170,6 +176,7 @@ A rigid ending announces challenges despite preceding praise, then predicts a po
 
 **Limit:** A substantive discussion of challenges is useful. The sign is the repeated optimistic template, not the word challenges.
 
+
 <a id="p008"></a>
 
 ### P008 Awards and recognition headings
@@ -184,6 +191,7 @@ A repeated Awards and recognition or Recognition section emphasizes acclaim. Pai
 
 **Limit:** Human biographies routinely need awards sections. The heading alone is weak evidence.
 
+
 ## Language and grammar
 
 <a id="p009"></a>
@@ -192,13 +200,20 @@ A repeated Awards and recognition or Recognition section emphasizes acclaim. Pai
 
 Source: Wikipedia PDF pp. 8–9. Related Vale rule: Vocabulary.
 
-Many characteristic words recur together across a passage. The PDF distinguishes specific overused words from all formal language and notes that vocabulary changes by model and period.
+Many characteristic words recur together across a passage. Wikipedia: Signs of AI writing distinguishes specific overused words from all formal language and notes that vocabulary changes by model and period.
 
 **Illustrative example:** Additionally, the initiative underscores a pivotal interplay within a vibrant landscape.
 
 **Editing guidance:** Use the most precise ordinary wording, preserve technical meaning, and inspect the whole passage for repeated patterns.
 
 **Limit:** A single word proves nothing. Literal tapestry or underscore may be exact. Do not treat synonyms as equally diagnostic by association.
+
+**Additional examples:**
+
+- **Thoughtful as a rating:** The rollback note is thoughtful about operator load.
+
+Source records: S22 and S23; supplied variants merged into this entry.
+
 
 <a id="p010"></a>
 
@@ -214,6 +229,7 @@ Straightforward identity or possession is expressed with serves as, functions as
 
 **Limit:** Serves as can accurately describe a temporary function. Has in a perfect tense is different from has meaning possesses.
 
+
 <a id="p011"></a>
 
 ### P011 Negative parallelism adding another quality
@@ -227,6 +243,7 @@ Not only X but Y and not just X it is Y imply an incomplete reader assumption an
 **Editing guidance:** State the substantive point directly unless the contrast answers a real question.
 
 **Limit:** This is common in human persuasion and explanations. Evaluate frequency and whether the correction is needed.
+
 
 <a id="p012"></a>
 
@@ -242,19 +259,34 @@ It is not X it is Y or no X no Y just Z rejects an imagined description before a
 
 **Limit:** A corrective contrast can be essential when a real misconception exists.
 
+**Additional examples:**
+
+- **More-than residual contrast:** The depot is more than a warehouse. It is the only cross-dock in the state.
+- **Instead-it reversal:** The panel did not expand. Instead it reloaded the same view.
+
+Source records: S22 and S23; supplied variants merged into this entry.
+
+
 <a id="p013"></a>
 
 ### P013 Reversed negative parallelism
 
 Source: Wikipedia PDF pp. 11. Related Vale rules: none directly implemented.
 
-Y rather than X creates the same corrective framing in reverse; the PDF associates this especially, but not exclusively, with Grok output.
+Y rather than X creates the same corrective framing in reverse; Wikipedia: Signs of AI writing associates this especially, but not exclusively, with Grok output.
 
 **Illustrative example:** The policy prioritizes practical consolidation rather than ideological purity.
 
 **Editing guidance:** Retain the comparison only if both alternatives are relevant and supported.
 
-**Limit:** Rather than is normal grammar. The model association is an observation in the supplied snapshot, not an authorship test.
+**Limit:** Rather than is normal grammar. The model association is an observation in Wikipedia: Signs of AI writing, not an authorship test.
+
+**Additional examples:**
+
+- **Less-like, more-like:** The outage was less like a crash and more like a slow leak.
+
+Source records: S22 and S23; supplied variants merged into this entry.
+
 
 <a id="p014"></a>
 
@@ -270,6 +302,7 @@ A list or broad topic title is defined as if it names a single independent entit
 
 **Limit:** Some titles can appear naturally in a lead; the defect is artificial reification of the title.
 
+
 <a id="p015"></a>
 
 ### P015 Repetitive groups of three
@@ -283,6 +316,7 @@ Adjectives, phrases, or examples repeatedly arrive in threes, making thin analys
 **Editing guidance:** Keep the items that the evidence requires; vary structure according to meaning.
 
 **Limit:** Three real categories can be the right structure. The repository Lists rule detects ordered first-second-third language, not this broader rhetorical pattern.
+
 
 ## Style and formatting
 
@@ -300,6 +334,7 @@ The article repeats its own title as a heading above its content, as if the writ
 
 **Limit:** A standalone document often needs an explicit title. This sign is platform dependent.
 
+
 <a id="p017"></a>
 
 ### P017 Title case headings
@@ -313,6 +348,7 @@ Main words in section headings are capitalized systematically, contrary to Wikip
 **Editing guidance:** Use the capitalization convention of the destination publication.
 
 **Limit:** Title case is normal in many publications and is not generally incorrect.
+
 
 <a id="p018"></a>
 
@@ -328,6 +364,7 @@ A parent heading has no introductory text and immediately leads to another headi
 
 **Limit:** Some reference manuals intentionally use container headings. An empty parent is not an authorship test.
 
+
 <a id="p019"></a>
 
 ### P019 Mechanical boldface
@@ -341,6 +378,7 @@ Keywords or selected phrases are repeatedly bolded in a key-takeaways style unre
 **Editing guidance:** Use emphasis sparingly and according to the publication's style.
 
 **Limit:** Training materials and business slides may use boldface appropriately. Newer models may be instructed to avoid it.
+
 
 <a id="p020"></a>
 
@@ -356,19 +394,21 @@ Each item begins with a short bold label followed by a colon and a description. 
 
 **Limit:** A glossary or scannable reference can legitimately use labeled lists. Bold Keep or Delete votes in Wikipedia discussions are a separate convention.
 
+
 <a id="p021"></a>
 
 ### P021 Formulaic em dash overuse
 
 Source: Wikipedia PDF pp. 15–16. Related Vale rules: none directly implemented.
 
-Dashes repeatedly add emphatic asides or contrasts, often surrounded by spaces. The PDF marks this as potentially historical and cites model and genre differences.
+Dashes repeatedly add emphatic asides or contrasts, often surrounded by spaces. Wikipedia: Signs of AI writing marks this as potentially historical and cites model and genre differences.
 
 **Illustrative example:** The center expanded — a bold step forward — reshaping its future.
 
 **Editing guidance:** Keep punctuation that clarifies the sentence; reduce repeated rhetorical interruptions when they obscure the claim.
 
-**Limit:** Professional writers use dashes. The PDF reports that contemporary models do not uniformly overuse them; this is weak evidence alone.
+**Limit:** Professional writers use dashes. Wikipedia: Signs of AI writing reports that contemporary models do not uniformly overuse them; this is weak evidence alone.
+
 
 <a id="p022"></a>
 
@@ -382,7 +422,8 @@ Emoji decorate headings, bullets, talk-page comments, or edit summaries rather t
 
 **Editing guidance:** Remove decorative symbols where the destination's style excludes them.
 
-**Limit:** Emoji are ordinary in informal communication. The PDF describes this as less common in recent output.
+**Limit:** Emoji are ordinary in informal communication. Wikipedia: Signs of AI writing describes this as less common in recent output.
+
 
 <a id="p023"></a>
 
@@ -398,6 +439,7 @@ Small tables repeat information better expressed as prose or an infobox. Markdow
 
 **Limit:** Tables are appropriate for genuinely parallel data. Minimal formatting alone is not evidence.
 
+
 <a id="p024"></a>
 
 ### P024 Curly quotes and apostrophes
@@ -410,7 +452,8 @@ Directional quotes and apostrophes, or inconsistent mixing of straight and curly
 
 **Editing guidance:** Normalize typography only if required by house style and preserve quotations accurately.
 
-**Limit:** Word, operating systems, citation tools, and professional typesetting routinely produce curly quotes. The PDF says model behavior differs.
+**Limit:** Word, operating systems, citation tools, and professional typesetting routinely produce curly quotes. Wikipedia: Signs of AI writing says model behavior differs.
+
 
 <a id="p025"></a>
 
@@ -426,6 +469,7 @@ Sections begin at level 3 rather than level 2, possibly during Markdown-to-wikit
 
 **Limit:** People also make hierarchy errors. Judge the actual document structure.
 
+
 <a id="p026"></a>
 
 ### P026 Repeated level 1 headings
@@ -440,6 +484,7 @@ Article-body sections use top-level headings normally reserved for the page titl
 
 **Limit:** Level 1 can be valid elsewhere. This observation is about Wikipedia formatting.
 
+
 <a id="p027"></a>
 
 ### P027 Thematic breaks between sections
@@ -453,6 +498,7 @@ Horizontal separators are inserted mechanically between sections, often reflecti
 **Editing guidance:** Let headings and spacing separate content unless a rule has a specific purpose.
 
 **Limit:** Rules are legitimate design elements in other contexts and do not establish provenance.
+
 
 ## Communication residue
 
@@ -470,6 +516,7 @@ Replies, offers to continue, praise, submission advice, or user-facing instructi
 
 **Limit:** A human may quote a chatbot as evidence. Ordinary courteous language in an actual conversation is not itself a defect.
 
+
 <a id="p029"></a>
 
 ### P029 Knowledge and source availability disclaimers
@@ -484,6 +531,7 @@ Text refers to training cutoffs, unavailable search results, sparse documentatio
 
 **Limit:** A carefully scoped limitation statement is good practice. The repository detects older cutoff phrases and misses many retrieval-era forms.
 
+
 <a id="p030"></a>
 
 ### P030 Unfilled placeholders and template instructions
@@ -497,6 +545,7 @@ Names, dates, citation fields, links, and infobox content are left as prompts to
 **Editing guidance:** Complete fields from evidence, remove inapplicable placeholders, and check embedded comments.
 
 **Limit:** Legitimate article templates contain boilerplate instructions. Compare an infobox comment with the standard template before attributing it to AI.
+
 
 ## Markup and tool artifacts
 
@@ -514,6 +563,7 @@ Markdown headings, links, emphasis, breaks, and numbered lists are pasted into M
 
 **Limit:** Markdown is widely used by humans. A newcomer may reasonably assume a wiki supports it.
 
+
 <a id="p032"></a>
 
 ### P032 Broken wikitext and submission code
@@ -527,6 +577,7 @@ Templates or article-submission markup contain garbled syntax, sometimes with im
 **Editing guidance:** Validate the template against its documented syntax and repair the actual submission state.
 
 **Limit:** Bad markup can come from human errors or tools. Not every unexplained HTML fragment is characteristic of AI.
+
 
 <a id="p033"></a>
 
@@ -542,6 +593,7 @@ Internal reference identifiers leak into prose: contentReference, oaicite, oai_c
 
 **Limit:** Quoted examples and technical documentation can contain these strings intentionally. The repository covers only part of this family.
 
+
 <a id="p034"></a>
 
 ### P034 Gemini citation and span markup
@@ -554,7 +606,8 @@ Copied output includes [cite: 1], combined citation lists such as [cite: 3, 12, 
 
 **Editing guidance:** Find the actual source and replace the tool marker with an ordinary citation.
 
-**Limit:** These are source-snapshot associations with Gemini; literal examples in documentation are not accidental artifacts.
+**Limit:** Wikipedia: Signs of AI writing associates these forms with Gemini; literal examples in documentation are not accidental artifacts.
+
 
 <a id="p035"></a>
 
@@ -570,19 +623,21 @@ XML-like grok_card tags or grok_render_citation_card_json appear where rendered 
 
 **Limit:** The tag indicates a tool format, not that every surrounding sentence was generated.
 
+
 <a id="p036"></a>
 
 ### P036 DeepSeek bracket and dagger references
 
 Source: Wikipedia PDF pp. 26–27. Related Vale rules: none directly implemented.
 
-Reference-like strings combine lenticular brackets, a number, a dagger, and line ranges. The PDF associates this format with DeepSeek and derivatives.
+Reference-like strings combine lenticular brackets, a number, a dagger, and line ranges. Wikipedia: Signs of AI writing associates this format with DeepSeek and derivatives.
 
 **Illustrative example:** A claim is followed by 【85†L261-269】.
 
 **Editing guidance:** Resolve the cited source and relevant passage; replace internal locators with usable references.
 
-**Limit:** Bracketed notation can be deliberately quoted. Model attribution in the PDF is observational.
+**Limit:** Bracketed notation can be deliberately quoted. Model attribution in Wikipedia: Signs of AI writing is observational.
+
 
 <a id="p037"></a>
 
@@ -590,7 +645,7 @@ Reference-like strings combine lenticular brackets, a number, a dagger, and line
 
 Source: Wikipedia PDF pp. 27. Related Vale rules: none directly implemented.
 
-Output exposes [attached_file:1], [web:1], or an S3 citation URL containing ppl-ai-file-upload. The PDF qualifies the platform association for the bracketed forms.
+Output exposes [attached_file:1], [web:1], or an S3 citation URL containing ppl-ai-file-upload. Wikipedia: Signs of AI writing qualifies the platform association for the bracketed forms.
 
 **Illustrative example:** The report describes the merger.[attached_file:1]
 
@@ -598,19 +653,21 @@ Output exposes [attached_file:1], [web:1], or an S3 citation URL containing ppl-
 
 **Limit:** Do not infer public availability from an uploaded file URL, and do not infer authorship of all text from one marker.
 
+
 <a id="p038"></a>
 
 ### P038 Unclassified writing block delimiters
 
 Source: Wikipedia PDF pp. 27. Related Vale rules: none directly implemented.
 
-A document includes :::writing{variant="document" id="12345"} and sometimes closing triple colons; the PDF leaves the origin unclassified.
+A document includes :::writing{variant="document" id="12345"} and sometimes closing triple colons; Wikipedia: Signs of AI writing leaves the origin unclassified.
 
 **Illustrative example:** :::writing{variant="document" id="12345"} precedes an article.
 
 **Editing guidance:** Remove interface wrappers after checking the enclosed content; preserve them when discussing the format itself.
 
 **Limit:** Do not assign a vendor that the source does not establish.
+
 
 <a id="p039"></a>
 
@@ -626,6 +683,7 @@ Categories are invented, obsolete, redirects, or broken by missing punctuation a
 
 **Limit:** New or returning editors make the same mistakes. A red link is corroborating context at most.
 
+
 <a id="p040"></a>
 
 ### P040 Invented templates and parameters
@@ -638,7 +696,8 @@ Plausible-sounding infoboxes do not exist; unsupported parameters silently do no
 
 **Editing guidance:** Check template existence and parameter documentation, then preview the result.
 
-**Limit:** Template mistakes and old examples can be human. The PDF's lang-?? example is a historical observation, not a current template inventory.
+**Limit:** Template mistakes and old examples can be human. Wikipedia: Signs of AI writing's lang-?? example is a historical observation, not a current template inventory.
+
 
 ## Citations and source checking
 
@@ -656,6 +715,7 @@ Several references in a new contribution lead to nonexistent pages or sites, wit
 
 **Limit:** Links decay, institutional access differs, scripts alter URLs, and copying can truncate them.
 
+
 <a id="p042"></a>
 
 ### P042 Invalid DOI or ISBN identifiers
@@ -670,6 +730,7 @@ A DOI cannot be resolved or an ISBN fails its checksum, suggesting an incorrect 
 
 **Limit:** A typo can cause the same failure. A valid checksum only verifies identifier structure, not the cited claim.
 
+
 <a id="p043"></a>
 
 ### P043 Real identifiers attached to the wrong work
@@ -682,7 +743,8 @@ A DOI or other identifier resolves, but its title, authors, date, or subject dif
 
 **Editing guidance:** Compare full metadata and read the supporting passage. Check chronological impossibilities as well.
 
-**Limit:** The PDF notes historical VisualEditor PMID errors that predate these AI patterns; a mismatch is a citation defect, not automatic proof of AI.
+**Limit:** Wikipedia: Signs of AI writing notes historical VisualEditor PMID errors that predate these AI patterns; a mismatch is a citation defect, not automatic proof of AI.
+
 
 <a id="p044"></a>
 
@@ -698,6 +760,7 @@ A long book is cited without the page or section needed to verify a specific sta
 
 **Limit:** Print books need not have URLs. Missing page numbers are common human citation weaknesses.
 
+
 <a id="p045"></a>
 
 ### P045 Incorrect or unconventional reference use
@@ -712,6 +775,7 @@ References are mechanically appended after every sentence, reused with invalid s
 
 **Limit:** Return arrows are normal footnote navigation on many websites. Their presence in pasted text is context dependent.
 
+
 <a id="p046"></a>
 
 ### P046 AI service tracking parameters
@@ -724,7 +788,8 @@ Source URLs contain utm_source=chatgpt.com, utm_source=openai, utm_source=copilo
 
 **Editing guidance:** Verify the destination and review revision history to distinguish citation assistance from generated prose.
 
-**Limit:** The PDF explicitly says a tracking parameter does not prove the writing was generated. Indexed or recirculated URLs can carry it onward.
+**Limit:** Wikipedia: Signs of AI writing explicitly says a tracking parameter does not prove the writing was generated. Indexed or recirculated URLs can carry it onward.
+
 
 <a id="p047"></a>
 
@@ -739,6 +804,7 @@ A reference is defined in a references section but never used inline, or an inli
 **Editing guidance:** Pair definitions and uses, remove unused entries where appropriate, and preview citation errors.
 
 **Limit:** Copying part of an article can create the same mismatch.
+
 
 ## Discussion comments
 
@@ -756,6 +822,7 @@ A comment cites nonexistent project shortcuts or misstates a policy as authorita
 
 **Limit:** People misremember policy. Check the substance before making claims about the writer.
 
+
 <a id="p049"></a>
 
 ### P049 Transcluding banners while mentioning them
@@ -769,6 +836,7 @@ A comment renders a maintenance banner when it intended merely to refer to the t
 **Editing guidance:** Use appropriate escaped or linked template references when discussing markup.
 
 **Limit:** New editors can misunderstand transclusion without using AI.
+
 
 <a id="p050"></a>
 
@@ -784,6 +852,7 @@ Long comments are divided into multiple titled sections, sometimes using Markdow
 
 **Limit:** Complex discussions sometimes benefit from headings and detail.
 
+
 <a id="p051"></a>
 
 ### P051 Assurances about AI use and compliance
@@ -797,6 +866,7 @@ The response downplays AI involvement by listing policies supposedly satisfied o
 **Editing guidance:** Explain the actual contribution and evidence; follow applicable disclosure practices.
 
 **Limit:** An assurance is neither proof of innocence nor proof of AI. Do not punish a person simply for responding to concern.
+
 
 <a id="p052"></a>
 
@@ -812,6 +882,7 @@ A defensive reply asks critics to specify exactly what must be improved, often w
 
 **Limit:** Requests for help are normal and should be encouraged; this is weak contextual evidence only.
 
+
 <a id="p053"></a>
 
 ### P053 Dismissing provenance concerns as speculation
@@ -826,19 +897,21 @@ The comment characterizes concerns as unsupported speculation and demands concre
 
 **Limit:** Writers can reasonably dispute false accusations. The stance alone cannot establish AI use.
 
+
 <a id="p054"></a>
 
 ### P054 Redirecting discussion away from provenance
 
 Source: Wikipedia PDF pp. 33–34. Related Vale rule: ChatbotCommunication.
 
-A response urges reviewers to focus exclusively on improving content rather than whether AI helped create it. The PDF also lists formal salutation formulas used in canned messages.
+A response urges reviewers to focus exclusively on improving content rather than whether AI helped create it. Wikipedia: Signs of AI writing also lists formal salutation formulas used in canned messages.
 
 **Illustrative example:** Let us focus on improving the article rather than its origin. Dear Wikipedia Editorial Team, I hope this message finds you well.
 
 **Editing guidance:** Address the actual editing issue and any applicable provenance requirement without using a script.
 
 **Limit:** Content-focused discussion and polite openings are legitimate. Evaluate the surrounding pattern.
+
 
 ## Edit summaries
 
@@ -856,6 +929,7 @@ Summaries follow repetitive formulas; older ones may include first-person explan
 
 **Limit:** Long or formal summaries can be human. Common local abbreviations and a consistent editing history provide useful context.
 
+
 <a id="p056"></a>
 
 ### P056 Canned policy compliance assurances
@@ -869,6 +943,7 @@ The summary stacks broad claims about neutrality, verifiability, attribution, or
 **Editing guidance:** Name the specific change and relevant policy only when useful.
 
 **Limit:** A concise policy-specific explanation is normal. Generic assurances do not demonstrate compliance.
+
 
 <a id="p057"></a>
 
@@ -884,6 +959,7 @@ The summary describes what was retained, preserved, avoided, or deliberately lef
 
 **Limit:** Preservation is genuinely important in some revisions. This pattern is contextual, not inherently improper.
 
+
 <a id="p058"></a>
 
 ### P058 Emphasizing the existence of sources
@@ -897,6 +973,7 @@ The summary stresses sourced, verified, independent, secondary, or peer-reviewed
 **Editing guidance:** Describe the new finding or fact and cite it properly.
 
 **Limit:** Adding or repairing references can itself be the entire edit and should then be stated plainly.
+
 
 <a id="p059"></a>
 
@@ -912,6 +989,7 @@ Summaries itemize template names, parameter keys, punctuation, inline citations,
 
 **Limit:** Experienced technical editors may legitimately describe exact parameters. Compare detail with the edit's purpose.
 
+
 <a id="p060"></a>
 
 ### P060 Formulaic references to AfC feedback
@@ -926,6 +1004,7 @@ After a draft decline, the summary announces that it addresses reviewer feedback
 
 **Limit:** Mentioning feedback is normal. The weak sign is the generic formula without useful specifics.
 
+
 ## Context and behavior
 
 <a id="p061"></a>
@@ -934,13 +1013,14 @@ After a draft decline, the summary announces that it addresses reviewer feedback
 
 Source: Wikipedia PDF pp. 39. Related Vale rules: none directly implemented.
 
-Grammar, register, or English variety changes sharply relative to the writer's history, or changes track successive model styles. The PDF gives American-English defaults as one possible mismatch.
+Grammar, register, or English variety changes sharply relative to the writer's history, or changes track successive model styles. Wikipedia: Signs of AI writing gives American-English defaults as one possible mismatch.
 
 **Illustrative example:** An editor's short informal posts suddenly become long, uniformly polished encyclopedia passages.
 
 **Editing guidance:** Compare comparable genres and dated revisions; seek an ordinary explanation before inferring tool use.
 
 **Limit:** Editing help, code switching, multilingual writing, collaboration, and deliberate improvement can all explain a shift.
+
 
 <a id="p062"></a>
 
@@ -956,6 +1036,7 @@ A draft includes a reviewer-facing statement declaring neutrality, source qualit
 
 **Limit:** Do not treat the source's categorical deletion rhetoric as a general instruction. Apply the relevant review process and evidence.
 
+
 <a id="p063"></a>
 
 ### P063 Preplaced maintenance and declined submission templates
@@ -969,6 +1050,7 @@ A new draft already contains a blank declined-AfC state, or implausible maintena
 **Editing guidance:** Inspect revision history and repair the template state using the proper workflow.
 
 **Limit:** Some maintenance tags are valid on creation. Confirm who inserted the template and why.
+
 
 <a id="p064"></a>
 
@@ -984,6 +1066,7 @@ User pages combine predictable welcome, About Me, interests, contributions, and 
 
 **Limit:** Many people choose similar profile sections without AI.
 
+
 <a id="p065"></a>
 
 ### P065 Permissions gaming as contextual evidence
@@ -998,13 +1081,14 @@ An already-supported suspicion of permissions gaming can justify reviewing rapid
 
 **Limit:** Rapid AI-assisted contributions do not, by themselves, establish permissions gaming or malicious intent.
 
+
 <a id="p066"></a>
 
 ### P066 Model and version differences
 
 Source: Wikipedia PDF pp. 42. Related Vale rules: none directly implemented.
 
-Models have different habitual styles, and these change over time. The PDF compares broader-context language and verbosity across particular older versions.
+Models have different habitual styles, and these change over time. Wikipedia: Signs of AI writing compares broader-context language and verbosity across particular older versions.
 
 **Illustrative example:** Two generated passages differ sharply in length and choice of stock phrases.
 
@@ -1012,19 +1096,27 @@ Models have different habitual styles, and these change over time. The PDF compa
 
 **Limit:** This is interpretive context, not a separate diagnostic rule or a reliable model classifier.
 
+**Additional examples:**
+
+- **Vanished em dash, new frame:** Dashes are gone, and the contrast moved into “more than an X, it is a Y.”
+
+Source records: S22 and S23; supplied variants merged into this entry.
+
+
 <a id="p067"></a>
 
 ### P067 Political and language-dependent content bias
 
 Source: Wikipedia PDF pp. 42. Related Vale rules: none directly implemented.
 
-The PDF discusses research reporting pro-authoritarian tendencies, differences across response languages, and uneven criticism of governments. It attributes these to training and safety-related factors.
+Wikipedia: Signs of AI writing discusses research reporting pro-authoritarian tendencies, differences across response languages, and uneven criticism of governments. It attributes these to training and safety-related factors.
 
 **Illustrative example:** A passage treats an official account as uncontested while omitting available critical reporting.
 
 **Editing guidance:** Check source diversity, framing, omissions, and evidence directly.
 
-**Limit:** Political bias occurs in human writing too. This snapshot's research summary is not a universal claim about all models or current versions.
+**Limit:** Political bias occurs in human writing too. The research summarized in Wikipedia: Signs of AI writing is not a universal claim about all models or current versions.
+
 
 ## Human context and ineffective indicators
 
@@ -1034,13 +1126,14 @@ The PDF discusses research reporting pro-authoritarian tendencies, differences a
 
 Source: Wikipedia PDF pp. 42–43. Related Vale rules: none directly implemented.
 
-The PDF uses November 30, 2022 as a practical historical boundary for ordinary Wikipedia contributions. Revision tools can establish when a passage first appeared.
+Wikipedia: Signs of AI writing uses November 30, 2022 as a practical historical boundary for ordinary Wikipedia contributions. Revision tools can establish when a passage first appeared.
 
 **Illustrative example:** A supposedly AI-like paragraph is verifiably present in a 2018 revision.
 
 **Editing guidance:** Check the actual insertion date with revision history, Who Wrote That, or WikiBlame.
 
 **Limit:** The source's claim that AI can be ruled out is too absolute in general: text-generation systems existed earlier. An early date strongly counters attribution to later chatbots.
+
 
 <a id="p069"></a>
 
@@ -1056,19 +1149,21 @@ A writer can give a coherent account of a mistake, supply the real source, or ex
 
 **Limit:** A good explanation supports a human-error account but is not an infallible authorship test.
 
+
 <a id="p070"></a>
 
 ### P070 Ordinary human syntax
 
 Source: Wikipedia PDF pp. 43. Related Vale rules: none directly implemented.
 
-The PDF lists simple is/has clauses; wrote, moved, used, tried, died; definitive statements; hedges such as perhaps and tends to; and isolated wordiness as relatively common in human Wikipedia prose.
+Wikipedia: Signs of AI writing lists simple is/has clauses; wrote, moved, used, tried, died; definitive statements; hedges such as perhaps and tends to; and isolated wordiness as relatively common in human Wikipedia prose.
 
 **Illustrative example:** The report says there is a delay and that the team used a temporary pump.
 
 **Editing guidance:** Write for meaning rather than removing every hedge, superlative, or ordinary phrase.
 
 **Limit:** These are comparative observations in the source, not instructions to insert imperfections or proof that such sentences are human.
+
 
 <a id="p071"></a>
 
@@ -1084,6 +1179,7 @@ Correct grammar alone does not distinguish AI from skilled or professionally edi
 
 **Limit:** A dramatic unexplained change in a comparable writing history is a different contextual question.
 
+
 <a id="p072"></a>
 
 ### P072 Mixed casual and formal registers are ineffective evidence
@@ -1098,19 +1194,21 @@ A clinical and emotional or casual and formal mixture can reflect technical back
 
 **Limit:** Do not use a person's communication style or possible neurodivergence as a proxy for AI use.
 
+
 <a id="p073"></a>
 
 ### P073 Bland or robotic prose is ineffective evidence
 
 Source: Wikipedia PDF pp. 43–44. Related Vale rules: none directly implemented.
 
-A vague impression of blandness does not identify the more specific patterns described in the PDF.
+A vague impression of blandness does not identify the more specific patterns described in Wikipedia: Signs of AI writing.
 
 **Illustrative example:** The paragraph sounds dry to a reviewer.
 
 **Editing guidance:** Name an observable content or language issue rather than relying on a feeling.
 
 **Limit:** Generated writing can be positive and verbose; human reference prose can be deliberately plain.
+
 
 <a id="p074"></a>
 
@@ -1126,6 +1224,7 @@ The overuse of particular words does not generalize to every sophisticated word 
 
 **Limit:** Expert human writing can be formal, complex, and polished.
 
+
 <a id="p075"></a>
 
 ### P075 An isolated transition is ineffective evidence
@@ -1138,7 +1237,8 @@ Words such as however or consequently occur routinely in human writing. Formulai
 
 **Editing guidance:** Keep a transition that accurately expresses the relationship.
 
-**Limit:** The repository's Transitions rule flags individual matches; the PDF explicitly warns against this inference in isolation.
+**Limit:** The repository's Transitions rule flags individual matches; Wikipedia: Signs of AI writing explicitly warns against this inference in isolation.
+
 
 <a id="p076"></a>
 
@@ -1154,6 +1254,7 @@ Unsourced Wikipedia content long predates LLMs, and modern generated text may in
 
 **Limit:** The presence of citations is no guarantee either; check their existence and relevance.
 
+
 <a id="p077"></a>
 
 ### P077 Random broken markup is ineffective evidence
@@ -1168,6 +1269,7 @@ Unexpected spans, misplaced italic markers, or other odd syntax may come from br
 
 **Limit:** Distinguish a recognizable tool artifact from an arbitrary formatting error.
 
+
 <a id="p078"></a>
 
 ### P078 Correct markup is ineffective evidence
@@ -1181,6 +1283,7 @@ Valid complex templates can result from a visual editor, previewing, or ordinary
 **Editing guidance:** Assess content and source quality directly.
 
 **Limit:** Correct formatting establishes neither human nor AI authorship.
+
 
 ## Historical indicators
 
@@ -1198,6 +1301,7 @@ Especially in the source's 2022–2024 period, text tells an imagined reader wha
 
 **Limit:** An explicit qualification may be necessary. The historical status should remain visible in the app.
 
+
 <a id="p080"></a>
 
 ### P080 Repetitive section summaries
@@ -1211,6 +1315,7 @@ Older long-form output ends sections by restating the same point, often under Co
 **Editing guidance:** Keep a summary when it synthesizes something useful; remove mere repetition.
 
 **Limit:** Human reports and teaching materials legitimately use conclusions.
+
 
 <a id="p081"></a>
 
@@ -1226,6 +1331,7 @@ A copied response apologizes, identifies itself as a language model, refuses a r
 
 **Limit:** A quotation about AI behavior may intentionally contain this wording; historical frequency is not a current guarantee.
 
+
 <a id="p082"></a>
 
 ### P082 Abrupt cutoffs
@@ -1239,6 +1345,7 @@ A response stops mid-thought, historically associated with output-length limits 
 **Editing guidance:** Recover the missing source text or remove the incomplete claim after checking context.
 
 **Limit:** Broken copying or an incomplete human draft can produce the same result; the source also mentions possible copying from copyrighted material.
+
 
 <a id="p083"></a>
 
@@ -1254,6 +1361,7 @@ New contributions contain unexpectedly old access-date fields, sometimes repeate
 
 **Limit:** Copied references, offline work, merges, and batch edits legitimately retain earlier dates.
 
+
 <a id="p084"></a>
 
 ### P084 Elegant variation and forced synonyms
@@ -1267,6 +1375,7 @@ A passage repeatedly renames the same entity or idea, possibly reflecting older 
 **Editing guidance:** Use stable names and precise references when readers need continuity.
 
 **Limit:** Some educational traditions discourage repetition. Separate generation sessions may not show the pattern.
+
 
 ## Additional repository rules
 
@@ -1284,6 +1393,7 @@ AspectOveruse flags a fixed set of broad phrases: multifaceted, various aspects,
 
 **Limit:** The rule triggers on existence, despite its overuse label. Some uses are accurate and helpful.
 
+
 <a id="p086"></a>
 
 ### P086 Hedged enumeration
@@ -1296,7 +1406,8 @@ Enumeration flags one of the most, among the most, some of the most, one of the 
 
 **Editing guidance:** Specify a supported comparison, scope, and date, or avoid the ranking.
 
-**Limit:** The PDF also describes some superlative and definitive constructions as relatively human-associated. A qualifier can prevent an overclaim.
+**Limit:** Wikipedia: Signs of AI writing also describes some superlative and definitive constructions as relatively human-associated. A qualifier can prevent an overclaim.
+
 
 <a id="p087"></a>
 
@@ -1312,6 +1423,7 @@ Hedging counts a fixed alternation of 15 phrases, mixing caveats with certainty 
 
 **Limit:** The rule's name does not describe every token. Three case-matching listed occurrences exceed its configured maximum; runtime parsing and defaults still matter.
 
+
 <a id="p088"></a>
 
 ### P088 Individual intensifiers
@@ -1324,7 +1436,21 @@ Intensifiers flags 12 tokens or phrases including notably, significantly, partic
 
 **Editing guidance:** Replace unsupported emphasis with a measure or a precise description.
 
-**Limit:** Significantly can be a technical statistical term. The PDF does not endorse treating each intensifier as AI evidence.
+**Limit:** Significantly can be a technical statistical term. Wikipedia: Signs of AI writing does not endorse treating each intensifier as AI evidence.
+
+**Additional examples:**
+
+- **Every-single intensifier:** Every single retry hit the same dead host.
+- **Enormously:** The queue grew enormously after the deploy.
+- **Matters-enormously:** The ordering matters enormously for the replay.
+- **An-enormous-amount:** The log holds an enormous amount of duplicate lines.
+- **Remarkably:** The two builds are remarkably close.
+- **Incredibly:** The lock wait is incredibly long on that shard.
+- **Absolutely essential:** A second replica is absolutely essential for this write.
+- **Immense:** The backlog is immense after the holiday batch.
+
+Source records: S22 and S23; supplied variants merged into this entry.
+
 
 <a id="p089"></a>
 
@@ -1338,7 +1464,8 @@ Passive combines forms of be with eight words: founded, known, considered, estab
 
 **Editing guidance:** Choose active or passive voice based on emphasis, agency, and clarity.
 
-**Limit:** This is a limited pattern, not a full grammar parser. Passive voice is legitimate and is not a standalone PDF sign.
+**Limit:** This is a limited pattern, not a full grammar parser. Passive voice is legitimate and is not a standalone sign of AI writing.
+
 
 <a id="p090"></a>
 
@@ -1354,6 +1481,7 @@ ScareQuotes matches so-called followed by a straight single- or double-quoted sp
 
 **Limit:** Scare quotes can communicate skepticism legitimately. This pattern does not cover all quotation practices or curly quotation marks.
 
+
 <a id="p091"></a>
 
 ### P091 Colons before introductory phrases
@@ -1367,6 +1495,7 @@ ColonOveruse flags a colon before including, such as, for example, notably, spec
 **Editing guidance:** Write The benefits include faster processing, or introduce a proper list after the colon.
 
 **Limit:** This is a narrow construction check, not a count of colons or a general prohibition on them.
+
 
 <a id="p092"></a>
 
@@ -1382,9 +1511,10 @@ Lists looks for first or firstly, then second or secondly, then third or thirdly
 
 **Limit:** The rule is not a detector for every list, every three-item phrase, or words spread across separate paragraphs.
 
+
 ## PDF phrase inventory
 
-These inventories preserve the named words and constructions in the PDF’s watch lists. Slash notation indicates alternatives. Ellipses represent an open construction, not a regular expression. Their presence is a prompt for contextual review, not a prohibited-word list.
+These inventories preserve the named words and constructions in Wikipedia: Signs of AI writing’s watch lists. Slash notation indicates alternatives. Ellipses represent an open construction, not a regular expression. Their presence is a prompt for contextual review, not a prohibited-word list.
 
 ### Significance and legacy
 
@@ -1488,17 +1618,17 @@ Source: Wikipedia PDF p. 45.
 
 as an AI language model; as a large language model; I cannot offer medical advice, but I can...; I’m sorry...
 
-### Vocabulary by period as described in the PDF
+### Vocabulary by period
 
 2023 to mid-2024, labeled GPT-4: Additionally; boasts; bolstered; crucial; delve; emphasizing; enduring; garner; intricate/intricacies; interplay; key; landscape; meticulous/meticulously; pivotal; underscore; tapestry; testament; valuable; vibrant.
 
 Mid-2024 to mid-2025, labeled GPT-4o: align with; bolstered; crucial; emphasizing; enhance; enduring; fostering; highlighting; pivotal; showcasing; underscore; vibrant.
 
-Mid-2025 onward, labeled GPT-5: emphasizing; enhance; highlighting; showcasing; and the canned notability/media-coverage vocabulary. The PDF also associates causal, empirical, correlate, and continued underscore use with Grok. These are approximate historical groupings from pp. 8–9, not hard date cutoffs or a current model benchmark.
+Mid-2025 onward, labeled GPT-5: emphasizing; enhance; highlighting; showcasing; and the canned notability/media-coverage vocabulary. Wikipedia: Signs of AI writing also associates causal, empirical, correlate, and continued underscore use with Grok. These are approximate historical groupings, not hard date cutoffs or a current model benchmark.
 
 ### Comment formulas and profile headings
 
-The PDF’s search examples on pp. 33–34 include I understand [the/your] concern(s) [about/regarding] AI-generated; I understand (that) my [contributions] may [have been] perceived as; can/could/will/would enhance the article’s ... and ...; Dear Wikipedia Editorial Team; I am writing to; and I hope/trust this message finds you well. Its user-page discussion on pp. 40–41 includes Welcome To My User Page, About Me, My Interests, My Contributions, Let’s Connect, and Let’s Collaborate. These are contextual formulas, not standalone detection rules.
+The search examples in Wikipedia: Signs of AI writing include I understand [the/your] concern(s) [about/regarding] AI-generated; I understand (that) my [contributions] may [have been] perceived as; can/could/will/would enhance the article’s ... and ...; Dear Wikipedia Editorial Team; I am writing to; and I hope/trust this message finds you well. Its discussion of user pages includes Welcome To My User Page, About Me, My Interests, My Contributions, Let’s Connect, and Let’s Collaborate. These are contextual formulas, not standalone detection rules.
 
 ## Complete Vale rule register
 
@@ -1977,7 +2107,7 @@ The improvement exceeded expectations.
 
 Type: existence. Level: warning. Pattern entries: 9.
 
-Nine entries, including the literal placeholder as of [month/year]. Broader claims about unavailable sources and speculative privacy explanations in the PDF are outside this rule.
+Nine entries, including the literal placeholder as of [month/year]. Broader claims about unavailable sources and speculative privacy explanations in Wikipedia: Signs of AI writing are outside this rule.
 
 Source: https://github.com/ammil-industries/vale-signs-of-ai-writing/blob/305467bafd0e491c4c00e0196ef551e64eefc9c4/styles/signs-of-ai-writing/KnowledgeCutoff.yml
 
@@ -2034,7 +2164,7 @@ According to available census data, the trend continues.
 
 Type: existence. Level: warning. Pattern entries: 1.
 
-One raw expression, paragraph scope, and ignorecase: true. Requires first/firstly before second/secondly before third/thirdly, with a comma or whitespace after the first two terms. This does not implement the PDF rule-of-three category as a whole.
+One raw expression, paragraph scope, and ignorecase: true. Requires first/firstly before second/secondly before third/thirdly, with a comma or whitespace after the first two terms. This does not implement Wikipedia: Signs of AI writing rule-of-three category as a whole.
 
 Source: https://github.com/ammil-industries/vale-signs-of-ai-writing/blob/305467bafd0e491c4c00e0196ef551e64eefc9c4/styles/signs-of-ai-writing/Lists.yml
 
@@ -2395,7 +2525,7 @@ She serves as the director of operations.
 
 Type: existence. Level: suggestion. Pattern entries: 12.
 
-Twelve comma-ending transition entries. The configuration flags occurrences; it does not measure a repetitive paragraph rhythm. The PDF specifically calls isolated transitions ineffective evidence.
+Twelve comma-ending transition entries. The configuration flags occurrences; it does not measure a repetitive paragraph rhythm. Wikipedia: Signs of AI writing specifically calls isolated transitions ineffective evidence.
 
 Source: https://github.com/ammil-industries/vale-signs-of-ai-writing/blob/305467bafd0e491c4c00e0196ef551e64eefc9c4/styles/signs-of-ai-writing/Transitions.yml
 
@@ -2461,7 +2591,7 @@ Some challenges remain despite progress.
 
 Type: existence. Level: error. Pattern entries: 4.
 
-Four entries cover ChatGPT/OpenAI tracking. The question-mark and ampersand patterns have no explicit end-of-value anchor and may match prefixes of longer values. Copilot and Grok parameters listed in the PDF are not included. Overlapping alternatives do not imply independent evidence.
+Four entries cover ChatGPT/OpenAI tracking. The question-mark and ampersand patterns have no explicit end-of-value anchor and may match prefixes of longer values. Copilot and Grok parameters listed in Wikipedia: Signs of AI writing are not included. Overlapping alternatives do not imply independent evidence.
 
 Source: https://github.com/ammil-industries/vale-signs-of-ai-writing/blob/305467bafd0e491c4c00e0196ef551e64eefc9c4/styles/signs-of-ai-writing/UTMParameters.yml
 
@@ -2623,19 +2753,19 @@ The README also describes downloading the release archive and copying the style 
 
 ### Individual words versus density
 
-Vocabulary, Transitions, and Intensifiers are existence checks. The PDF emphasizes clusters, repetition, genre, and literal meaning. A single alert does not implement that contextual judgment.
+Vocabulary, Transitions, and Intensifiers are existence checks. Wikipedia: Signs of AI writing emphasizes clusters, repetition, genre, and literal meaning. A single alert does not implement that contextual judgment.
 
 ### Hedges and rankings
 
-The repository flags qualified rankings and some intensifiers. The PDF’s human-syntax section also lists definitive or superlative constructions, hedging qualifiers, and intensifiers as relatively human-associated. These statements concern different contexts and cannot be merged into a universal ban.
+The repository flags qualified rankings and some intensifiers. Wikipedia: Signs of AI writing’s human-syntax section also lists definitive or superlative constructions, hedging qualifiers, and intensifiers as relatively human-associated. These statements concern different contexts and cannot be merged into a universal ban.
 
 ### Rhetorical threes versus ordered steps
 
-The PDF’s rule of three is broader than Lists.yml. A three-adjective phrase may fit the PDF observation without matching the rule; useful first-second-third instructions may match the rule without being poor writing.
+Wikipedia: Signs of AI writing’s rule of three is broader than Lists.yml. A three-adjective phrase may fit Wikipedia: Signs of AI writing observation without matching the rule; useful first-second-third instructions may match the rule without being poor writing.
 
 ### Historical patterns versus current use
 
-Didactic language, summaries, refusals, cutoffs, old access dates, and elegant variation are grouped historically in the PDF. Em dashes have an explicit caution about changing model behavior. The YAML rules do not encode era.
+Didactic language, summaries, refusals, cutoffs, old access dates, and elegant variation are grouped historically in Wikipedia: Signs of AI writing. Em dashes have an explicit caution about changing model behavior. The YAML rules do not encode era.
 
 ### Tool involvement versus generated prose
 
@@ -2911,6 +3041,7 @@ Several sentences reuse the same opening, grammar or cadence even when the ideas
 
 **Limit:** Repetition can be deliberate rhetoric or necessary parallel reporting.
 
+
 <a id="p094"></a>
 
 ### P094 — Uniform sentence and paragraph rhythm
@@ -2924,6 +3055,13 @@ Passages have nearly identical sentence lengths, equally sized paragraphs or a p
 **Editing guidance:** Give each idea the space it needs; read the passage aloud.
 
 **Limit:** Uniformity also comes from templates, accessibility requirements and human editing.
+
+**Additional examples:**
+
+- **Flat sentence length:** Five sentences in a row, each landing near the same length, with almost no short punch or long aside.
+
+Source records: S22 and S23; supplied variants merged into this entry.
+
 
 <a id="p095"></a>
 
@@ -2939,6 +3077,7 @@ Ordinary observations are split into tiny statements or every paragraph ends wit
 
 **Limit:** Fragments are legitimate in dialogue, advertising and speeches.
 
+
 <a id="p096"></a>
 
 ### P096 — Negative chains before a reveal
@@ -2952,6 +3091,7 @@ A series of denials delays the positive claim: no X, no Y; did not X, did not Y.
 **Editing guidance:** State what was used and explain any relevant exclusions.
 
 **Limit:** A list of exclusions can be essential to define scope.
+
 
 <a id="p097"></a>
 
@@ -2967,6 +3107,7 @@ The writer advertises a twist, hidden truth or overlooked detail before stating 
 
 **Limit:** A genuine reversal or discovery may deserve a setup.
 
+
 <a id="p098"></a>
 
 ### P098 — Self-answered rhetorical questions
@@ -2980,6 +3121,7 @@ The passage asks an easy question only to supply an immediate answer, or stacks 
 **Editing guidance:** Explain the result and its limits directly.
 
 **Limit:** FAQs and interview formats use questions for a real reader need.
+
 
 <a id="p099"></a>
 
@@ -2995,6 +3137,7 @@ Claims of candour and commands to absorb a point stand in for support. Includes 
 
 **Limit:** These expressions occur naturally in speech.
 
+
 <a id="p100"></a>
 
 ### P100 — Manufactured intimacy and assumed agreement
@@ -3008,6 +3151,7 @@ The narrator claims to know the reader's private thoughts or invites a simulated
 **Editing guidance:** Address the reader's actual task without inventing shared feelings.
 
 **Limit:** Established relationships and personal essays may justify familiarity.
+
 
 <a id="p101"></a>
 
@@ -3023,6 +3167,7 @@ The passage validates feelings, grants permission or announces that an experienc
 
 **Limit:** Supportive language is appropriate in many genuine conversations.
 
+
 <a id="p102"></a>
 
 ### P102 — Inflating one point into the whole answer
@@ -3036,6 +3181,7 @@ The entire problem, the whole point or the only answer compresses a complex issu
 **Editing guidance:** Specify which part of the issue the claim explains.
 
 **Limit:** Some problems genuinely have one decisive constraint.
+
 
 <a id="p103"></a>
 
@@ -3051,6 +3197,7 @@ A stock first-person endorsement lends authority without supplying experience or
 
 **Limit:** A real personal preference is not suspicious by itself.
 
+
 <a id="p104"></a>
 
 ### P104 — Canned verification invitations
@@ -3064,6 +3211,7 @@ A request to check the claim is used as a rhetorical flourish without giving a u
 **Editing guidance:** Provide the actual results and a usable source.
 
 **Limit:** A specific invitation to reproduce a finding is useful.
+
 
 <a id="p105"></a>
 
@@ -3079,6 +3227,7 @@ Software descriptions rely on familiar promises about simplicity and defaults wi
 
 **Limit:** These idioms are common in longstanding human software documentation.
 
+
 <a id="p106"></a>
 
 ### P106 — Obituary-and-replacement slogans
@@ -3092,6 +3241,7 @@ A topic is declared dead to introduce its supposed successor.
 **Editing guidance:** Describe the change and the circumstances in which it helps.
 
 **Limit:** Headlines have used this construction for centuries.
+
 
 <a id="p107"></a>
 
@@ -3107,6 +3257,7 @@ The ending tells readers why a moment mattered without developing that significa
 
 **Limit:** Retrospective narration is legitimate when the effect is established.
 
+
 <a id="p108"></a>
 
 ### P108 — Clipped auxiliary contrasts
@@ -3120,6 +3271,7 @@ A dramatic contrast ends with an auxiliary verb that omits the previously stated
 **Editing guidance:** Use the ellipsis only when its meaning is clear and its emphasis earned.
 
 **Limit:** This is ordinary English ellipsis, not an authorship test.
+
 
 <a id="p109"></a>
 
@@ -3135,6 +3287,7 @@ A work incident is forced into a personal growth story, humble announcement or l
 
 **Limit:** Real reflection and gratitude need not be stripped from personal writing.
 
+
 <a id="p110"></a>
 
 ### P110 — Engagement bait and vague relatability
@@ -3148,6 +3301,7 @@ A generic request for reactions or a one-of-those opening simulates conversation
 **Editing guidance:** State the experience; ask a question with a clear purpose if feedback is needed.
 
 **Limit:** Useful discussion prompts and informal conversation can use these forms.
+
 
 <a id="p111"></a>
 
@@ -3163,6 +3317,7 @@ The opening spends time on weather, light, location or a broad era before reachi
 
 **Limit:** Atmospheric openings are often effective in fiction.
 
+
 <a id="p112"></a>
 
 ### P112 — Predictably uplifting endings
@@ -3176,6 +3331,7 @@ Conflict gives way to generic hope, togetherness, belonging or a tidy happy endi
 **Editing guidance:** End at the actual outcome, including unresolved matters.
 
 **Limit:** Hopeful conclusions are not inherently formulaic.
+
 
 <a id="p113"></a>
 
@@ -3191,6 +3347,7 @@ Familiar physical cues substitute for a particular character's response: racing 
 
 **Limit:** These are longstanding fiction clichés shared by human authors.
 
+
 <a id="p114"></a>
 
 ### P114 — Generic foreshadowing and unnamed menace
@@ -3204,6 +3361,7 @@ The narrator promises change or danger without giving the reader a concrete clue
 **Editing guidance:** Supply a meaningful clue or let the later event establish the change.
 
 **Limit:** Withholding information is a valid narrative technique.
+
 
 <a id="p115"></a>
 
@@ -3219,6 +3377,13 @@ Metaphors, sensory modifiers or paired descriptors accumulate without clarifying
 
 **Limit:** Literary prose may intentionally be ornate.
 
+**Additional examples:**
+
+- **Mannered substitute:** A metaphor stands in for the fact: the pipeline becomes a river, the bug a shadow, the metric a pulse.
+
+Source records: S22 and S23; supplied variants merged into this entry.
+
+
 <a id="p116"></a>
 
 ### P116 — Telling the reader what a scene means
@@ -3232,6 +3397,7 @@ The narrator explains an emotion or moral already apparent from the action, leav
 **Editing guidance:** Let the action carry the inference unless explanation adds necessary context.
 
 **Limit:** Explicit explanation can be appropriate for the audience or genre.
+
 
 <a id="p117"></a>
 
@@ -3247,6 +3413,7 @@ A passage substitutes generalized descriptions for observed particulars, motives
 
 **Limit:** Never invent personal experience or evidence to make prose sound human.
 
+
 <a id="p118"></a>
 
 ### P118 — Repeated words and restated conclusions
@@ -3260,6 +3427,7 @@ The passage repeats its point, preferred words or transitions without adding evi
 **Editing guidance:** Remove duplicate propositions and keep repetition that serves comprehension.
 
 **Limit:** Technical terminology should remain consistent rather than being replaced with synonyms.
+
 
 <a id="p119"></a>
 
@@ -3275,6 +3443,7 @@ Long passages offer statements broad enough to fit almost any topic, with little
 
 **Limit:** A high-level overview can be useful if it is the requested deliverable.
 
+
 <a id="p120"></a>
 
 ### P120 — Answering the topic but missing the task
@@ -3288,6 +3457,7 @@ The text discusses the broad subject while failing to address the reader's quest
 **Editing guidance:** Identify the decision or action the reader needs and answer it.
 
 **Limit:** Scope misunderstandings can happen in human writing too.
+
 
 <a id="p121"></a>
 
@@ -3303,6 +3473,7 @@ Sentences sound related but do not develop a coherent argument or consistent nar
 
 **Limit:** A rough draft is not evidence of machine authorship.
 
+
 <a id="p122"></a>
 
 ### P122 — Awkward wording, reference or tense
@@ -3316,6 +3487,7 @@ Word combinations, pronoun references or tense changes make the passage unnatura
 **Editing guidance:** Clarify who acts, use the intended time frame and choose idiomatic wording.
 
 **Limit:** Translation, language learning and ordinary drafting can produce the same problems.
+
 
 <a id="p123"></a>
 
@@ -3331,6 +3503,7 @@ Different speakers sound like the narrator or each other, with identical polish,
 
 **Limit:** Do not rewrite a direct quotation merely to make it sound less polished.
 
+
 <a id="p124"></a>
 
 ### P124 — Register that ignores the situation
@@ -3344,6 +3517,13 @@ The voice stays formal, detached or promotional in contexts requiring a differen
 **Editing guidance:** Match language to the audience and purpose.
 
 **Limit:** Formal language alone is an ineffective indicator; compare P074.
+
+**Additional examples:**
+
+- **Missing contractions:** Gemini-like formal runs that never contract: it is, do not, they are, across a whole article.
+
+Source records: S22 and S23; supplied variants merged into this entry.
+
 
 <a id="p125"></a>
 
@@ -3359,6 +3539,7 @@ Every situation is handled with neutral or positive phrasing, without the humour
 
 **Limit:** Profanity, dark subjects and jokes are not prerequisites for human writing.
 
+
 <a id="p126"></a>
 
 ### P126 — Reflexive balance or missing point of view
@@ -3372,6 +3553,7 @@ The text presents equal sides mechanically or avoids a justified perspective. Th
 **Editing guidance:** Represent uncertainty and competing evidence in proportion to their support.
 
 **Limit:** Impartial reporting and balanced analysis remain valuable.
+
 
 <a id="p127"></a>
 
@@ -3387,6 +3569,7 @@ Examples and stories avoid specific cultural references, personal observations, 
 
 **Limit:** A text need not be quirky or autobiographical to be good.
 
+
 <a id="p128"></a>
 
 ### P128 — Repeated full names and honorifics
@@ -3400,6 +3583,7 @@ The same person is repeatedly introduced by full name or title, or every authori
 **Editing guidance:** After a clear introduction, use the appropriate shorter reference.
 
 **Limit:** Professional and legal conventions may require repetition. Name ethnicity is not an acceptable authorship cue.
+
 
 <a id="p129"></a>
 
@@ -3415,6 +3599,7 @@ Abstract noun forms obscure the actor and action, especially when several occur 
 
 **Limit:** Technical and legal nouns often carry necessary precision.
 
+
 <a id="p130"></a>
 
 ### P130 — Sparse or unusually repetitive punctuation
@@ -3428,6 +3613,13 @@ Long passages use few commas or parentheses, or repeatedly rely on the same colo
 **Editing guidance:** Punctuate for meaning; examine the passage rather than counting one symbol.
 
 **Limit:** The sources disagree on punctuation direction. Treat these as corpus-specific measurements.
+
+**Additional examples:**
+
+- **Missing asides:** A long article with no parentheses, no exclamation, and no first-person aside where a human web piece would have several.
+
+Source records: S22 and S23; supplied variants merged into this entry.
+
 
 <a id="p131"></a>
 
@@ -3443,6 +3635,7 @@ Long clause chains or run-on sentences obscure the main claim.
 
 **Limit:** Sentence length depends strongly on genre, language and intended readership.
 
+
 <a id="p132"></a>
 
 ### P132 — False agency and distant narration
@@ -3456,6 +3649,7 @@ Abstractions perform actions that obscure who made the decision or what caused t
 **Editing guidance:** Name the decision maker or state the actual mechanism.
 
 **Limit:** Personification is legitimate when it helps rather than obscures.
+
 
 <a id="p133"></a>
 
@@ -3471,6 +3665,7 @@ Every, always, never or nobody is used for rhetorical force where the evidence s
 
 **Limit:** Universal claims are sometimes demonstrably true.
 
+
 <a id="p134"></a>
 
 ### P134 — Unnecessary narration of the document
@@ -3484,6 +3679,7 @@ The writer describes what the article will discuss or how the reader should foll
 **Editing guidance:** Keep navigation that helps with a long document; delete redundant previews.
 
 **Limit:** A roadmap can be useful in a dissertation or complex report.
+
 
 <a id="p135"></a>
 
@@ -3499,6 +3695,7 @@ Whether-you-are openings or think-of-it-as metaphors promise universal relevance
 
 **Limit:** A well-chosen analogy can make a difficult idea accessible.
 
+
 <a id="p136"></a>
 
 ### P136 — Hedge followed by automatic affirmation
@@ -3512,6 +3709,7 @@ A small concession is immediately followed by reassurance, making the qualificat
 **Editing guidance:** Explain the specific limitation and the demonstrated benefit.
 
 **Limit:** Concession and qualification are normal reasoning tools.
+
 
 <a id="p137"></a>
 
@@ -3527,6 +3725,7 @@ A large spread of words from a fitted lexicon may characterize a particular mode
 
 **Limit:** A fitted list is not a banned-word list and does not establish authorship.
 
+
 <a id="p138"></a>
 
 ### P138 — Stock transitions and linking phrases
@@ -3540,6 +3739,18 @@ The passage repeatedly inserts a transition regardless of whether it expresses a
 **Editing guidance:** Use a transition only where it identifies the logical relationship.
 
 **Limit:** An isolated transition is weak evidence; see P075.
+
+**Additional examples:**
+
+- **Forward glance:** Looking ahead, the next release adds a second region.
+- **What-comes-next handoff:** What comes next is a cutover on Thursday night.
+- **Layer stacking:** The cache adds another layer between the app and the database.
+- **Extra dimension:** Pricing is another dimension of the same outage.
+- **In-practice pivot:** In practice, the job finishes in under a minute.
+- **Together-these summary:** Together these checks cover the three failure modes.
+
+Source records: S22 and S23; supplied variants merged into this entry.
+
 
 ## Additions merged into the original catalog
 
@@ -3703,7 +3914,7 @@ actually; and that was that; any ___ and ___; blitzing; bolstering; chubby; chun
 
 ### Stop Slop phrase inventory
 
-Source: S07. 65 terms or phrases. Short phrase forms reconstructed from the visible list; instructions and replacement prose are not reproduced. Review function and context.
+Source: S07. 65 terms or phrases. Short phrases from Stop Slop. Review their function and context.
 
 As we'll see...; At its core; At the end of the day; But that's another post; Can we talk about; Dressed up as; Full stop." / "Period.; Here's that [X]; Here's the problem though; Here's the thing:; Here's this [X]; Here's what I find interesting; Here's what [X]; Here's why [X]; Here's why that matters; Hint:; I promise; I want to explore...; I'll say it again:; I'm going to be honest; In a world where; In this section, we'll...; In today's [X]; It turns out; It's worth noting; Let me be clear; Let me walk you through...; Let that sink in.; Make no mistake; Plot twist:" / "Spoiler:; The consequences are real; The implications are significant; The real [X] is; The reality is; The reasons are structural; The rest of this essay explains...; The stakes are high; The truth is,; The uncomfortable truth is; They exist, I promise; This is genuinely hard; This is the deepest problem; This is what X actually looks like; This is what leadership actually looks like; This matters because; When it comes to; X is a feature, not a bug; You already know this, but; actually; actually matters; creeps in; crucially; deeply; fundamentally; genuinely; honestly; importantly; inevitably; inherently; interestingly; just; literally; really; simply; truly.
 
@@ -4247,6 +4458,133 @@ Each source item maps to its canonical entry or to a context-only disposition. R
 
 - Style-labelled annotation inventory → P137. Merged into canonical catalog.
 
+
+## Additional patterns from the supplied Graphite review
+
+<a id="p139"></a>
+
+### P139 — Repeated importance flags
+
+Source records: S22 and S23; user-supplied additions reviewed 2 October 2026.
+
+The writer repeatedly announces that a point matters before explaining its consequence. Bare importance statements, rankings and declarations that a distinction matters can add emphasis without adding information.
+
+**Illustrative example:** This matters. The delay changes the launch date.
+
+**Editing guidance:** State the consequence directly. Keep an importance flag when it helps the reader identify a real priority.
+
+**Limit:** A consequence, priority or comparison can justify this wording. Frequency alone does not make a statement wrong.
+
+**Additional examples:**
+
+- **Importance flag, bare:** This matters. The delay changes the launch date.
+- **Why-X-matters frame:** Why the buffer matters is that the queue drops packets after 40 ms.
+- **Matters-most ranking:** Latency matters most when the call is on a weak radio link.
+- **Just-as-important twin:** Cost is just as important as speed for this route.
+- **Distinction-matters closer:** The distinction matters once the two queues share a worker.
+
+Source records: S22 and S23; supplied variants merged into this entry.
+
+
+<a id="p140"></a>
+
+### P140 — Promises without tradeoffs
+
+Source records: S22 and S23; user-supplied additions reviewed 2 October 2026.
+
+A benefit is paired with a promise that nothing valuable is lost or required. Repeated assurances about preserving quality, coverage or convenience can hide the conditions under which the promise holds.
+
+**Illustrative example:** The cut reduces cost without sacrificing coverage.
+
+**Editing guidance:** Name the benefit, the cost and the conditions. Keep a claim of no loss only when evidence supports it.
+
+**Limit:** Some changes really do remove a requirement or preserve a capability. Check the claim rather than banning the construction.
+
+**Additional examples:**
+
+- **Tradeoff denial:** The cut reduces cost without sacrificing coverage.
+- **Without compromising:** The filter blocks the flood without compromising mail delivery.
+- **Without losing:** The move shortens the path without losing the audit log.
+- **Without requiring:** The client reconnects without requiring a new login.
+
+Source records: S22 and S23; supplied variants merged into this entry.
+
+
+<a id="p141"></a>
+
+### P141 — Stock helpfulness claims
+
+Source records: S22 and S23; user-supplied additions reviewed 2 October 2026.
+
+The prose repeatedly describes a tool or step as helpful, easy or useful to the reader. The claim can substitute for an explanation of what the tool does and when it helps.
+
+**Illustrative example:** The checklist can help you catch a bad config.
+
+**Editing guidance:** Describe the action or result. Retain a helpfulness claim when the benefit and its conditions are clear.
+
+**Limit:** Instructional writing often needs to explain benefits. These phrases can be appropriate and accurate.
+
+**Additional examples:**
+
+- **Helpfulness coaching:** The checklist can help you catch a bad config.
+- **Especially-helpful label:** The dry run is especially helpful before a holiday cutover.
+- **Makes-it-easier claim:** The wrapper makes it easier to retry a failed call.
+- **Helps-you-avoid:** The linter helps you avoid a mismatched schema.
+
+Source records: S22 and S23; supplied variants merged into this entry.
+
+
+<a id="p142"></a>
+
+### P142 — Repeated qualification and reassurance
+
+Source records: S22 and S23; user-supplied additions reviewed 2 October 2026.
+
+Claims are repeatedly softened with possibility language, limits on what evidence establishes, or assurances that a step is unnecessary. These constructions serve different purposes, but habitual use can make the prose evasive or cumbersome.
+
+**Illustrative example:** The test does not establish that the patch caused the drop.
+
+**Editing guidance:** Match the strength of the statement to the evidence. Explain a relevant uncertainty once; remove only redundant qualification.
+
+**Limit:** Scientific, legal and technical writing often requires careful qualification. Do not turn an uncertain claim into a certainty to avoid a suspected tell.
+
+**Additional examples:**
+
+- **Does-not-establish disclaimer:** The test does not establish that the patch caused the drop.
+- **May-provide hedge:** The change may provide a shorter failover.
+- **Can-provide hedge:** A local cache can provide a faster read.
+- **Not-necessarily qualifier:** A green build is not necessarily a safe deploy.
+- **Need-not hedge:** The reader need not restart the service.
+
+Source records: S22 and S23; supplied variants merged into this entry.
+
+
+<a id="p143"></a>
+
+### P143 — Unsupported superlatives
+
+Source records: S22 and S23; user-supplied additions reviewed 2 October 2026.
+
+The writer repeatedly calls something the best, most powerful or most popular without defining the comparison. Words such as arguably or perhaps can soften the ranking without supplying evidence.
+
+**Illustrative example:** This is the single most common cause of the retry storm.
+
+**Editing guidance:** Specify the comparison and evidence, or replace the ranking with a concrete property.
+
+**Limit:** A measured ranking can be precise. Hedging a ranking is appropriate when the comparison is genuinely uncertain.
+
+**Additional examples:**
+
+- **Single-most superlative:** This is the single most common cause of the retry storm.
+- **Arguably-the-most:** This is arguably the most expensive query on the box.
+- **The-most-powerful:** The limiter is the most powerful control on this path.
+- **The-most-popular:** That image is the most popular tag in the registry.
+- **Perhaps-the-most:** This is perhaps the most brittle step in the runbook.
+- **One-of-the-best-about:** This is one of the best notes about the old scheduler.
+
+Source records: S22 and S23; supplied variants merged into this entry.
+
+
 ## Expanded source register and reading scope
 
 The accompanying spreadsheet is the rolling register. It has one row per source and a separate extraction map for source items. Add a new stable source ID for a new resource; keep the source family to distinguish related papers, implementations and ports. Record the review date and extraction scope before merging new material. Source content and licenses can change; these records describe the inspection on 2 October 2026.
@@ -4419,6 +4757,96 @@ Repository; Included. All 407 style-labelled rows in results/excess_words.csv.
 
 Limit: Across all selected years, not the 2024-only list; compressed counts and analysis code not downloaded.
 
+### S22 — Graphite: AI Tells
+
+Source: https://graphite.io/five-percent/research/ai-tells
+
+Article; supplied phrase and style observations reconciled against the existing catalog. Published 16 September 2026; inspected 2 October 2026.
+
+Limit: Matched web-article study, not a universal authorship test. No dataset, software or skill installed.
+
+### S23 — Graphite: AI Tells: Opus 5.5 Update
+
+Source: https://graphite.io/five-percent/research/ai-tells-opus-5-5-update
+
+Article; supplied additions and model-comparison context reviewed. Published 1 October 2026; inspected 2 October 2026.
+
+Limit: Model-to-model ratios are not human-relative ratios. Observed wording is not necessarily an editing defect.
+
 ## Attribution and reuse of the expansion
 
 Sources retain their own copyright and license terms. The original Wikipedia and Vale attribution remains above. This expansion adds original descriptions, editorial guidance and illustrative examples, with source identifiers and URLs for attribution. Word inventories and short pattern labels are preserved as reference data. A software license does not automatically license associated papers, datasets or third-party quotations. Check the relevant license before redistributing those originals. No external skill file is embedded in these deliverables.
+
+## Reconciliation of the supplied additional tells
+
+All 47 rows in `grok-ai-slop-tells-not-in-reference.md` are retained as labeled additional examples in the catalog. Five entries were added; the other forms were merged into existing entries. The supplied claim that every row was absent was checked against the broader patterns rather than accepted as a reason to create duplicate pages.
+
+The examples are supplied illustrations, not quotations from the research articles. Several demonstrate valid technical statements. Missing contractions, missing asides and uniform rhythm are contextual observations, not instructions to insert casual language into formal work. The vanished-em-dash observation is grouped with model/version differences rather than treated as a new punctuation rule.
+
+| Supplied tell | Catalog entry | Decision |
+| --- | --- | --- |
+| Importance flag, bare | [P139](#p139) | Grouped into new entry |
+| Why-X-matters frame | [P139](#p139) | Grouped into new entry |
+| Matters-most ranking | [P139](#p139) | Grouped into new entry |
+| Just-as-important twin | [P139](#p139) | Grouped into new entry |
+| Distinction-matters closer | [P139](#p139) | Grouped into new entry |
+| Forward glance | [P138](#p138) | Merged with existing entry |
+| What-comes-next handoff | [P138](#p138) | Merged with existing entry |
+| Layer stacking | [P138](#p138) | Merged with existing entry |
+| Extra dimension | [P138](#p138) | Merged with existing entry |
+| In-practice pivot | [P138](#p138) | Merged with existing entry |
+| More-than residual contrast | [P012](#p012) | Merged with existing entry |
+| Less-like, more-like | [P013](#p013) | Merged with existing entry |
+| Instead-it reversal | [P012](#p012) | Merged with existing entry |
+| Tradeoff denial | [P140](#p140) | Grouped into new entry |
+| Without compromising | [P140](#p140) | Grouped into new entry |
+| Without losing | [P140](#p140) | Grouped into new entry |
+| Without requiring | [P140](#p140) | Grouped into new entry |
+| Does-not-establish disclaimer | [P142](#p142) | Grouped into new entry |
+| May-provide hedge | [P142](#p142) | Grouped into new entry |
+| Can-provide hedge | [P142](#p142) | Grouped into new entry |
+| Not-necessarily qualifier | [P142](#p142) | Grouped into new entry |
+| Helpfulness coaching | [P141](#p141) | Grouped into new entry |
+| Especially-helpful label | [P141](#p141) | Grouped into new entry |
+| Makes-it-easier claim | [P141](#p141) | Grouped into new entry |
+| Helps-you-avoid | [P141](#p141) | Grouped into new entry |
+| Thoughtful as a rating | [P009](#p009) | Merged with existing entry |
+| Together-these summary | [P138](#p138) | Merged with existing entry |
+| Single-most superlative | [P143](#p143) | Grouped into new entry |
+| Arguably-the-most | [P143](#p143) | Grouped into new entry |
+| The-most-powerful | [P143](#p143) | Grouped into new entry |
+| The-most-popular | [P143](#p143) | Grouped into new entry |
+| Perhaps-the-most | [P143](#p143) | Grouped into new entry |
+| One-of-the-best-about | [P143](#p143) | Grouped into new entry |
+| Every-single intensifier | [P088](#p088) | Merged with existing entry |
+| Enormously | [P088](#p088) | Merged with existing entry |
+| Matters-enormously | [P088](#p088) | Merged with existing entry |
+| An-enormous-amount | [P088](#p088) | Merged with existing entry |
+| Remarkably | [P088](#p088) | Merged with existing entry |
+| Incredibly | [P088](#p088) | Merged with existing entry |
+| Absolutely essential | [P088](#p088) | Merged with existing entry |
+| Immense | [P088](#p088) | Merged with existing entry |
+| Need-not hedge | [P142](#p142) | Grouped into new entry |
+| Flat sentence length | [P094](#p094) | Merged with existing entry |
+| Missing contractions | [P124](#p124) | Merged with existing entry |
+| Missing asides | [P130](#p130) | Merged with existing entry |
+| Mannered substitute | [P115](#p115) | Merged with existing entry |
+| Vanished em dash, new frame | [P066](#p066) | Merged with existing entry |
+
+### Study scope and reported rates
+
+The supplied note reports study-specific frequency ratios. The original article compares roughly 10,000 human articles with model-written articles on matching topics; the update uses 9,974 aligned topics. Counts are normalized for text length and filtered for minimum frequency. A twofold cutoff describes the study selection procedure, not the probability that a passage is AI-written. Some observations come from model-to-model comparisons, and some features are stylistic measurements rather than phrase-frequency tells.
+
+The numerical notes below are retained from the supplied file for traceability. The two linked articles were inspected, but every value in their interactive explorers was not independently reproduced.
+
+Opus 5.5 against human articles: “this matters” 116×, “why _ matters” 92×, “is more than a _ it” 98×, “looking ahead the” 40×, “adds another layer” 27×, “what comes next” 24×.
+
+Astra against human articles: “the _ is not simply” 576×, “rather than relying” 187×, “not simply” 157×, “matters because” 357×. “Distinction matters” did not appear in the human set. Those contrast strings sit next to older negative-parallelism entries, so they are recorded here as rates only, not as new rows.
+
+Astra against Opus 5.5: “does not establish” 275×, “may provide” 18×, “not necessarily” 17×.
+
+Opus 5.5 against Astra: “one of the best _ about” 79×, “the most popular” 45×, “perhaps the most” 29×, “the most powerful” 24×.
+
+Opus 5 against Opus 5.5: “is genuinely” 26×, “matters enormously” 15×. Opus 5.5 against Opus 5: “is especially helpful” 12×, “can help you” 8×.
+
+Claude Opus 5: “less like a _ and more like” 105×. About 65% of tells were unique to one model family. Opus 5.5 still had 2,548 tells at the 2× cutoff, down from 2,666 on Opus 5. Em dashes fell 99% from Opus 5 to Opus 5.5; Astra sat 88% under the human rate; Gemini 3.1 Pro nearly dropped them. The frame count did not fall with the dashes.

@@ -1,0 +1,422 @@
+[
+  {
+    "id": "R1-1",
+    "round": 1,
+    "type": "tell",
+    "expected": "decorative-metaphor-and-adjective-overload",
+    "text": "A tapestry of innovation becomes a symphony of possibility across the landscape of tomorrow."
+  },
+  {
+    "id": "R1-2",
+    "round": 1,
+    "type": "tell",
+    "expected": "inflated-significance-and-legacy",
+    "text": "Installing the new noticeboard marks a pivotal milestone, reflecting an unwavering commitment to staff wellbeing."
+  },
+  {
+    "id": "R1-3",
+    "round": 1,
+    "type": "tell",
+    "expected": "forced-groups-of-three",
+    "text": "Our approach brings trust, growth, and innovation. It creates clarity, confidence, and connection."
+  },
+  {
+    "id": "R1-4",
+    "round": 1,
+    "type": "tell",
+    "expected": "repeated-qualification-and-reassurance",
+    "text": "I hesitate to put this too strongly. A definitive judgment would be premature; we should leave room for other readings."
+  },
+  {
+    "id": "R1-5",
+    "round": 1,
+    "type": "tell",
+    "expected": "repeated-words-and-restated-conclusions",
+    "text": "In summary, the revised process assigns an owner to every ticket. To sum up, the revised process assigns an owner to every ticket."
+  },
+  {
+    "id": "R1-6",
+    "round": 1,
+    "type": "tell",
+    "expected": "reflexive-balance-or-missing-point-of-view",
+    "text": "The receipt proves the fee was paid. Nevertheless, both claims deserve equal weight."
+  },
+  {
+    "id": "R1-7",
+    "round": 1,
+    "type": "tell",
+    "expected": "unnecessary-narration-of-the-document",
+    "text": "I will begin by exploring the question before considering how to frame a thoughtful response."
+  },
+  {
+    "id": "R1-8",
+    "round": 1,
+    "type": "tell",
+    "expected": "staged-revelations",
+    "text": "Here is the thing: ownership is everything. Read that again."
+  },
+  {
+    "id": "R1-9",
+    "round": 1,
+    "type": "tell",
+    "expected": "decorative-metaphor-and-adjective-overload",
+    "text": "The mosaic of potential becomes a beacon of excellence on our journey into tomorrow."
+  },
+  {
+    "id": "R1-10",
+    "round": 1,
+    "type": "tell",
+    "expected": "repeated-qualification-and-reassurance",
+    "text": "I would not want to draw too firm a conclusion. This remains open to interpretation, and we should resist a definitive reading."
+  },
+  {
+    "id": "R1-11",
+    "round": 1,
+    "type": "control",
+    "expected": null,
+    "text": "The carpenter repaired a tapestry frame. The fabric was torn along the lower edge."
+  },
+  {
+    "id": "R1-12",
+    "round": 1,
+    "type": "control",
+    "expected": null,
+    "text": "The survey includes 34 households. The interval is wide, so we cannot establish a trend."
+  },
+  {
+    "id": "R1-13",
+    "round": 1,
+    "type": "control",
+    "expected": null,
+    "text": "Pack bread, cheese, and apples. Bring forks, plates, and napkins."
+  },
+  {
+    "id": "R1-14",
+    "round": 1,
+    "type": "control",
+    "expected": null,
+    "text": "The sculpture resembles a mosaic. A beacon guides boats past it. The journey takes an hour."
+  },
+  {
+    "id": "R1-15",
+    "round": 1,
+    "type": "control",
+    "expected": null,
+    "text": "The invoice is a refund, not a new charge. Match it to the September statement."
+  },
+  {
+    "id": "R1-16",
+    "round": 1,
+    "type": "control",
+    "expected": null,
+    "text": "You are not alone in this. I can bring dinner and stay with you tonight."
+  },
+  {
+    "id": "R1-17",
+    "round": 1,
+    "type": "control",
+    "expected": null,
+    "text": "We tested steel at 10 degrees. We tested steel at 30 degrees. We tested steel at 50 degrees."
+  },
+  {
+    "id": "R1-18",
+    "round": 1,
+    "type": "control",
+    "expected": null,
+    "text": "I will begin by opening the cabinet and photographing the serial number."
+  },
+  {
+    "id": "R1-19",
+    "round": 1,
+    "type": "control",
+    "expected": null,
+    "text": "Both sides deserve equal weight on the balance. Add five grams to each pan."
+  },
+  {
+    "id": "R1-20",
+    "round": 1,
+    "type": "control",
+    "expected": null,
+    "text": "Clarity, confidence, and connection are the three labels printed on the survey."
+  },
+  {
+    "id": "R2-1",
+    "round": 2,
+    "type": "tell",
+    "expected": "decorative-metaphor-and-adjective-overload",
+    "text": "The fabric of potential becomes a mosaic of purpose and a symphony of excellence."
+  },
+  {
+    "id": "R2-2",
+    "round": 2,
+    "type": "tell",
+    "expected": "forced-groups-of-three",
+    "text": "The plan promises resilience, agility, and transformation. It delivers empowerment, inspiration, and opportunity."
+  },
+  {
+    "id": "R2-3",
+    "round": 2,
+    "type": "tell",
+    "expected": "inflated-significance-and-legacy",
+    "text": "Changing the printer cartridge signals an enduring dedication to innovation and represents a transformative milestone in our story."
+  },
+  {
+    "id": "R2-4",
+    "round": 2,
+    "type": "tell",
+    "expected": "repeated-qualification-and-reassurance",
+    "text": "Without overstating the answer, I am not saying it is settled. Multiple possible interpretations remain available."
+  },
+  {
+    "id": "R2-5",
+    "round": 2,
+    "type": "tell",
+    "expected": "staged-revelations",
+    "text": "Here is the kicker: the meeting could have been an email."
+  },
+  {
+    "id": "R2-6",
+    "round": 2,
+    "type": "tell",
+    "expected": "repeated-words-and-restated-conclusions",
+    "text": "In short, every proposal requires a named reviewer before submission. To summarize, every proposal requires a named reviewer before submission."
+  },
+  {
+    "id": "R2-7",
+    "round": 2,
+    "type": "tell",
+    "expected": "unnecessary-narration-of-the-document",
+    "text": "We should first acknowledge the complexity of the question before attempting to formulate a nuanced response."
+  },
+  {
+    "id": "R2-8",
+    "round": 2,
+    "type": "tell",
+    "expected": "reflexive-balance-or-missing-point-of-view",
+    "text": "The log records an outage at noon. Both perspectives deserve equal consideration, including the claim that the system never failed."
+  },
+  {
+    "id": "R2-9",
+    "round": 2,
+    "type": "tell",
+    "expected": "negative-chains-before-a-reveal",
+    "text": "No dashboard. No workshop. No manifesto. Just delivery."
+  },
+  {
+    "id": "R2-10",
+    "round": 2,
+    "type": "tell",
+    "expected": "repeated-sentence-templates",
+    "text": "We need trust from customers. We need trust from colleagues. We need trust from investors."
+  },
+  {
+    "id": "R2-11",
+    "round": 2,
+    "type": "control",
+    "expected": null,
+    "text": "Copper weighs twelve grams. Both sides deserve equal weight on the scales before the measurement begins."
+  },
+  {
+    "id": "R2-12",
+    "round": 2,
+    "type": "control",
+    "expected": null,
+    "text": "We recorded latency at 10 milliseconds. We recorded latency at 20 milliseconds. We recorded latency at 30 milliseconds."
+  },
+  {
+    "id": "R2-13",
+    "round": 2,
+    "type": "control",
+    "expected": null,
+    "text": "The woven fabric depicts a landscape beside a tapestry. All three pieces are on display in the textile gallery."
+  },
+  {
+    "id": "R2-14",
+    "round": 2,
+    "type": "control",
+    "expected": null,
+    "text": "This is not an overdue bill. It is a credit note correcting an invoice issued twice."
+  },
+  {
+    "id": "R2-15",
+    "round": 2,
+    "type": "control",
+    "expected": null,
+    "text": "You are not alone. I will call you after work and help book the appointment."
+  },
+  {
+    "id": "R2-16",
+    "round": 2,
+    "type": "control",
+    "expected": null,
+    "text": "The report says that it is unclear whether the policy affected demand. The sample is too small to separate seasonal effects."
+  },
+  {
+    "id": "R2-17",
+    "round": 2,
+    "type": "control",
+    "expected": null,
+    "text": "Our packing list includes rice, beans, and lentils. The equipment list includes bowls, spoons, and plates."
+  },
+  {
+    "id": "R2-18",
+    "round": 2,
+    "type": "control",
+    "expected": null,
+    "text": "Here is the thing you ordered: a replacement handle for the blue suitcase."
+  },
+  {
+    "id": "R2-19",
+    "round": 2,
+    "type": "control",
+    "expected": null,
+    "text": "She said the answer was probably twelve, checked her notes, and corrected it to thirteen."
+  },
+  {
+    "id": "R2-20",
+    "round": 2,
+    "type": "control",
+    "expected": null,
+    "text": "The renovation represents a milestone in the preservation project: the final roof beam is now secure."
+  },
+  {
+    "id": "R3-1",
+    "round": 3,
+    "type": "tell",
+    "expected": "forced-groups-of-three",
+    "text": "The platform delivers creativity, courage and commitment. Our team offers integrity, accountability and adaptability."
+  },
+  {
+    "id": "R3-2",
+    "round": 3,
+    "type": "tell",
+    "expected": "repeated-words-and-restated-conclusions",
+    "text": "To put it briefly, each department needs one owner for the monthly report. In essence, each department needs one owner for the monthly report."
+  },
+  {
+    "id": "R3-3",
+    "round": 3,
+    "type": "tell",
+    "expected": "staged-revelations",
+    "text": "Here’s the thing—the roadmap needs an owner."
+  },
+  {
+    "id": "R3-4",
+    "round": 3,
+    "type": "tell",
+    "expected": "decorative-metaphor-and-adjective-overload",
+    "text": "Our collaboration is a tapestry of possibility, a symphony of purpose, a beacon of innovation."
+  },
+  {
+    "id": "R3-5",
+    "round": 3,
+    "type": "tell",
+    "expected": "inflated-significance-and-legacy",
+    "text": "The intern renamed the folder, demonstrating a profound commitment to operational excellence."
+  },
+  {
+    "id": "R3-6",
+    "round": 3,
+    "type": "tell",
+    "expected": "repeated-qualification-and-reassurance",
+    "text": "We ought not to overinterpret this. More than one reading is possible, and it would be rash to reach a settled conclusion."
+  },
+  {
+    "id": "R3-7",
+    "round": 3,
+    "type": "tell",
+    "expected": "repeated-words-and-restated-conclusions",
+    "text": "The rollout needs a named owner before it can begin. Before it can begin, the rollout needs a named owner."
+  },
+  {
+    "id": "R3-8",
+    "round": 3,
+    "type": "tell",
+    "expected": "unnecessary-narration-of-the-document",
+    "text": "We must first consider the nuance before we attempt to answer the question."
+  },
+  {
+    "id": "R3-9",
+    "round": 3,
+    "type": "tell",
+    "expected": "reflexive-balance-or-missing-point-of-view",
+    "text": "The meter reading establishes the volume. Both sides offer equally valid accounts, including an estimate ten times higher."
+  },
+  {
+    "id": "R3-10",
+    "round": 3,
+    "type": "tell",
+    "expected": "information-poor-generalities",
+    "text": "Success depends on addressing the relevant factors in a suitable manner. By taking appropriate steps, organizations can achieve better outcomes in a range of situations."
+  },
+  {
+    "id": "R3-11",
+    "round": 3,
+    "type": "control",
+    "expected": null,
+    "text": "The gallery has a tapestry, a mosaic, and a fabric sample. A label explains how each was made."
+  },
+  {
+    "id": "R3-12",
+    "round": 3,
+    "type": "control",
+    "expected": null,
+    "text": "We measured voltage at 2 volts. We measured voltage at 4 volts. We measured voltage at 6 volts."
+  },
+  {
+    "id": "R3-13",
+    "round": 3,
+    "type": "control",
+    "expected": null,
+    "text": "You’re not alone. I can listen whenever you are ready, and I will bring your prescription tomorrow."
+  },
+  {
+    "id": "R3-14",
+    "round": 3,
+    "type": "control",
+    "expected": null,
+    "text": "This is not an additional charge. It is a reversal of the duplicate payment shown on your invoice."
+  },
+  {
+    "id": "R3-15",
+    "round": 3,
+    "type": "control",
+    "expected": null,
+    "text": "Both sides deserve equal weight on the weighing scale. Use the same brass masses."
+  },
+  {
+    "id": "R3-16",
+    "round": 3,
+    "type": "control",
+    "expected": null,
+    "text": "We must first consider the pressure before opening the vessel."
+  },
+  {
+    "id": "R3-17",
+    "round": 3,
+    "type": "control",
+    "expected": null,
+    "text": "Here’s the thing she found under the chair: a small red button."
+  },
+  {
+    "id": "R3-18",
+    "round": 3,
+    "type": "control",
+    "expected": null,
+    "text": "Some participants left before the final assessment. That limits the comparison, so we report the dropout count alongside the estimate."
+  },
+  {
+    "id": "R3-19",
+    "round": 3,
+    "type": "control",
+    "expected": null,
+    "text": "The final audit requires a named owner and a signed report. The monthly report requires an owner and a final signed audit."
+  },
+  {
+    "id": "R3-20",
+    "round": 3,
+    "type": "control",
+    "expected": null,
+    "text": "The survey asks about trust, growth, and innovation. A second question asks about clarity, confidence, and connection."
+  }
+]

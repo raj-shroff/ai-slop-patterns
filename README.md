@@ -1,4 +1,4 @@
-# AI Writing Patterns
+# AI Slop Patterns
 
 A static website for browsing writing patterns, examples and editing guidance. Intended for client presentations and students. No accounts, APIs, models, external assets or runtime dependencies.
 
@@ -21,13 +21,13 @@ npm run build
 
 ## Content
 
-- [Master Markdown](content/ai-writing-signs-and-rules.md): the site's content source, converted from the Word document. Contains 138 entries, including contextual observations and ineffective indicators.
-- [Word reference](docs/references/AI-Writing-Signs-and-Rules.docx): the document used for the conversion.
-- [Source register](docs/references/AI-Writing-Source-Register.xlsx): 21 sources and 253 source-item mappings.
+- [Master Markdown](content/ai-writing-signs-and-rules.md): the site's content source, converted from the Word document. Contains 143 entries, including contextual observations and ineffective indicators.
+- [Word reference](docs/references/AI-Writing-Signs-and-Rules.docx): the Word master, synchronized from the current Markdown.
+- [Source register](docs/references/AI-Writing-Source-Register.xlsx): original snapshot with 21 sources and 253 source-item mappings. The Markdown register now includes two additional Graphite articles.
 - [Content conventions](docs/content-conventions.md): structure, identifiers and conversion procedure.
 - [Screen designs](docs/design/screen-review.md): the proposed category, pattern and example screens.
 
-Edit the master Markdown for future content work. The Word file is a reference snapshot; it does not automatically receive Markdown changes.
+Edit the master Markdown for future content work. Run `scripts/markdown_to_docx.py` with the bundled Python runtime after Markdown edits to synchronize the Word master. The script checks all paragraph and table-cell text against the Markdown.
 
 ## Application
 
@@ -66,3 +66,7 @@ No remote is configured and no deployment has been published by this setup.
 ## License and content provenance
 
 Application code is licensed under [MIT](LICENSE). Reference content retains its existing terms, including CC BY-SA 4.0 for the Wikipedia/Vale adaptations. See [NOTICE.md](NOTICE.md), the site's Sources page and the master reference for attribution and the content exceptions. Third-party reference content has not been relicensed as MIT.
+
+## Word and phrase library
+
+The site imports all 19 Wikipedia phrase collections, six supplemental-form sections and six reconstructed vocabulary lists directly from the master Markdown. The vocabulary lists contain 2,230 entries (including overlap between lists). All 31 collections are browsable and searchable; exact matches rank ahead of approximate matches. Supplemental forms also appear on related pattern pages. Collection filters preserve the query in the URL and have a Show all control. `npm test` checks every vocabulary term for retrieval and validates all collection counts.

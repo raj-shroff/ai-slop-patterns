@@ -8,6 +8,7 @@ const categories = [
   ['historical','Historical patterns','Patterns associated with earlier models']
 ].map(([slug,title,description])=>({slug,title,description}));
 function category(n) {
+  if([139,140,141,143].includes(n)) return 'content';
   if(n<=8) return 'content';
   if(n<=15) return 'language';
   if(n<=27) return 'formatting';
@@ -26,6 +27,11 @@ const overrides = {
 };
 // Concept groups bridge everyday descriptions to the terminology in the reference.
 const concepts = [
+  ['importance',['this matters','why it matters','matters most','just as important','distinction matters','importance flags'],[139]],
+  ['tradeoffs',['without sacrificing','without compromising','without losing','without requiring','tradeoff denial','no tradeoffs','no downsides'],[140]],
+  ['helpfulness',['can help you','especially helpful','makes it easier','helps you avoid','helpfulness coaching'],[141]],
+  ['qualification',['does not establish','may provide','can provide','not necessarily','need not','too many caveats','repeated qualification'],[142]],
+  ['superlatives',['single most','arguably the most','the most powerful','the most popular','perhaps the most','one of the best','unsupported superlatives'],[143]],
   ['contrast',['not x its y','not x it is y','not this but that','negative parallelism','false contrast','binary contrast','not because because','rather than'],[11,12,13,136]],
   ['empty',['says a lot but nothing','lots of words no substance','word salad','waffle','fluff','vague generic','empty claims','all filler','low information'],[119,117,3,134]],
   ['repetition',['same sentence structure','same structure over and over','repetitive wording','repeating itself','repetition','cookie cutter','formulaic','templated','copy paste cadence'],[93,94,118,138]],

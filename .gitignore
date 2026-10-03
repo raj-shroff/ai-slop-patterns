@@ -2,6 +2,7 @@
 /working/
 /sources/
 /output/
+/.codex-remote-attachments/
 
 # Dependencies and generated site files
 node_modules/
