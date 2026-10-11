@@ -4,14 +4,14 @@ test('all requested sections and inventory terms are present',()=>{
  assert.equal(data.library.length,31);
  assert.equal(data.library.filter(c=>c.group==='Phrase collections').length,19);
  assert.equal(data.library.filter(c=>c.group==='Additional forms').length,6);
- assert.deepEqual(data.library.filter(c=>c.terms.length).map(c=>c.terms.length),[1345,250,407,132,31,65]);
+ assert.deepEqual(data.library.filter(c=>c.group==='Vocabulary lists').map(c=>c.terms.length),[1337,250,407,132,31,67]);
  for(const c of data.library){assert.ok(c.paragraphs.length);assert.ok(c.related.length);assert.ok(c.related.every(s=>data.entries.some(e=>e.slug===s)));assert.doesNotMatch(JSON.stringify(c),/\bP\d{3}\b/);}
 });
 test('every searchable inventory term can be found in its own collection',()=>{
  for(const c of data.library)for(const term of c.terms)assert.ok(searchLibrary([c],term).some(r=>r.matches.some(m=>m.text===term)),term);
 });
 test('supplemental variants and uncommon words are searchable',()=>{
- for(const q of ['feature not a bug','not because','top-notch','multi-pronged','ALL-CAPS','paragraph ends','at its core','long final recaps','ablation','underexplored','gonna'])assert.ok(searchLibrary(data.library,q).length,q);
+ for(const q of ['feature not a bug','not because','top-notch','multi-pronged','ALL-CAPS','paragraph ends','at its core','long final recaps','ablation','underexplored','gonna','town’s enduring spirit'])assert.ok(searchLibrary(data.library,q).length,q);
  assert.equal(searchLibrary(data.library,'zzzzzzqqqqq').length,0);
  assert.equal(searchLibrary(data.library,'').length,0);
  assert.ok(searchLibrary(data.library,'tapesrty').length);

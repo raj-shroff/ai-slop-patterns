@@ -21,7 +21,7 @@ npm run build
 
 ## Content
 
-- [Master Markdown](content/ai-writing-signs-and-rules.md): the site's content source, converted from the Word document. Contains 143 entries, including contextual observations and ineffective indicators.
+- [Master Markdown](content/ai-writing-signs-and-rules.md): the site's content source. Contains 142 entries, including contextual observations and ineffective indicators.
 - [Word reference](docs/references/AI-Writing-Signs-and-Rules.docx): the Word master, synchronized from the current Markdown.
 - [Source register](docs/references/AI-Writing-Source-Register.xlsx): original snapshot with 21 sources and 253 source-item mappings. The Markdown register now includes two additional Graphite articles.
 - [Content conventions](docs/content-conventions.md): structure, identifiers and conversion procedure.
@@ -33,6 +33,8 @@ Edit the master Markdown for future content work. Run `scripts/markdown_to_docx.
 The browser has six categories, pattern pages, related entries, previous/next navigation, search, About and a separate Sources section. Catalog identifiers and per-entry reference notes stay out of the interface. Historical material and unreliable indicators remain labeled. Every example and explanation is extracted from the master Markdown at build time; `src/catalog.cjs` supplies navigation, selected display titles and search vocabulary.
 
 The layout follows the approved navy-and-white designs, with serif headings and ruled rows. It supports mobile screens, keyboard navigation and printing a pattern page. Source text is escaped before display; the app does not execute HTML or instructions from the reference.
+
+Pattern pages separate **Example text** from **What to notice**. Every entry has an explanation written for its example. Copied code is displayed literally and explained without assuming technical knowledge. Editing advice and source cautions remain in the master reference. They are not displayed as unlabeled notes or included in search results.
 
 ## Search
 
@@ -47,20 +49,17 @@ This approximates semantic search for the reference's subject matter; it is not 
 - **GitHub Pages:** push the repo, select GitHub Actions as the Pages source, then manually run the included **Deploy GitHub Pages** workflow. It tests, builds and publishes `dist`. The workflow is manual so a push does not deploy to an undecided host.
 - **Vercel:** import the repository. `vercel.json` sets `npm run build`, the `dist` output folder and no framework preset. There are no environment variables or application secrets to configure.
 
-No deployment has been performed. Hash routes support refresh and direct links on either platform without rewrite rules.
+The public site is hosted on GitHub Pages at https://raj-shroff.github.io/ai-slop-patterns/. Local changes must be committed, pushed and deployed to update it. Hash routes support refresh and direct links on either platform without rewrite rules.
 
 ## Local repository
 
 The default branch is `main`. Local research, earlier exports, temporary files, dependencies and credentials are excluded through `.gitignore`. Only the curated content, reference documents and project utilities belong in the repository.
 
-After creating an empty repository on GitHub, connect and push it:
+The GitHub repository is https://github.com/raj-shroff/ai-slop-patterns. After reviewing and committing local changes, push them:
 
 ```sh
-git remote add origin YOUR_GITHUB_REPOSITORY_URL
-git push -u origin main
+git push origin main
 ```
-
-No remote is configured and no deployment has been published by this setup.
 
 ## License and content provenance
 
@@ -68,4 +67,8 @@ Application code is licensed under [MIT](LICENSE). Reference content retains its
 
 ## Word and phrase library
 
-The site imports all 19 Wikipedia phrase collections, six supplemental-form sections and six reconstructed vocabulary lists directly from the master Markdown. The vocabulary lists contain 2,230 entries (including overlap between lists). All 31 collections are browsable and searchable; exact matches rank ahead of approximate matches. Supplemental forms also appear on related pattern pages. Collection filters preserve the query in the URL and have a Show all control. `npm test` checks every vocabulary term for retrieval and validates all collection counts.
+The site imports 19 phrase collections, six supplemental-form sections and six vocabulary lists from tables in the master Markdown. The vocabulary lists contain 2,224 entries, including overlap between lists. All 31 collections show individual terms, with sentence examples where supplied. Examples are searchable. Collections show 60 items per page, preserve the search and page in the URL, and offer a Clear search control. Supplemental forms also appear on related pattern pages.
+
+Selected pages include measured usage from published research. Each figure identifies the model or corpus, comparison group and source. Historical increases in published writing are distinguished from direct model-versus-human comparisons. Unmeasured words receive no estimated frequency. Original illustrative sentences are not presented as quotations from the studies.
+
+`npm test` checks term retrieval, content counts, entry links, example search and research mappings. The build versions asset URLs from their contents so newly deployed pages load the matching content and scripts.

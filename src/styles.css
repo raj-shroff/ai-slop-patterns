@@ -17,3 +17,43 @@ main:focus{outline:none}
 
 
 .site-intro{max-width:900px;font-size:20px;line-height:1.6;margin:0 0 24px}
+
+/* Word collections use readable entries, with examples below each term. */
+.word-list{list-style:none;margin:24px 0 36px;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:48px;align-items:start}
+.word-list li{border-top:1px solid var(--line);padding:20px 0 24px;min-width:0}
+.word-list h3{font-size:25px;line-height:1.25;overflow-wrap:anywhere}
+.word-list p{font-size:18px;color:var(--ink);margin-top:10px;max-width:58ch;overflow-wrap:anywhere}
+.collection-size{display:block;color:var(--muted);font-size:15px;margin-top:8px}
+.collection-example-note{max-width:85ch;margin-top:18px}
+.collection-pagination{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:48px;max-width:600px}
+.collection-pagination button{border:1px solid var(--navy);background:white;padding:10px 20px;color:var(--navy)}
+.collection-pagination button:disabled{opacity:.4;cursor:default}
+.research{max-width:1050px;margin:30px 0 40px;padding-top:24px;border-top:1px solid var(--line)}
+.research h2{font-size:30px;margin-bottom:20px}
+.research-study{margin-bottom:22px}
+.measurement-list{list-style:none;padding:0;margin:0 0 12px}
+.measurement-list li{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--line);font-size:18px}
+.measurement-list strong{font-weight:600}
+.measurement-comparison,.research-scope{color:var(--muted);font-size:16px;line-height:1.6}
+.example blockquote{white-space:normal;overflow-wrap:anywhere;font-size:clamp(25px,3.2vw,42px);line-height:1.4;max-width:1000px}
+.example-context{color:var(--muted);font-size:18px;max-width:85ch;margin:18px 0}
+.additional-examples .word-list h3{font-size:23px}
+@media(max-width:650px){.word-list{grid-template-columns:1fr;gap:0}.word-list li{padding:18px 0}.measurement-list li{grid-template-columns:1fr 1fr;gap:5px 12px}.measurement-comparison{grid-column:1/-1}.collection-controls{gap:12px}.collection-controls input{min-width:0;max-width:100%}.research h2{font-size:28px}}
+
+/* Reading pages separate the sample from the explanation. */
+.detail{max-width:1000px}
+.detail h1{font-size:clamp(38px,4.5vw,64px);line-height:1.12;letter-spacing:-1.6px;max-width:950px}
+.detail .intro p{max-width:72ch;font-size:21px;line-height:1.6}
+.reading-label{font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:600;line-height:1.4;color:var(--muted);margin-bottom:14px}
+.example{padding:28px 0 32px}
+.example blockquote{font-size:clamp(24px,2.8vw,34px);line-height:1.45;letter-spacing:-.3px;max-width:900px}
+.example-reading{margin-top:32px;max-width:76ch}
+.example-reading p{font-size:19px;line-height:1.65;color:var(--ink)}
+.code-example{font:17px/1.65 Consolas,'Courier New',monospace;white-space:pre-wrap;overflow-wrap:anywhere;background:var(--wash);padding:22px;margin:0;color:var(--navy)}
+.example-caption{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:5px}
+.variant blockquote{font:20px/1.55 Georgia,serif;letter-spacing:0;max-width:75ch}
+.research h2{font-size:28px}
+.research-findings{list-style:none;padding:0;margin:0;max-width:78ch}
+.research-findings li{margin:15px 0;font-size:18px;color:var(--ink)}
+.research-findings a{font-size:15px;white-space:nowrap}
+@media(max-width:560px){.detail .intro p{font-size:19px}.example-reading p{font-size:18px}.code-example{padding:16px;font-size:15px}.detail h1{letter-spacing:-1px}.research-findings li{font-size:17px}}

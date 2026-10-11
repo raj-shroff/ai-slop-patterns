@@ -6,7 +6,7 @@
  const tokens=s=>normalize(s).split(' ').filter(w=>w&&!stop.has(w)).map(stem);
  function distance(a,b){if(Math.abs(a.length-b.length)>2)return 3;let prev=Array.from({length:b.length+1},(_,i)=>i);for(let i=1;i<=a.length;i++){let curr=[i];for(let j=1;j<=b.length;j++)curr[j]=Math.min(curr[j-1]+1,prev[j]+1,prev[j-1]+(a[i-1]!==b[j-1]));prev=curr;}return prev[b.length];}
  function createSearch(entries,concepts){
-  const docs=entries.map(e=>{const aliases=concepts.filter(c=>e.concepts.includes(c.name)).flatMap(c=>c.phrases).join(' ');const extra=(e.additionalExamples||[]).map(v=>v.label+' '+v.example).join(' ')+' '+(e.supplemental||[]).flatMap(s=>s.paragraphs).join(' ');const fields=[[extra,3],[e.title,7],[e.example,3],[aliases,3.5],[e.description,1.4],[e.guidance,.5],[e.limit,.25]];const weights=new Map();for(const [value,w]of fields)for(const t of new Set(tokens(value)))weights.set(t,(weights.get(t)||0)+w);return {e,weights,length:tokens(e.description).length,title:normalize(e.title),example:normalize(e.example+' '+extra)};});
+  const docs=entries.map(e=>{const aliases=concepts.filter(c=>e.concepts.includes(c.name)).flatMap(c=>c.phrases).join(' ');const extra=(e.additionalExamples||[]).map(v=>v.label+' '+v.example).join(' ')+' '+(e.supplemental||[]).flatMap(s=>s.paragraphs).join(' ');const fields=[[extra,3],[e.title,7],[e.example,3],[e.notice||'',1.4],[aliases,3.5],[e.description,1.4]];const weights=new Map();for(const [value,w]of fields)for(const t of new Set(tokens(value)))weights.set(t,(weights.get(t)||0)+w);return {e,weights,length:tokens(e.description).length,title:normalize(e.title),example:normalize(e.example+' '+extra)};});
   const vocab=new Set(docs.flatMap(d=>[...d.weights.keys()]));
   const df=new Map();for(const d of docs)for(const t of d.weights.keys())df.set(t,(df.get(t)||0)+1);
   return function search(query,category='all'){
@@ -31,7 +31,16 @@
   const words=q.split(' ').filter(Boolean);
   return library.map(c=>{
    const units=c.terms.length?c.terms:c.paragraphs;
-   const found=units.map(text=>{const n=normalize(text),ts=n.split(' ');const exact=n===q;const phrase=(' '+n+' ').includes(' '+q+' ');const all=words.every(w=>ts.some(t=>t===w||(w.length>=5&&distance(w,t)<=(w.length>=7?2:1))));return {text,score:exact?100:phrase?80:all?40:0};}).filter(x=>x.score).sort((a,b)=>b.score-a.score);
+   const itemsByTerm=new Map((c.items||[]).map(i=>[i.term,i]));
+   const found=units.map(text=>{
+    const item=itemsByTerm.get(text),n=normalize(text),ts=n.split(' ');
+    const exact=n===q,phrase=(' '+n+' ').includes(' '+q+' ');
+    const all=words.every(w=>ts.some(t=>t===w||(w.length>=5&&distance(w,t)<=(w.length>=7?2:1))));
+    const example=item?.example?normalize(item.example):'';
+    const exampleMatch=example&&words.every(w=>example.split(' ').includes(w));
+    return {text,item,score:exact?100:phrase?80:all?40:exampleMatch?25:0};
+   }).filter(x=>x.score).sort((a,b)=>b.score-a.score);
+
    const titleMatch=normalize(c.title).includes(q);
    return {collection:c,matches:found,score:(found[0]?.score||0)+(titleMatch?60:0)};
   }).filter(r=>r.score).sort((a,b)=>b.score-a.score||a.collection.title.localeCompare(b.collection.title));
@@ -48,7 +57,7 @@
  }
  function explain(result,query,concepts){
   const e=result.entry;
-  const fields=[['title',e.title],['example',e.example],...(e.additionalExamples||[]).map(v=>['additional example',v.label+': '+v.example]),...(e.supplemental||[]).flatMap(s=>s.paragraphs.map(p=>['additional form',p])),['description',e.description],['editing guidance',e.guidance],['context note',e.limit]];
+  const fields=[['title',e.title],['example',e.example],...(e.additionalExamples||[]).map(v=>['additional example',v.label+': '+v.example]),...(e.supplemental||[]).flatMap(s=>s.paragraphs.map(p=>['additional form',p])),['description',e.description],['explanation',e.notice]];
   const scored=fields.map(([field,text])=>({field,text,count:segments(text,query).filter(p=>p.match).length,phrase:normalize(text).includes(normalize(query))})).sort((a,b)=>Number(b.phrase)-Number(a.phrase)||b.count-a.count);
   const best=scored[0];
   if(result.reason==='Related concept'){

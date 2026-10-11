@@ -3,9 +3,9 @@ const categories = [
   ['language','Language','Phrasing, word choice, and repetition'],
   ['content','Content','Claims, narrative, and generalizations'],
   ['formatting','Formatting','Headings, lists, and emphasis'],
-  ['citations','Citations and markup','Reference errors and tool artifacts'],
-  ['context','Context','Comments, writing history, and unreliable indicators'],
-  ['historical','Historical patterns','Patterns associated with earlier models']
+  ['citations','References and copied text','Broken citations and text left by writing tools'],
+  ['context','Context and cautions','Revision notes, replies, and ordinary human writing'],
+  ['historical','Older chatbot habits','Patterns associated with earlier models']
 ].map(([slug,title,description])=>({slug,title,description}));
 function category(n) {
   if([139,140,141,143].includes(n)) return 'content';
@@ -23,7 +23,7 @@ function category(n) {
 const overrides = {
   9:'Repeated stock vocabulary',10:'Avoiding “is” and “has”',11:'Not just X, but also Y',
   12:'It’s not X. It’s Y.',13:'Y rather than X',15:'Forced groups of three',
-  85:'Vague aspect language',84:'Forced synonyms'
+  84:'Forced synonyms'
 };
 // Concept groups bridge everyday descriptions to the terminology in the reference.
 const concepts = [
