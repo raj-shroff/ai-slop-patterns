@@ -1,0 +1,8 @@
+Use case: logo-brand
+Asset type: square browser favicon and logo for a website called AI Slop Signatures.
+Primary request: The exact word "Slop" in black cursive handwriting on an opaque pure white background.
+Text (verbatim): "Slop" — capital S followed by lowercase l, o, p.
+Style: confident, compact, bold handwritten cursive lettering, connected letters, smooth solid strokes, slightly informal and human. Distinct letter shapes and open counters. Thick strokes that survive being reduced to a tiny browser tab icon.
+Composition: one single centered word, filling about 90 percent of the square image width and as much height as is natural for the compact cursive word. Keep the capital S and p descender inside the canvas. Minimal even white margin. Very compact proportions.
+Palette: pure black lettering on pure white only.
+Constraints: flat clean logo artwork, no other text, no symbols, no underline, no border, no shadow, no gradients, no texture, no mockup or display scene, no ornamental flourishes or fine hairlines. Make the full word clearly readable.

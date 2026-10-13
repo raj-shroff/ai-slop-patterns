@@ -32,11 +32,14 @@ const out=path.join(root,'dist');fs.mkdirSync(out,{recursive:true});
 // Remove retired assets when rebuilding an existing output directory.
 for(const name of ['checker.js','reference-compare.js'])fs.rmSync(path.join(out,name),{force:true});
 for(const f of ['index.html','styles.css','app.js','search.js','checker-rules.js','checker-text.js','checker-families.js','checker-engine.js','checker-worker.js','checker-ui.js'])fs.copyFileSync(path.join(root,'src',f),path.join(out,f));
+const iconFiles=['icons/favicon.ico','icons/favicon-32.png','icons/apple-touch-icon.png'];
+fs.mkdirSync(path.join(out,'icons'),{recursive:true});
+for(const file of iconFiles)fs.copyFileSync(path.join(root,'src',file),path.join(out,file));
 fs.writeFileSync(path.join(out,'data.js'),'/* Reference content: see Sources and NOTICE.md for attribution. */\nwindow.PATTERNS = '+JSON.stringify(data).replace(/</g,'\\u003c')+';\n');
 // New content gets a new asset URL, avoiding stale scripts after a Pages deployment.
 let html=fs.readFileSync(path.join(out,'index.html'),'utf8');
 const versions={};
-for(const file of ['data.js','search.js','checker-rules.js','checker-text.js','checker-families.js','checker-engine.js','checker-worker.js','checker-ui.js','app.js','styles.css']){
+for(const file of ['data.js','search.js','checker-rules.js','checker-text.js','checker-families.js','checker-engine.js','checker-worker.js','checker-ui.js','app.js','styles.css',...iconFiles]){
  let bytes=fs.readFileSync(path.join(out,file));
  if(file==='checker-worker.js'){
   let code=bytes.toString('utf8');
@@ -44,7 +47,7 @@ for(const file of ['data.js','search.js','checker-rules.js','checker-text.js','c
   bytes=Buffer.from(code);
  }
  const hash=crypto.createHash('sha256').update(bytes).digest('hex').slice(0,12);
- const versioned=file.replace(/\.(js|css)$/,`.${hash}.$1`);
+ const versioned=file.replace(/\.(js|css|png|ico)$/,`.${hash}.$1`);
  fs.writeFileSync(path.join(out,versioned),bytes);
  versions[file]=versioned;
  html=html.replaceAll(`"./${file}"`,`"./${versioned}"`);
