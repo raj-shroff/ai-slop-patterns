@@ -1,86 +1,45 @@
 # AI Slop Signatures
 
-A static reference for common AI writing habits, with examples, word lists and a live text checker. No accounts, API keys, models, external assets or runtime dependencies.
+A guide to common AI writing patterns, with examples, word lists, and a text checker.
 
-## Open locally
+**[Visit the site](https://raj-shroff.github.io/ai-slop-patterns/)**
 
-Run `npm run build` to generate the site. Node.js 18 or later is needed to rebuild. Once built, `dist/index.html` works directly without Node, a server or an internet connection. The `dist` folder is portable.
+The checker looks for familiar wording, repetition, and sentence structures. It runs entirely in your browser: no uploads, accounts, or API keys. It flags patterns, but cannot determine whether a person or AI wrote something.
 
-For development:
+Maximum input: **10,000 words or 80,000 characters, whichever comes first.** See [checker coverage and limits](docs/live-checker-coverage.md) for details.
+
+## Run locally
+
+Requires Node.js 18 or later. No `npm install` needed.
 
 ```sh
 npm run dev
 ```
 
-Open `http://127.0.0.1:4173`. No `npm install` is required. Rebuild after editing content or source files, then reload the browser:
+Open [localhost:4173](http://127.0.0.1:4173). After editing files, run `npm run build` and refresh the page. The server does not rebuild automatically.
 
-```sh
-npm test
-npm run build
-```
+## Edit the site
 
-## Content
+| What to change | File |
+| --- | --- |
+| Patterns, examples, and word lists | [Master Markdown](content/ai-writing-signs-and-rules.md) |
+| Page text and navigation | [app.js](src/app.js), [index.html](src/index.html) |
+| Checker page text | [checker-ui.js](src/checker-ui.js) |
+| Checker behavior | [checker-rules.js](src/checker-rules.js), [checker-families.js](src/checker-families.js), [checker-engine.js](src/checker-engine.js) |
+| Appearance | [styles.css](src/styles.css) |
 
-- [Master Markdown](content/ai-writing-signs-and-rules.md): the site's content source. Contains 143 entries, including contextual observations and ineffective indicators.
-- [Word reference](docs/references/AI-Writing-Signs-and-Rules.docx): the Word master, synchronized from the current Markdown.
-- [Source register](docs/references/AI-Writing-Source-Register.xlsx): source details and extraction mappings, including the punctuation commentary behind the unnecessary-hyphen entry.
-- [Content conventions](docs/content-conventions.md): structure, identifiers and conversion procedure.
+Edit source files, then rebuild. Files in `dist/` are generated and will be overwritten. For content formatting, see [content conventions](docs/content-conventions.md).
 
-Edit the master Markdown for future content work. Run `scripts/markdown_to_docx.py` with the bundled Python runtime after Markdown edits to synchronize the Word master. The script checks all paragraph and table-cell text against the Markdown.
+Run `npm test` to check the project, or `npm run test:checker` for checker tests only.
 
-## Application
+## Publish to GitHub Pages
 
-The browser has six categories, pattern pages, related entries, previous/next navigation, search, About and a separate Sources section. Catalog identifiers and per-entry reference notes stay out of the interface. Historical material and unreliable indicators remain labeled. Every example and explanation is extracted from the master Markdown at build time; `src/catalog.cjs` supplies navigation, selected display titles and search vocabulary.
+1. Commit and push your changes to `main`.
+2. In the repository's **Actions** tab, select **Deploy GitHub Pages**.
+3. Click **Run workflow**, choose `main`, and confirm.
 
-The layout follows the approved navy-and-white designs, with serif headings and ruled rows. It supports mobile screens, keyboard navigation and printing a pattern page. Source text is escaped before display; the app does not execute HTML or instructions from the reference.
+The workflow tests, builds, and publishes the site. **Pushing alone does not deploy it.** For first-time setup, set **Settings → Pages → Source** to **GitHub Actions**.
 
-Pattern pages separate **Example text** from **What to notice**. Every entry has an explanation written for its example. Copied code is displayed literally and explained without assuming technical knowledge. Editing advice and source cautions remain in the master reference. They are not displayed as unlabeled notes or included in search results.
+## License
 
-## Search
-
-Search runs entirely in the browser. It combines weighted matches across titles, examples and descriptions with curated concept groups, light word normalization, prefix matching and edit-distance typo correction. Phrase matches receive an additional boost. Category filters apply to the ranked results.
-
-This approximates semantic search for the reference's subject matter; it is not an embedding model or an LLM. It cannot reliably understand arbitrary paraphrases, negation or multilingual queries. The test suite checks 30 representative queries, every entry's title, filters, empty results and content integrity. Add new aliases in `src/catalog.cjs` to improve coverage without changing source prose. Queries are kept in URL fragments for shareable results and never sent to a search service.
-
-## Check for AI Slop
-
-The checker is independently authored application code. It does not incorporate code, rule files, vocabulary weights or scoring formulas from the cited slop linter. The reference's existing third-party content retains its existing attribution and licenses.
-
-`src/checker-rules.js` maps observable wording and structures to catalogue entries. `src/checker-text.js` extracts readable prose, normalizes whitespace and common HTML entities, and maps every character back to the untouched input. `src/checker-families.js` checks contrasts, repeated negative clauses, recurring vocabulary, sentence frames, clause breaks and hyphen use. `src/checker-engine.js` coordinates those checks with phrase and formatting rules. `src/checker-worker.js` runs analysis away from the interface; revision IDs discard outdated results. The browser falls back to the same engine when workers are unavailable. `src/checker-ui.js` displays findings anchored to the draft. Everything runs locally; there is no text upload or persistent storage.
-
-Input limits are 1–10,000 words and 80,000 UTF-16 character units. Both maximums apply; over-limit input is rejected. Contractions and hyphenated compounds count as one word. Findings are capped at 300 overall and 30 matches per rule, with a visible notice when capped. Structural checks have stated minimum lengths. Code is excluded; ordinary quotations remain eligible.
-
-The checker observes wording; it cannot judge meaning, truth, relevance or authorship. Every catalogue ID has an explicit coverage record and an original test case. Some entries have only a detectable facet; others are manual review or cautions that never become positive findings. See [coverage and limitations](docs/live-checker-coverage.md). The test cases verify behavior, not real-world detection accuracy.
-
-Run `npm run test:checker` for engine, formatting-variation and UI checks. Run `npm run audit:checker` to regenerate the complete catalogue audit and [separate passage evaluation](docs/live-checker-evaluation.md). Vocabulary findings report observed repetition, not an AI score. Hyphen findings distinguish spelling advice from stacked descriptions that may be grammatical. No-match results contain no unrelated catalogue checklist.
-
-## Hosting
-
-`npm run build` emits the complete site in `dist`. Relative asset links and hash routes work at the root of a domain, under a GitHub project path, or from a local file. Neither deployment target requires an API key in the app.
-
-- **GitHub Pages:** push the repo, select GitHub Actions as the Pages source, then manually run the included **Deploy GitHub Pages** workflow. It tests, builds and publishes `dist`. The workflow is manual so a push does not deploy to an undecided host.
-- **Vercel:** import the repository. `vercel.json` sets `npm run build`, the `dist` output folder and no framework preset. There are no environment variables or application secrets to configure.
-
-The public site is hosted on GitHub Pages at https://raj-shroff.github.io/ai-slop-patterns/. Local changes must be committed, pushed and deployed to update it. Hash routes support refresh and direct links on either platform without rewrite rules.
-
-## Local repository
-
-The default branch is `main`. Local research, earlier exports, temporary files, dependencies and credentials are excluded through `.gitignore`. Only the curated content, reference documents and project utilities belong in the repository.
-
-The GitHub repository is https://github.com/raj-shroff/ai-slop-patterns. After reviewing and committing local changes, push them:
-
-```sh
-git push origin main
-```
-
-## License and content provenance
-
-Application code is licensed under [MIT](LICENSE). Reference content retains its existing terms, including CC BY-SA 4.0 for the Wikipedia/Vale adaptations. See [NOTICE.md](NOTICE.md), the site's Sources page and the master reference for attribution and the content exceptions. Third-party reference content has not been relicensed as MIT.
-
-## Word and phrase library
-
-The site imports 19 phrase collections, six supplemental-form sections and six vocabulary lists from tables in the master Markdown. The vocabulary lists contain 2,221 entries, including overlap between lists. All 31 collections show individual terms, with sentence examples where supplied. Examples are searchable. Collections show 60 items per page, preserve the search and page in the URL, and offer a Clear search control. Supplemental forms also appear on related pattern pages.
-
-Selected pages include measured usage from published research. Each figure identifies the model or corpus, comparison group and source. Historical increases in published writing are distinguished from direct model-versus-human comparisons. Unmeasured words receive no estimated frequency. Original illustrative sentences are not presented as quotations from the studies.
-
-`npm test` checks term retrieval, content counts, entry links, example search and research mappings. The build versions asset URLs from their contents so newly deployed pages load the matching content and scripts.
+Application code: [MIT](LICENSE). Reference content has separate attribution and license terms in [NOTICE.md](NOTICE.md).
