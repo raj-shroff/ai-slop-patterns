@@ -16,7 +16,7 @@ function category(n) {
   if(n<=78) return 'context';
   if(n<=84) return 'historical';
   if(n<=92) return [90,91,92].includes(n)?'formatting':'language';
-  if([94,130].includes(n)) return 'formatting';
+  if([94,130,144].includes(n)) return 'formatting';
   if([107,109,111,112,114,116,117,119,120,121,125,126,127,133,134].includes(n)) return 'content';
   return 'language';
 }
@@ -27,6 +27,7 @@ const overrides = {
 };
 // Concept groups bridge everyday descriptions to the terminology in the reference.
 const concepts = [
+  ['hyphens',['unnecessary hyphens','over hyphenation','hyphenated words','project timeline','newsletter','blog post','team members','brainstorming'],[144]],
   ['importance',['this matters','why it matters','matters most','just as important','distinction matters','importance flags'],[139]],
   ['tradeoffs',['without sacrificing','without compromising','without losing','without requiring','tradeoff denial','no tradeoffs','no downsides'],[140]],
   ['helpfulness',['can help you','especially helpful','makes it easier','helps you avoid','helpfulness coaching'],[141]],

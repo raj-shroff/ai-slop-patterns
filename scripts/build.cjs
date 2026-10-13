@@ -6,7 +6,7 @@ const stableSlugs=require('../src/entry-slugs.json');
 const root=path.resolve(__dirname,'..');
 const md=fs.readFileSync(path.join(root,'content/ai-writing-signs-and-rules.md'),'utf8').replace(/\r\n/g,'\n');
 const blocks=[...md.matchAll(/<a id="p(\d{3})"><\/a>\s*\n### P\d{3}\s+(?:—\s+)?([^\n]+)\n([\s\S]*?)(?=\n<a id=|\n## |$)/g)];
-if(blocks.length!==142) throw Error(`Expected 142 entries, found ${blocks.length}`);
+if(blocks.length!==143) throw Error(`Expected 143 entries, found ${blocks.length}`);
 const titleMap=Object.fromEntries(blocks.map(m=>[Number(m[1]),overrides[Number(m[1])]||m[2]]));
 function clean(s){return s.replace(/\*\*/g,'').replace(/\bP(\d{3})\b/g,(_,id)=>titleMap[Number(id)]||'the related pattern').replace(/\s+/g,' ').trim();}
 const slug=s=>s.toLowerCase().normalize('NFKD').replace(/[’'“”]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
@@ -24,23 +24,30 @@ const entries=blocks.map(m=>{
 if(new Set(entries.map(e=>e.slug)).size!==entries.length)throw Error('Duplicate slugs');
 const sourceText=md.split('## Expanded source register and reading scope')[1]?.split('## Attribution')[0];
 const sources=[...sourceText.matchAll(/### S\d+ — ([^\n]+)\s+Source: (https?:\/\/\S+)\s+([\s\S]*?)(?=\n### |$)/g)].map(m=>({title:clean(m[1]),url:m[2],description:clean(m[3].split('Limit:')[0]),limit:clean(m[3].split('Limit:')[1]||'')}));
-if(sources.length!==23)throw Error(`Expected 23 sources, found ${sources.length}`);
+if(sources.length!==24)throw Error(`Expected 24 sources, found ${sources.length}`);
 const library=require('../src/library.cjs')(md,entries,clean,slug);
 require('../src/evidence.cjs')(md,entries,library,sources);
 const data={library,categories,entries,sources:sources.map(({title,url})=>({title,url})),concepts:concepts.map(({name,phrases})=>({name,phrases})),sourceHash:crypto.createHash('sha256').update(md).digest('hex')};
 const out=path.join(root,'dist');fs.mkdirSync(out,{recursive:true});
 // Remove retired assets when rebuilding an existing output directory.
-for(const name of ['checker.js','checker-ui.js','reference-compare.js'])fs.rmSync(path.join(out,name),{force:true});
-for(const f of ['index.html','styles.css','app.js','search.js'])fs.copyFileSync(path.join(root,'src',f),path.join(out,f));
+for(const name of ['checker.js','reference-compare.js'])fs.rmSync(path.join(out,name),{force:true});
+for(const f of ['index.html','styles.css','app.js','search.js','checker-rules.js','checker-text.js','checker-families.js','checker-engine.js','checker-worker.js','checker-ui.js'])fs.copyFileSync(path.join(root,'src',f),path.join(out,f));
 fs.writeFileSync(path.join(out,'data.js'),'/* Reference content: see Sources and NOTICE.md for attribution. */\nwindow.PATTERNS = '+JSON.stringify(data).replace(/</g,'\\u003c')+';\n');
 // New content gets a new asset URL, avoiding stale scripts after a Pages deployment.
 let html=fs.readFileSync(path.join(out,'index.html'),'utf8');
-for(const file of ['data.js','search.js','app.js','styles.css']){
- const bytes=fs.readFileSync(path.join(out,file));
+const versions={};
+for(const file of ['data.js','search.js','checker-rules.js','checker-text.js','checker-families.js','checker-engine.js','checker-worker.js','checker-ui.js','app.js','styles.css']){
+ let bytes=fs.readFileSync(path.join(out,file));
+ if(file==='checker-worker.js'){
+  let code=bytes.toString('utf8');
+  for(const name of ['checker-rules.js','checker-text.js','checker-families.js','checker-engine.js'])code=code.replaceAll(name,versions[name]);
+  bytes=Buffer.from(code);
+ }
  const hash=crypto.createHash('sha256').update(bytes).digest('hex').slice(0,12);
  const versioned=file.replace(/\.(js|css)$/,`.${hash}.$1`);
  fs.writeFileSync(path.join(out,versioned),bytes);
- html=html.replace(`"./${file}"`,`"./${versioned}"`);
+ versions[file]=versioned;
+ html=html.replaceAll(`"./${file}"`,`"./${versioned}"`);
 }
 fs.writeFileSync(path.join(out,'index.html'),html);
 fs.writeFileSync(path.join(out,'.nojekyll'),'');

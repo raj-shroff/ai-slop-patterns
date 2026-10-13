@@ -10,7 +10,7 @@ The Word synchronization preserves paragraph order, heading levels, list items, 
 
 The file contains the initial catalog and Vale rule appendix, followed by the expanded catalog, merged observations, word inventories and source concordance. Keep this provenance structure while preparing the site. Source records and technical appendices can be presented separately from the pattern browser.
 
-Pattern headings retain IDs `P001` through `P143`, with `P018` retired. Each has a stable HTML anchor, such as `<a id="p012"></a>`, so links can use `ai-writing-signs-and-rules.md#p012` independently of title changes. Preserve IDs when editing titles or merging future additions. Never treat an ID as an array position. Preserve existing public routes in `src/entry-slugs.json` when renaming a pattern. Do not turn contextual or ineffective indicators into positive detection rules.
+Pattern headings retain IDs `P001` through `P144`, with `P018` retired. Each has a stable HTML anchor, such as `<a id="p012"></a>`, so links can use `ai-writing-signs-and-rules.md#p012` independently of title changes. Preserve IDs when editing titles or merging future additions. Never treat an ID as an array position. Preserve existing public routes in `src/entry-slugs.json` when renaming a pattern. Do not turn contextual or ineffective indicators into positive detection rules.
 
 The conversion adds no executable source instructions. Existing rule examples remain fenced reference text. If the future Markdown renderer accepts raw HTML, restrict it to the intentional anchors or sanitize the rendered output.
 
@@ -26,7 +26,7 @@ This overwrites the Markdown output. Use it only if Word is intentionally being 
 
 ## Website build
 
-`npm run build` extracts the 142 anchored entries and 23 source records into `dist/data.js`. It fails on missing fields, incorrect counts or duplicate URL slugs. The source-item concordance remains in the master reference for traceability. Other headings and rule fixtures do not become pattern pages. The app escapes source text and supports only bold emphasis and line breaks in examples.
+`npm run build` extracts the 143 anchored entries and 24 source records into `dist/data.js`. It fails on missing fields, incorrect counts or duplicate URL slugs. The source-item concordance remains in the master reference for traceability. Other headings and rule fixtures do not become pattern pages. The app escapes source text and supports a small, explicit set of formatting options for examples.
 
 Use `src/catalog.cjs` to adjust category assignments, display titles and search aliases. Keep explanations, examples, guidance and qualifications in the master Markdown. IDs are only internal mapping keys; visitors see readable titles and URL slugs. Run `npm test` after content changes, then rebuild. When adding or removing entries, update the explicit build and test coverage checks intentionally.
 

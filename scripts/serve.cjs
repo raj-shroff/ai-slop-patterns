@@ -12,4 +12,4 @@ const server=http.createServer((req,res)=>{
  fs.readFile(file,(err,body)=>{if(err){res.writeHead(404);return res.end('Not found');}res.writeHead(200,{'Content-Type':types[path.extname(file)]||'text/plain; charset=utf-8','Cache-Control':'no-cache','X-Content-Type-Options':'nosniff'});res.end(req.method==='HEAD'?undefined:body);});
 });
 server.on('error',e=>{console.error(e.code==='EADDRINUSE'?`Port ${port} is in use. Choose another with --port.`:e.message);process.exit(1);});
-server.listen(port,host,()=>console.log(`AI Writing Patterns: http://${host}:${port}`));
+server.listen(port,host,()=>console.log(`AI Slop Signatures: http://${host}:${port}`));

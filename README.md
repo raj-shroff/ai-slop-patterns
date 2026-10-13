@@ -1,6 +1,6 @@
-# AI Slop Patterns
+# AI Slop Signatures
 
-A static website for browsing writing patterns, examples and editing guidance. Intended for client presentations and students. No accounts, APIs, models, external assets or runtime dependencies.
+A static reference for common AI writing habits, with examples, word lists and a live text checker. No accounts, API keys, models, external assets or runtime dependencies.
 
 ## Open locally
 
@@ -21,9 +21,9 @@ npm run build
 
 ## Content
 
-- [Master Markdown](content/ai-writing-signs-and-rules.md): the site's content source. Contains 142 entries, including contextual observations and ineffective indicators.
+- [Master Markdown](content/ai-writing-signs-and-rules.md): the site's content source. Contains 143 entries, including contextual observations and ineffective indicators.
 - [Word reference](docs/references/AI-Writing-Signs-and-Rules.docx): the Word master, synchronized from the current Markdown.
-- [Source register](docs/references/AI-Writing-Source-Register.xlsx): original snapshot with 21 sources and 253 source-item mappings. The Markdown register now includes two additional Graphite articles.
+- [Source register](docs/references/AI-Writing-Source-Register.xlsx): source details and extraction mappings, including the punctuation commentary behind the unnecessary-hyphen entry.
 - [Content conventions](docs/content-conventions.md): structure, identifiers and conversion procedure.
 
 Edit the master Markdown for future content work. Run `scripts/markdown_to_docx.py` with the bundled Python runtime after Markdown edits to synchronize the Word master. The script checks all paragraph and table-cell text against the Markdown.
@@ -41,6 +41,18 @@ Pattern pages separate **Example text** from **What to notice**. Every entry has
 Search runs entirely in the browser. It combines weighted matches across titles, examples and descriptions with curated concept groups, light word normalization, prefix matching and edit-distance typo correction. Phrase matches receive an additional boost. Category filters apply to the ranked results.
 
 This approximates semantic search for the reference's subject matter; it is not an embedding model or an LLM. It cannot reliably understand arbitrary paraphrases, negation or multilingual queries. The test suite checks 30 representative queries, every entry's title, filters, empty results and content integrity. Add new aliases in `src/catalog.cjs` to improve coverage without changing source prose. Queries are kept in URL fragments for shareable results and never sent to a search service.
+
+## Check for AI Slop
+
+The checker is independently authored application code. It does not incorporate code, rule files, vocabulary weights or scoring formulas from the cited slop linter. The reference's existing third-party content retains its existing attribution and licenses.
+
+`src/checker-rules.js` maps observable wording and structures to catalogue entries. `src/checker-text.js` extracts readable prose, normalizes whitespace and common HTML entities, and maps every character back to the untouched input. `src/checker-families.js` checks contrasts, repeated negative clauses, recurring vocabulary, sentence frames, clause breaks and hyphen use. `src/checker-engine.js` coordinates those checks with phrase and formatting rules. `src/checker-worker.js` runs analysis away from the interface; revision IDs discard outdated results. The browser falls back to the same engine when workers are unavailable. `src/checker-ui.js` displays findings anchored to the draft. Everything runs locally; there is no text upload or persistent storage.
+
+Input limits are 1–10,000 words and 80,000 UTF-16 character units. Both maximums apply; over-limit input is rejected. Contractions and hyphenated compounds count as one word. Findings are capped at 300 overall and 30 matches per rule, with a visible notice when capped. Structural checks have stated minimum lengths. Code is excluded; ordinary quotations remain eligible.
+
+The checker observes wording; it cannot judge meaning, truth, relevance or authorship. Every catalogue ID has an explicit coverage record and an original test case. Some entries have only a detectable facet; others are manual review or cautions that never become positive findings. See [coverage and limitations](docs/live-checker-coverage.md). The test cases verify behavior, not real-world detection accuracy.
+
+Run `npm run test:checker` for engine, formatting-variation and UI checks. Run `npm run audit:checker` to regenerate the complete catalogue audit and [separate passage evaluation](docs/live-checker-evaluation.md). Vocabulary findings report observed repetition, not an AI score. Hyphen findings distinguish spelling advice from stacked descriptions that may be grammatical. No-match results contain no unrelated catalogue checklist.
 
 ## Hosting
 
@@ -67,7 +79,7 @@ Application code is licensed under [MIT](LICENSE). Reference content retains its
 
 ## Word and phrase library
 
-The site imports 19 phrase collections, six supplemental-form sections and six vocabulary lists from tables in the master Markdown. The vocabulary lists contain 2,224 entries, including overlap between lists. All 31 collections show individual terms, with sentence examples where supplied. Examples are searchable. Collections show 60 items per page, preserve the search and page in the URL, and offer a Clear search control. Supplemental forms also appear on related pattern pages.
+The site imports 19 phrase collections, six supplemental-form sections and six vocabulary lists from tables in the master Markdown. The vocabulary lists contain 2,221 entries, including overlap between lists. All 31 collections show individual terms, with sentence examples where supplied. Examples are searchable. Collections show 60 items per page, preserve the search and page in the URL, and offer a Clear search control. Supplemental forms also appear on related pattern pages.
 
 Selected pages include measured usage from published research. Each figure identifies the model or corpus, comparison group and source. Historical increases in published writing are distinguished from direct model-versus-human comparisons. Unmeasured words receive no estimated frequency. Original illustrative sentences are not presented as quotations from the studies.
 

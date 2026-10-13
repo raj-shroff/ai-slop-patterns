@@ -3,17 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Browse patterns in AI writing, with examples and practical context. Search phrasing, structure, and style.">
+  <meta name="description" content="AI Slop Signatures: Examples of known AI writing tells, popular AI word choices, and tool to test for AI writing.">
   <meta name="theme-color" content="#051c2c">
-  <title>AI Slop Patterns</title>
+  <title>AI Slop Signatures</title>
   <link rel="stylesheet" href="./styles.css">
   <script defer src="./data.js"></script>
   <script defer src="./search.js"></script>
+  <script defer src="./checker-rules.js"></script>
+  <script defer src="./checker-text.js"></script>
+  <script defer src="./checker-families.js"></script>
+  <script defer src="./checker-engine.js"></script>
+  <script defer src="./checker-ui.js" data-worker="./checker-worker.js"></script>
   <script defer src="./app.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="masthead"><a class="brand" href="#/">AI Slop Patterns</a><nav aria-label="Main navigation"><a href="#/">Home</a><a href="#/phrases">Words &amp; phrases</a><a href="#/sources">Sources</a><a href="#/about">About</a></nav></header>
+  <header class="masthead"><a class="brand" href="#/">AI Slop Signatures</a><nav aria-label="Main navigation"><a href="#/">Slop Categories</a><a href="#/checker">Check for AI Slop</a><a href="#/phrases">AI's Favorite Words</a><a href="#/sources">Sources</a><a href="#/about">About</a></nav></header>
   <main id="main" tabindex="-1"><p class="loading">Loading the reference…</p><noscript><p>This browser needs JavaScript enabled to browse and search. You can also <a href="./downloads/ai-writing-signs-and-rules.md">read the full reference</a>.</p></noscript></main>
   <footer class="footer"><a href="#/sources">Sources</a></footer>
 </body>

@@ -1,8 +1,8 @@
-# AI Writing Signs and Rules
+# AI Slop Signatures
 
 A reference for reviewing prose and preparing examples
 
-Updated 11 October 2026 | 142 entries | 23 source records
+Updated 12 October 2026 | 143 entries | 24 source records
 
 This reference brings together the signs described in the supplied Wikipedia PDF and every rule in the vale-signs-of-ai-writing repository. It explains what each pattern looks like, supplies an illustrative example, and records the limits of the observation. The technical appendix preserves the exact rule files and all repository fixtures.
 
@@ -84,9 +84,9 @@ Ordinary facts become grand claims about history, legacy or social change. A new
 
 **What to notice:** “A testament to the city's enduring spirit” gives the station a grand meaning without saying anything specific about its history.
 
-**Editing guidance:** State the specific contribution and cite evidence for significance. Check ecological and conservation claims separately.
+**Editing guidance:** Explain what changed, who benefited and how that is known. Keep a claim about historical importance only when the evidence supports it.
 
-**Limit:** A supported account of significance is appropriate. Symbolism is a phrase matcher, not a test of historical importance.
+**Limit:** A building or event can have real historical importance. The problem is asserting that importance without explaining it.
 
 
 <a id="p002"></a>
@@ -171,7 +171,7 @@ Unnamed experts or observers supposedly support a claim. One or two opinions bec
 
 **Editing guidance:** Identify who said what, how many sources support it, and whether the claim represents opinion or evidence.
 
-**Limit:** Some generalizations are well supported. A plural attribution needs plural evidence; such as is misleading only when it implies unsupported additional examples.
+**Limit:** An accurate summary can describe agreement among experts. Check who was consulted and whether the text fairly represents their views.
 
 
 <a id="p007"></a>
@@ -195,9 +195,11 @@ The ending follows a fixed routine: praise the subject, acknowledge vague challe
 
 ### P008 Awards sections with no awards
 
+
 Source: Wikipedia PDF pp. 7–8. Related Vale rules: none directly implemented.
 
-A repeated Awards and recognition or Recognition section emphasizes acclaim. Paired X and Y headings can reinforce an outline built around vague prestige.
+An “Awards and recognition” section promises named honors but delivers vague praise. The heading makes acclaim look documented even though the text identifies no award.
+
 
 **Illustrative example:** Awards and recognition: The firm has earned widespread recognition for excellence.
 
@@ -212,15 +214,15 @@ A repeated Awards and recognition or Recognition section emphasizes acclaim. Pai
 
 <a id="p009"></a>
 
-### P009 Dense clusters of characteristic vocabulary
+### P009 Repeated stock vocabulary
 
 Source: Wikipedia PDF pp. 8–9. Related Vale rule: Vocabulary.
 
 Words such as “pivotal,” “underscores” and “vibrant” crowd into the same passage. The concern is repeated use where simpler or more precise words would do. Favored vocabulary changes between models and over time.
 
-**Illustrative example:** Additionally, the initiative underscores a pivotal interplay within a vibrant landscape.
+**Illustrative example:** Additionally, the new library serves as a vibrant hub, fostering meaningful connections and underscoring the pivotal role of community engagement.
 
-**What to notice:** “Underscores,” “pivotal,” “interplay,” “vibrant” and “landscape” are crowded into one sentence. Together they make the claim sound weighty while leaving its meaning vague.
+**What to notice:** “Vibrant hub,” “fostering meaningful connections” and “pivotal role” pile up around a simple subject. The sentence praises the library without describing its services or visitors.
 
 **Editing guidance:** Use the most precise ordinary wording, preserve technical meaning, and inspect the whole passage for repeated patterns.
 
@@ -228,31 +230,35 @@ Words such as “pivotal,” “underscores” and “vibrant” crowd into the 
 
 **Additional examples:**
 
-- **Calling something thoughtful:** The plan takes a thoughtful approach to improving the customer experience.
+- **Calling something thoughtful:** The plan is thoughtful, the process is thoughtful, and the result reflects a thoughtful commitment to meaningful progress.
 
 Source records: S22 and S23; supplied variants merged into this entry.
+
+- **A plan described through abstract praise:** The plan takes a thoughtful, holistic approach, weaving together diverse perspectives to create a robust foundation for meaningful change.
 
 
 <a id="p010"></a>
 
-### P010 Avoiding simple is and has constructions
+### P010 Avoiding “is” and “has”
+
 
 Source: Wikipedia PDF pp. 9–10. Related Vale rules: Symbolism, Vocabulary.
 
-Simple statements use “serves as,” “functions as” or “boasts” where “is” or “has” would do. Calling a thing something it “refers to” can also confuse the subject with its name.
+A straightforward statement becomes a claim about what something “serves as,” “functions as” or “boasts.” When the subject's identity or possessions are all that matters, the extra wording can make a simple fact sound grander than it is.
+
 
 **Illustrative example:** The building serves as a library and boasts four reading rooms.
 
-**What to notice:** “Serves as a library” means that it is a library; “boasts” means that it has reading rooms. The extra wording adds grandeur to a simple fact.
+**What to notice:** The building could simply be described as a library with four reading rooms. “Boasts” adds praise; “serves as” is useful only if its role needs explaining.
 
-**Editing guidance:** Prefer The building is a library with four reading rooms when that is the intended meaning.
+**Editing guidance:** When the intended meaning is simply the building's identity and features, write: “The building is a library with four reading rooms.”
 
 **Limit:** Serves as can accurately describe a temporary function. Has in a perfect tense is different from has meaning possesses.
 
 
 <a id="p011"></a>
 
-### P011 Negative parallelism adding another quality
+### P011 Not just X, but also Y
 
 Source: Wikipedia PDF pp. 10–11. Related Vale rules: none directly implemented.
 
@@ -260,7 +266,7 @@ A sentence gives an ordinary description, then upgrades it: “not just X, but Y
 
 **Illustrative example:** The archive is not just a collection; it is a gateway to the past.
 
-**What to notice:** “Not just” introduces an ordinary description, then replaces it with the grander “gateway to the past.”
+**What to notice:** “Not just” sets an ordinary collection beside the grander image of a “gateway to the past.” The contrast promises a deeper meaning without explaining it.
 
 **Editing guidance:** State the substantive point directly unless the contrast answers a real question.
 
@@ -269,7 +275,7 @@ A sentence gives an ordinary description, then upgrades it: “not just X, but Y
 
 <a id="p012"></a>
 
-### P012 Negative parallelism replacing a quality
+### P012 It’s not X. It’s Y.
 
 Source: Wikipedia PDF pp. 11. Related Vale rules: none directly implemented.
 
@@ -293,19 +299,19 @@ Source records: S22 and S23; supplied variants merged into this entry.
 
 <a id="p013"></a>
 
-### P013 Reversed negative parallelism
+### P013 Y rather than X
 
 Source: Wikipedia PDF pp. 11. Related Vale rules: none directly implemented.
 
 The preferred description comes first, followed by a rejected alternative: “Y rather than X.” The contrast can sound decisive even when nobody proposed the alternative.
 
-**Illustrative example:** The policy prioritizes practical consolidation rather than ideological purity.
+**Illustrative example:** The new app brings people together rather than merely connecting them.
 
-**What to notice:** “Rather than” sets two descriptions against each other. The sentence sounds decisive, but it does not explain why those are the relevant alternatives.
+**What to notice:** “Brings people together” and “connecting them” mean much the same thing here. “Rather than merely” makes that small wording change sound like a major distinction.
 
 **Editing guidance:** Retain the comparison only if both alternatives are relevant and supported.
 
-**Limit:** Rather than is normal grammar. The model association is an observation in Wikipedia: Signs of AI writing, not an authorship test.
+**Limit:** “Rather than” is ordinary grammar. A comparison is useful when the alternatives differ in a way that matters to the reader.
 
 **Additional examples:**
 
@@ -328,7 +334,7 @@ A broad page title is treated as the name of a single thing. A list or topic the
 
 **Editing guidance:** Introduce the actual topic naturally: This list covers bridges along the coast, if that is its scope.
 
-**Limit:** Some titles can appear naturally in a lead; the defect is artificial reification of the title.
+**Limit:** A title can be mentioned naturally. The problem is giving a document the properties of the people or things it describes.
 
 
 <a id="p015"></a>
@@ -371,15 +377,19 @@ The article repeats its own title as a heading above its content, as if the writ
 
 <a id="p017"></a>
 
-### P017 Title case headings
+### P017 Inconsistent heading capitalization
+
 
 Source: Wikipedia PDF pp. 13. Related Vale rules: none directly implemented.
 
-Every main word in a heading is capitalized even when the surrounding document uses sentence case.
+One heading capitalizes each main word while the next uses ordinary sentence capitalization. The switch makes the document look assembled from different styles.
 
-**Illustrative example:** History And Cultural Significance<br>The school opened in 1910.<br><br>Student life<br>Students organized the first sports club in 1912.
 
-**What to notice:** “History And Cultural Significance” capitalizes every main word, while “Student life” uses sentence case. The inconsistency is visible in the headings.
+**Illustrative example:** ## History and Cultural Significance<br>The school opened in 1910.<br><br>## Student life<br>Students organized the first sports club in 1912.
+
+**Example format:** formatted
+
+**What to notice:** “History and Cultural Significance” uses title case, while “Student life” uses sentence case. The change in convention makes the headings inconsistent.
 
 **Example context:** Notice the switch from title case to sentence case.
 
@@ -434,30 +444,30 @@ Source: Wikipedia PDF pp. 15–16. Related Vale rules: none directly implemented
 
 Em dashes repeatedly interrupt sentences to add praise, an aside or a dramatic contrast. Some models use this heavily; others use it far less.
 
-**Illustrative example:** The center expanded — a bold step forward — reshaping its future.
+**Illustrative example:** The center expanded—a bold step forward—last spring. The new wing—a hub of opportunity—opened in June. It will reshape the neighborhood—one visitor at a time.
 
-**What to notice:** The two dashes interrupt a simple statement to add “a bold step forward.” The praise is doing more work than the facts.
+**What to notice:** Each sentence uses dashes to insert praise or deliver a dramatic ending. The repeated interruptions draw attention away from the simple news that a new wing opened.
 
 **Editing guidance:** Keep punctuation that clarifies the sentence; reduce repeated rhetorical interruptions when they obscure the claim.
 
-**Limit:** Professional writers use dashes. Wikipedia: Signs of AI writing reports that contemporary models do not uniformly overuse them; this is weak evidence alone.
+**Limit:** Dashes are useful punctuation in human and generated writing. One dash, or even a pair of dashes, is not evidence of a problem; look at what the repeated interruptions do.
 
 
 <a id="p022"></a>
 
-### P022 Emoji as structural decoration
+### P022 Emoji decorating a formal document
 
 Source: Wikipedia PDF pp. 16. Related Vale rules: none directly implemented.
 
 Emoji are added to headings or bullets where they do not explain the content or fit the document’s tone.
 
-**Illustrative example:** 🚀 Future prospects: Continued innovation promises a bright future.
+**Illustrative example:** Inspection report to the finance committee<br>🚀 Overview: An exciting step toward improvement.<br>🌟 Findings: Valuable opportunities await.<br>✅ Outlook: A brighter future for all.
 
-**What to notice:** The rocket decorates a heading about future prospects. It adds excitement but no information.
+**What to notice:** The emoji give a formal inspection report a cheerful promotional tone. The headings promise excitement rather than helping the committee identify the findings.
 
 **Editing guidance:** Remove decorative symbols where the destination's style excludes them.
 
-**Limit:** Emoji are ordinary in informal communication. Wikipedia: Signs of AI writing describes this as less common in recent output.
+**Limit:** Emoji can make an informal message easier to scan or express its tone. Their suitability depends on the audience and setting.
 
 
 <a id="p023"></a>
@@ -468,15 +478,17 @@ Source: Wikipedia PDF pp. 16. Related Vale rules: none directly implemented.
 
 A table separates a few simple facts into cells without making them easier to compare. Formatting copied from another tool may also display incorrectly.
 
-**Illustrative example:** Name | Harbor Center<br>Type | Museum
+**Illustrative example:** | Field | Value |<br>| --- | --- |<br>| Name | Harbor Center |<br>| Type | Museum |
 
-**What to notice:** The two rows say only that Harbor Center is a museum. There is no comparison or substantial information for the table to organize.
+**What to notice:** The whole table says that Harbor Center is a museum. It makes the reader move between four cells to collect a fact that fits in one short sentence.
 
 **Example context:** This two-row table contains information that would fit in one short sentence.
 
 **Editing guidance:** Use a table for meaningful comparisons; use prose for a simple fact and validate markup.
 
 **Limit:** Tables are appropriate for genuinely parallel data. Minimal formatting alone is not evidence.
+
+**Example format:** table
 
 
 <a id="p024"></a>
@@ -495,7 +507,7 @@ A passage switches between straight and curly quotation marks. This is usually a
 
 **Editing guidance:** Normalize typography only if required by house style and preserve quotations accurately.
 
-**Limit:** Word, operating systems, citation tools, and professional typesetting routinely produce curly quotes. Wikipedia: Signs of AI writing says model behavior differs.
+**Limit:** Document editors, operating systems and citation tools can change quotation marks automatically. Mixed styles often reflect copying between tools.
 
 
 <a id="p025"></a>
@@ -544,13 +556,17 @@ Several sections use the top-level title format instead of a consistent hierarch
 
 ### P027 A divider after every section
 
+
 Source: Wikipedia PDF pp. 17. Related Vale rules: none directly implemented.
 
-Horizontal separators are inserted mechanically between sections, often reflecting a Markdown response style.
+A horizontal line appears after each small section, giving a short message the visual weight of a report. The divisions repeat even when headings and spacing already separate the points.
 
-**Illustrative example:** Background<br>The team met on Tuesday.<br>----<br>Findings<br>The deadline was missed.<br>----<br>Next steps<br>The team will meet again.
+
+**Illustrative example:** ## Background<br>The team met on Tuesday.<br>----<br>## Findings<br>The deadline was missed.<br>----<br>## Next steps<br>The team will meet again.
 
 **What to notice:** A horizontal line separates each tiny section. The separators give a three-sentence update the appearance of a much larger report.
+
+**Example format:** formatted
 
 **Example context:** A separator appears after every short section.
 
@@ -593,6 +609,12 @@ The response discusses its training cutoff, missing search results or lack of so
 **Editing guidance:** Describe the specific evidence gap without inventing its cause. Verify the claim or remove the speculation.
 
 **Limit:** A carefully scoped limitation statement is good practice. A statement about missing information should accurately describe what was checked.
+
+**Additional examples:**
+
+- **Talking about training instead of the subject:** As of my last training update, I do not have information about the company's latest appointments.
+
+- **Turning a failed search into a story:** No interviews were found, suggesting that the founder prefers to let her work speak for itself.
 
 
 <a id="p030"></a>
@@ -637,11 +659,13 @@ Formatting instructions appear as ordinary text because the destination does not
 
 <a id="p032"></a>
 
-### P032 Broken code left in a document
+### P032 An error message left in the text
+
 
 Source: Wikipedia PDF pp. 24. Related Vale rules: none directly implemented.
 
-Copied text contains damaged instructions for a publishing system, such as incomplete labels, repeated dates or error messages inside a submission field.
+A date, label or other field contains duplicated text or an error message. Something went wrong while the text was copied or prepared, and the broken result was published.
+
 
 **Illustrative example:** Review date: 2025-04-012025-04-01ERROR
 
@@ -691,7 +715,7 @@ A copied response contains labels such as “[cite: 1]” or “[span_1]” wher
 
 **Editing guidance:** Find the actual source and replace the tool marker with an ordinary citation.
 
-**Limit:** Wikipedia: Signs of AI writing associates these forms with Gemini; literal examples in documentation are not accidental artifacts.
+**Limit:** A technical article may deliberately quote citation codes. Check whether the code is being discussed or was accidentally left in the text.
 
 
 <a id="p035"></a>
@@ -733,7 +757,7 @@ A copied sentence ends with a bracketed reference number and line numbers. Witho
 
 **Editing guidance:** Resolve the cited source and relevant passage; replace internal locators with usable references.
 
-**Limit:** Bracketed notation can be deliberately quoted. Model attribution in Wikipedia: Signs of AI writing is observational.
+**Limit:** These marks can be quoted deliberately or copied from another document. A marker does not identify the author of every surrounding sentence.
 
 
 <a id="p037"></a>
@@ -771,9 +795,9 @@ A response has been copied with formatting code still wrapped around it. The cod
 
 **Example context:** The export wrapper is visible to the reader.
 
-**Editing guidance:** Remove interface wrappers after checking the enclosed content; preserve them when discussing the format itself.
+**Editing guidance:** Remove the lines around the prose when preparing a finished article. Keep them when the format itself is the subject being explained.
 
-**Limit:** Do not assign a vendor that the source does not establish.
+**Limit:** Visible formatting code can show that text passed through a writing tool. It does not establish how the prose inside it was written.
 
 
 <a id="p039"></a>
@@ -803,9 +827,9 @@ Source: Wikipedia PDF pp. 28–29. Related Vale rules: none directly implemented
 
 The text tells someone to fill in a field that the form does not have.
 
-**Illustrative example:** Enter the year in the historical_population_year field, then select Save.
+**Illustrative example:** Fields on the form: Name, Address, Telephone.<br>Instructions: Enter the year in the Population year field, then select Save.
 
-**What to notice:** In this example, the form has only Name, Address and Telephone fields. The instructions invent a field that the user cannot find.
+**What to notice:** The instructions name a Population year field, but the form only has Name, Address and Telephone. Readers cannot complete a step when the field it names is missing.
 
 **Example context:** In this fictional scenario, the form has only Name, Address and Telephone fields.
 
@@ -820,9 +844,11 @@ The text tells someone to fill in a field that the form does not have.
 
 ### P041 Made-up citations
 
+
 Source: Wikipedia PDF pp. 29. Related Vale rules: none directly implemented.
 
-Several references in a new contribution lead to nonexistent pages or sites, with no archive evidence that the pages existed.
+A source list contains convincing titles or web addresses for publications that cannot be found. The citation looks complete until someone tries to check it.
+
 
 **Illustrative example:** Sources:<br>https://example.org/research/harbor-cleanup-2024<br>https://example.org/news/port-water-quality-review<br>https://example.org/reports/coastal-recovery-study
 
@@ -845,7 +871,7 @@ A book or article is given an invalid reference number. An ISBN identifies a boo
 
 **Illustrative example:** L. Hart. A History of Harbor Engineering. ISBN 978-0-306-40615-8.
 
-**What to notice:** The book and author are fictional, and the ISBN's final check digit is wrong. A formal-looking book reference still needs to identify a real publication.
+**What to notice:** The ISBN ends in 8, but the preceding digits require a final digit of 7. A valid-looking number can still be malformed; even a correctly formed ISBN must be checked against the book it names.
 
 **Example context:** The book and author are invented. This ISBN also has an invalid check digit.
 
@@ -858,9 +884,11 @@ A book or article is given an invalid reference number. An ISBN identifies a boo
 
 ### P043 A real source attached to the wrong claim
 
+
 Source: Wikipedia PDF pp. 30. Related Vale rules: none directly implemented.
 
-A DOI or other identifier resolves, but its title, authors, date, or subject differ from the cited reference. Apparent citation precision masks fabrication.
+A claim has a citation, but the cited work concerns something else or does not support what the sentence says. The presence of a reference can hide the mismatch.
+
 
 **Illustrative example:** “A field study proves the bridge can withstand the flood.” [1]<br>[1] Childhood sleep habits: a survey of school pupils.
 
@@ -881,9 +909,9 @@ Source: Wikipedia PDF pp. 30–31. Related Vale rules: none directly implemented
 
 A precise claim cites a whole book without giving the page or section needed to check it.
 
-**Illustrative example:** At 24°C, the reaction reaches equilibrium in exactly 18 minutes (Handbook of Industrial Chemistry).
+**Illustrative example:** The town spent £42,600 on the bridge in 1908 (A History of Westford).
 
-**What to notice:** The precise claim is attributed to an entire handbook. There is no author, edition or page to help the reader check it.
+**What to notice:** The exact amount and year need a passage the reader can check. Naming an entire book, without an author, edition or page, does not provide it.
 
 **Example context:** The fictional citation gives no author, edition, chapter or page for a precise claim.
 
@@ -896,9 +924,11 @@ A precise claim cites a whole book without giving the page or section needed to 
 
 ### P045 Broken citation formatting
 
+
 Source: Wikipedia PDF pp. 31–32. Related Vale rule: CitationArtifacts.
 
-References are mechanically appended after every sentence, reused with invalid syntax, or accompanied by footnote return arrows such as ↩ and [↩].
+A copied passage includes citation templates, HTML tags or stray footnote arrows where the reader should see usable references. The formatting code has not been converted for the place where the text is published.
+
 
 **Illustrative example:** The center opened in 1998. {{cite web...}}<sup>[3]</sup> ↩
 
@@ -917,9 +947,11 @@ References are mechanically appended after every sentence, reused with invalid s
 
 ### P046 AI service names in links
 
+
 Source: Wikipedia PDF pp. 32. Related Vale rule: UTMParameters.
 
-Source URLs contain utm_source=chatgpt.com, utm_source=openai, utm_source=copilot.com, or referrer=grok.com. This can indicate how a source was found.
+A source link includes the name of an AI service in a tracking label. That may show how someone found or shared the link, but it does not show who wrote the surrounding passage.
+
 
 **Illustrative example:** https://example.org/report?utm_source=chatgpt.com
 
@@ -927,7 +959,7 @@ Source URLs contain utm_source=chatgpt.com, utm_source=openai, utm_source=copilo
 
 **Editing guidance:** Verify the destination and review revision history to distinguish citation assistance from generated prose.
 
-**Limit:** Wikipedia: Signs of AI writing explicitly says a tracking parameter does not prove the writing was generated. Indexed or recirculated URLs can carry it onward.
+**Limit:** Tracking labels can travel with a link through search results, messages and copied source lists. They are evidence about the link's route, not a test of authorship.
 
 
 <a id="p047"></a>
@@ -961,11 +993,11 @@ Source: Wikipedia PDF pp. 33. Related Vale rules: none directly implemented.
 
 The text claims that a rule or policy supports its position, but the rule does not exist or says something different.
 
-**Illustrative example:** Company policy requires customer complaints to be deleted after 30 days.
+**Illustrative example:** Policy handbook: Keep customer complaints for seven years.<br>Draft report: Company policy requires customer complaints to be deleted after 30 days.
 
-**What to notice:** In this fictional case, the company has no such policy. The sentence uses the authority of a rule to support an invented requirement.
+**What to notice:** The report invokes company policy, but the policy says to keep the records for seven years. The confident reference to a rule disguises a direct contradiction.
 
-**Example context:** In this fictional scenario, the company has no such policy.
+**Example context:** The report contradicts the policy quoted above.
 
 **Editing guidance:** Find the policy being cited and check what it actually requires.
 
@@ -1016,13 +1048,15 @@ A short message is split into a report-like sequence of headings. The structure 
 
 ### P051 Claiming the work meets every requirement
 
+
 Source: Wikipedia PDF pp. 33. Related Vale rules: none directly implemented.
 
-The response downplays AI involvement by listing policies supposedly satisfied or insisting the words represent the writer's own thoughts.
+Asked about the work, a response offers blanket claims about originality, accuracy or compliance. The assurances take the place of an explanation someone could check.
 
-**Illustrative example:** These are entirely my own views, and the report fully complies with every requirement for accuracy and originality.
 
-**What to notice:** The writer claims complete originality and accuracy but supplies no details about how the report was prepared or checked.
+**Illustrative example:** Reviewer: Which sources did you check?<br>Reply: These are entirely my own views, and the report fully complies with every requirement for accuracy and originality.
+
+**What to notice:** The reviewer asks about sources. The reply claims originality and accuracy without identifying a source or answering the question.
 
 **Editing guidance:** Explain the actual contribution and evidence; follow applicable disclosure practices.
 
@@ -1033,51 +1067,57 @@ The response downplays AI involvement by listing policies supposedly satisfied o
 
 ### P052 Stock requests for feedback
 
+
 Source: Wikipedia PDF pp. 33. Related Vale rules: none directly implemented.
 
-A defensive reply asks critics to specify exactly what must be improved, often within a longer canned response.
+A reply asks for precise feedback even though the reviewer has already identified the problem. The wording could be sent in response to almost any criticism.
 
-**Illustrative example:** Please identify the precise changes needed to bring my contribution into full compliance.
 
-**What to notice:** The reply uses formal language to ask what should change. It does not engage with a particular criticism.
+**Illustrative example:** Reviewer: The opening says 2008, but the source says 2009.<br>Reply: Thank you for your feedback. Please identify the precise changes needed to bring my contribution into full compliance.
+
+**What to notice:** The wrong year has already been identified. The stock request for more detail avoids dealing with that simple correction.
 
 **Editing guidance:** Ask or answer a concrete editorial question tied to the disputed content.
 
-**Limit:** Requests for help are normal and should be encouraged; this is weak contextual evidence only.
+**Limit:** Asking for clarification is useful when feedback is vague. This example concerns a generic reply to a specific, answerable point.
 
 
 <a id="p053"></a>
 
-### P053 Dismissing questions about AI use
+### P053 Arguing about AI instead of addressing the error
+
 
 Source: Wikipedia PDF pp. 33. Related Vale rules: none directly implemented.
 
-The comment characterizes concerns as unsupported speculation and demands concrete proof, often using a recurring defensive formula.
+A response disputes accusations of AI use without addressing the actual error the reviewer raised. The discussion moves from checking the text to arguing about the writer.
 
-**Illustrative example:** These allegations rely on speculation rather than concrete evidence.
 
-**What to notice:** The reply dismisses the concern as speculation. It offers no account of how the text was written.
+**Illustrative example:** Reviewer: The journal cannot find the article you cited.<br>Reply: These allegations of AI use rely on speculation rather than concrete evidence.
+
+**What to notice:** The reviewer has raised a missing source. The reply argues about AI accusations instead of helping locate or correct the citation.
 
 **Editing guidance:** Discuss observable source or content problems and state the limits of any inference.
 
-**Limit:** Writers can reasonably dispute false accusations. The stance alone cannot establish AI use.
+**Limit:** A writer can reasonably reject an unsupported accusation. The useful question here is whether the cited article can be found.
 
 
 <a id="p054"></a>
 
-### P054 Deflecting questions about AI use
+### P054 Redirecting a question instead of answering it
+
 
 Source: Wikipedia PDF pp. 33–34. Related Vale rule: ChatbotCommunication.
 
-Asked how a passage was produced, the response redirects the conversation toward improving the text without answering the question.
+A reply proposes a different conversation instead of answering a concrete question about the draft. Cooperative wording can conceal the missing answer.
 
-**Illustrative example:** Let us focus on improving the report rather than discussing how it was written.
 
-**What to notice:** The response moves the discussion to improving the report while leaving the question about its origin unanswered.
+**Illustrative example:** Reviewer: You mentioned using a chatbot. Which claims did you check against the sources?<br>Reply: Let us focus on improving the report rather than discussing how it was written.
 
-**Editing guidance:** Answer the question about how the text was produced, then address any requested edits.
+**What to notice:** The question concerns which claims were checked. The reply suggests improving the report but never supplies that information.
 
-**Limit:** Content-focused discussion and polite openings are legitimate. Evaluate the surrounding pattern.
+**Editing guidance:** Answer the concrete question about the work, then discuss the requested changes.
+
+**Limit:** Redirecting an irrelevant or intrusive question can be appropriate. That is different from leaving a relevant source-checking question unanswered.
 
 
 ## Edit summaries
@@ -1120,9 +1160,11 @@ A revision note says the work meets every rule or standard, but never explains w
 
 ### P057 Listing what stayed the same
 
+
 Source: Wikipedia PDF pp. 36–37. Related Vale rules: none directly implemented.
 
-The summary describes what was retained, preserved, avoided, or deliberately left untouched, echoing constraints in a possible editing prompt.
+An editing note spends most of its space listing what was kept or left untouched. It says little about the changes the reader came to review.
+
 
 **Illustrative example:** Improved neutrality while preserving structure, references, and all technical details.
 
@@ -1130,16 +1172,18 @@ The summary describes what was retained, preserved, avoided, or deliberately lef
 
 **Editing guidance:** Explain meaningful constraints only when they help a reviewer understand the edit.
 
-**Limit:** Preservation is genuinely important in some revisions. This pattern is contextual, not inherently improper.
+**Limit:** Keeping references or technical details intact can be an important requirement. Mention it when it helps someone review the change.
 
 
 <a id="p058"></a>
 
 ### P058 Saying sources exist without saying what they show
 
+
 Source: Wikipedia PDF pp. 37–38. Related Vale rules: none directly implemented.
 
-The summary stresses sourced, verified, independent, secondary, or peer-reviewed content without saying what information was added.
+An editing note praises the sources as verified, independent or peer-reviewed without telling the reader what information was added or corrected.
+
 
 **Illustrative example:** Expanded the article with verified information and independent sources.
 
@@ -1158,9 +1202,9 @@ Source: Wikipedia PDF pp. 38. Related Vale rules: none directly implemented.
 
 A note about an edit lists tiny formatting changes at such length that the actual revision becomes hard to find.
 
-**Illustrative example:** Adjusted the third heading’s font size, moved two commas, replaced three link labels and realigned the final table cell.
+**Illustrative example:** Changed the second heading from 16 pt to 18 pt, aligned its left edge, added a comma after “however,” corrected the contract cost from £4,000 to £40,000, removed a double space, and made the final date bold.
 
-**What to notice:** The small formatting operations overwhelm the note. It becomes hard to tell whether anything important changed.
+**What to notice:** The cost correction changes the reported figure tenfold, but it is buried among font sizes, spaces and punctuation. Treating every edit as equally important hides the one a reviewer needs to see.
 
 **Editing guidance:** Include only technical details needed to review the change.
 
@@ -1175,9 +1219,9 @@ Source: Wikipedia PDF pp. 38. Related Vale rules: none directly implemented.
 
 A response to a reviewer says the feedback has been addressed without identifying the concern or explaining the correction.
 
-**Illustrative example:** Addressed reviewer feedback by improving sourcing, formatting, and neutrality.
+**Illustrative example:** Reviewer: Please add the year of the survey.<br>Reply: Addressed reviewer feedback by improving sourcing, formatting and neutrality.
 
-**What to notice:** The note says the feedback was addressed but does not identify the feedback or the correction.
+**What to notice:** The reviewer asked for a survey year. The reply lists broad improvements but does not say whether that year was added.
 
 **Editing guidance:** State which concern was resolved and what evidence or content changed.
 
@@ -1230,9 +1274,9 @@ Source: Wikipedia PDF pp. 40. Related Vale rules: none directly implemented.
 
 A draft arrives with a status such as “reviewed” or “rejected” even though the corresponding review has not happened. The label may have been copied from an example.
 
-**Illustrative example:** Quarterly report — first draft<br>Status: Approved by the review committee
+**Illustrative example:** Quarterly report — first draft<br>Review log: Not yet sent to the committee.<br>Status: Approved by the review committee
 
-**What to notice:** The fictional report is marked “Approved” before the review committee has received it.
+**What to notice:** The review log says the committee has not received the draft, while the status says it has approved it. Those two labels contradict each other.
 
 **Example context:** In this fictional scenario, the committee has not received the draft.
 
@@ -1245,13 +1289,15 @@ A draft arrives with a status such as “reviewed” or “rejected” even thou
 
 ### P064 Profiles that all sound the same
 
+
 Source: Wikipedia PDF pp. 40–41. Related Vale rules: none directly implemented.
 
-A personal profile follows a familiar set of welcome, interests and contribution headings, with little personal information.
+A profile uses polished welcome text and broad interests that could describe almost anyone. Familiar headings divide the page without revealing much about the person.
 
-**Illustrative example:** Welcome To My User Page! About Me. My Contributions. Let's Connect!
 
-**What to notice:** The profile uses a sequence of familiar welcome and biography headings without saying anything about the person.
+**Illustrative example:** Welcome!<br>I'm passionate about sharing knowledge and making a meaningful contribution.<br><br>About me<br>I enjoy learning, exploring new ideas, and connecting with others.<br><br>My contributions<br>I aim to provide valuable insights and support a collaborative community.
+
+**What to notice:** The profile names no subject, project or experience. “Learning,” “new ideas” and “valuable insights” leave the reader without a picture of the person.
 
 **Editing guidance:** Use a personal description appropriate to the platform; inspect the combination of copied formatting and formulaic content.
 
@@ -1262,9 +1308,11 @@ A personal profile follows a familiar set of welcome, interests and contribution
 
 ### P065 The same filler added to unrelated pages
 
+
 Source: Wikipedia PDF pp. 41–42. Related Vale rules: none directly implemented.
 
-Repeated generic additions across unrelated pages may accompany attempts to build an account’s edit count. The text and the account’s behavior need separate checks.
+The same sentence is added to unrelated pages with only the subject changed. Generic praise fills space that could have described what makes each subject different.
+
 
 **Illustrative example:** Museum page: This institution plays a vital role in the community.<br>Bridge page: This structure plays a vital role in the community.<br>Festival page: This event plays a vital role in the community.
 
@@ -1272,9 +1320,9 @@ Repeated generic additions across unrelated pages may accompany attempts to buil
 
 **Example context:** The same generic addition appears on unrelated pages. Assess any account behavior separately.
 
-**Editing guidance:** Review the actual edits and evidence of gaming separately.
+**Editing guidance:** Check each addition against its subject. Replace reusable praise with relevant information or remove it.
 
-**Limit:** Rapid AI-assisted contributions do not, by themselves, establish permissions gaming or malicious intent.
+**Limit:** Repetition can come from templates or human copy-and-paste. Review the content separately from any question about the writer's motives.
 
 
 <a id="p066"></a>
@@ -1310,15 +1358,15 @@ Source: Wikipedia PDF pp. 42. Related Vale rules: none directly implemented.
 
 The writing repeats a government's preferred account without examining its claims or acknowledging relevant criticism.
 
-**Illustrative example:** The government’s reforms delivered prosperity and demonstrated the wisdom of its leadership.
+**Illustrative example:** Official statement: Our reforms brought prosperity to every household.<br>Audit finding: The available income figures do not support that claim.<br>Draft report: The reforms delivered prosperity and demonstrated the wisdom of the government's leadership.
 
-**What to notice:** The sentence praises the government as if the conclusion were settled. It names no results, evidence or competing views.
+**What to notice:** The draft repeats the official claim as fact and adds praise for the leadership. It leaves out the audit's direct challenge to the claim.
 
 **Example context:** An unsupported endorsement leaves no room for contrary evidence. Human writers can use the same framing.
 
 **Editing guidance:** Check source diversity, framing, omissions, and evidence directly.
 
-**Limit:** Political bias occurs in human writing too. The research summarized in Wikipedia: Signs of AI writing is not a universal claim about all models or current versions.
+**Limit:** Human writers also repeat official claims uncritically. Check the evidence and relevant opposing accounts rather than inferring a particular model from the political stance.
 
 
 ## Human context and ineffective indicators
@@ -1358,7 +1406,7 @@ A writer can give a coherent account of a mistake, supply the real source, or ex
 
 **Editing guidance:** Invite a concrete explanation and verify it against the evidence.
 
-**Limit:** A good explanation supports a human-error account but is not an infallible authorship test.
+**Limit:** A verifiable correction helps resolve the mistake. It does not, by itself, identify who or what wrote the original passage.
 
 
 <a id="p070"></a>
@@ -1375,7 +1423,7 @@ Ordinary verbs such as is, has, wrote and used, and qualifications such as perha
 
 **Editing guidance:** Write for meaning rather than removing every hedge, superlative, or ordinary phrase.
 
-**Limit:** These are comparative observations in the source, not instructions to insert imperfections or proof that such sentences are human.
+**Limit:** There is no need to add errors or unusual wording to make a sentence seem human. Ordinary language is useful because readers understand it.
 
 
 <a id="p071"></a>
@@ -1462,9 +1510,9 @@ Source: Wikipedia PDF pp. 44. Related Vale rule: Transitions.
 
 Words such as however or consequently occur routinely in human writing. Formulaic repetition of certain transitions is a different claim.
 
-**Illustrative example:** However, the second trial failed.
+**Illustrative example:** The first pump worked throughout the test. However, the second pump stopped after ten minutes.
 
-**What to notice:** “However” signals a change in the result. A single useful transition is ordinary writing.
+**What to notice:** “However” connects two different test results. It expresses a real contrast instead of adding a transition for its own sake.
 
 **Editing guidance:** Keep a transition that accurately expresses the relationship.
 
@@ -1529,6 +1577,8 @@ Correctly formatted documents can result from templates, visual editing tools or
 
 **Limit:** Correct formatting establishes neither human nor AI authorship.
 
+**Example format:** formatted
+
 
 ## Historical indicators
 
@@ -1540,11 +1590,11 @@ Source: Wikipedia PDF pp. 44–45. Related Vale rules: Narrative, Hedging.
 
 The text repeatedly tells readers that something is “important to note” or “worth remembering” before making a simple point. This was common in early chatbot responses.
 
-**Illustrative example:** It is important to note that requirements may vary.
+**Illustrative example:** It is important to note that applications close on Friday. It is worth remembering that late applications cannot be accepted. It is crucial to consider that the deadline applies to everyone.
 
-**What to notice:** “It is important to note” delays the simple point that requirements vary.
+**What to notice:** Every sentence begins by telling readers to pay attention. The repeated introductions slow down a short message about one deadline.
 
-**Editing guidance:** State the actual limitation or difference and provide the relevant context.
+**Editing guidance:** State the deadline or requirement directly. Keep an instruction to take note when it helps readers spot something they could otherwise miss.
 
 **Limit:** An explicit qualification may be necessary. This observation concerns earlier chatbot output and should not be assumed to apply to every current model.
 
@@ -1553,9 +1603,11 @@ The text repeatedly tells readers that something is “important to note” or �
 
 ### P080 Repetitive section summaries
 
+
 Source: Wikipedia PDF pp. 45. Related Vale rules: none directly implemented.
 
-Older long-form output ends sections by restating the same point, often under Conclusion or with In summary, In conclusion, or Overall.
+A section ends by repeating what it just said, often after “In summary,” “In conclusion” or “Overall.” The closing lines add length without drawing a useful conclusion.
+
 
 **Illustrative example:** The new timetable gives the team an extra week to prepare. This additional preparation time will help the team. In summary, the team will benefit from having more time to prepare.
 
@@ -1572,15 +1624,17 @@ Older long-form output ends sections by restating the same point, often under Co
 
 ### P081 The chatbot identifies itself or refuses to answer
 
+
 Source: Wikipedia PDF pp. 45–46. Related Vale rule: ChatbotCommunication.
 
-A copied response apologizes, identifies itself as a language model, refuses a request, or offers an alternative task.
+A finished passage contains text addressed to the person prompting the chatbot, such as an AI self-description, a refusal or an offer to do another task.
+
 
 **Illustrative example:** As an AI language model, I cannot do that, but I can draft an outline.
 
 **What to notice:** The response explicitly calls itself an AI language model. The assistant's refusal has been copied into the text.
 
-**Editing guidance:** Exclude correspondence from the article and inspect any replacement content independently.
+**Editing guidance:** Remove the exchange with the chatbot from the finished document and check any replacement content before using it.
 
 **Limit:** A quotation about AI behavior may intentionally contain this wording; historical frequency is not a current guarantee.
 
@@ -1589,19 +1643,21 @@ A copied response apologizes, identifies itself as a language model, refuses a r
 
 ### P082 Abrupt cutoffs
 
+
 Source: Wikipedia PDF pp. 46. Related Vale rules: none directly implemented.
 
-A response stops mid-thought, historically associated with output-length limits and a continue-generating interaction.
+A response stops in the middle of a sentence or argument. Earlier chatbots sometimes reached their output limit before finishing, leaving the user to ask them to continue.
+
 
 **Illustrative example:** The repairs will begin on Monday. The remaining work includes replacing the
 
-**What to notice:** The sentence ends after “replacing the.” The object of the sentence is missing.
+**What to notice:** The passage ends after “replacing the.” It never says what is being replaced.
 
 **Example context:** The passage stops in the middle of a sentence.
 
 **Editing guidance:** Recover the missing source text or remove the incomplete claim after checking context.
 
-**Limit:** Broken copying or an incomplete human draft can produce the same result; the source also mentions possible copying from copyrighted material.
+**Limit:** An incomplete draft, interrupted copy operation or accidental deletion can leave the same kind of unfinished sentence.
 
 
 <a id="p083"></a>
@@ -1614,7 +1670,7 @@ New references carry much older dates for when the writer supposedly checked the
 
 **Illustrative example:** Report submitted: 12 May 2025<br>Source accessed: 8 March 2024<br>Second source accessed: 8 March 2024
 
-**What to notice:** Both access dates are much older than the report. That is a reason to check the references, although old dates can be accurate.
+**What to notice:** Both references have the same old access date. It could have come from a copied source list, but it could also be accurate; the dates need checking before calling them errors.
 
 **Example context:** The dates may be genuine, but repeated old access dates are worth checking.
 
@@ -1625,7 +1681,7 @@ New references carry much older dates for when the writer supposedly checked the
 
 <a id="p084"></a>
 
-### P084 Elegant variation and forced synonyms
+### P084 Forced synonyms
 
 Source: Wikipedia PDF pp. 46–47. Related Vale rules: none directly implemented.
 
@@ -1637,9 +1693,9 @@ The same person, place or thing gets a new label in each sentence. The variety c
 
 **Example context:** Three labels refer to the same laboratory.
 
-**Editing guidance:** Use stable names and precise references when readers need continuity.
+**Editing guidance:** Choose a clear name for the subject and keep using it. Use a pronoun when the reference is obvious; change the label only when the distinction helps the reader.
 
-**Limit:** Some educational traditions discourage repetition. Separate generation sessions may not show the pattern.
+**Limit:** Writers may have been taught to avoid repeated words. Changing a label is useful when it marks a real distinction.
 
 
 ## Additional repository rules
@@ -1648,15 +1704,17 @@ The same person, place or thing gets a new label in each sentence. The variety c
 
 ### P085 Vague talk about aspects and dimensions
 
+
 Source: Repository configuration; see the rule register. Related Vale rule: AspectOveruse.
 
-Broad phrases such as “various aspects,” “many dimensions” or “multifaceted” stand in for naming the actual issues.
+Phrases such as “various aspects,” “many dimensions” and “multifaceted” promise detail without naming any of it.
 
-**Illustrative example:** We need to examine the various aspects of the design.
 
-**What to notice:** “Various aspects” does not identify what needs attention in the design.
+**Illustrative example:** The design review must consider various aspects of this multifaceted issue. Looking at its many dimensions will help us take a comprehensive approach.
 
-**Editing guidance:** Name the actual components or questions when possible.
+**What to notice:** The review is described through “various aspects,” “many dimensions” and a “comprehensive approach.” None names a question the review needs to answer.
+
+**Editing guidance:** Name the parts of the problem: cost, delivery time, accessibility or whatever actually needs review.
 
 **Limit:** Some broad descriptions are useful. The problem is leaving the relevant details unspecified.
 
@@ -1686,9 +1744,9 @@ Source: Repository configuration; see the rule register. Related Vale rule: Hedg
 
 Phrases such as “it is worth noting,” “clearly” and “without a doubt” repeatedly announce importance or certainty instead of supplying evidence.
 
-**Illustrative example:** It is worth noting the result. Clearly, it matters. Without a doubt, it will endure.
+**Illustrative example:** It is worth noting that the event was a success. Clearly, it made a difference. Without a doubt, its impact will last.
 
-**What to notice:** Each sentence announces importance or certainty. None supplies evidence for the claim.
+**What to notice:** The passage announces importance three times but never says what happened at the event or who benefited.
 
 **Editing guidance:** Delete empty preambles, state uncertainty accurately, and avoid unsupported certainty.
 
@@ -1737,7 +1795,7 @@ Sentences repeatedly describe what was done without naming who did it. Phrases s
 
 **What to notice:** The deadline changes and a decision is made, but no person or team is named as responsible.
 
-**Editing guidance:** Choose active or passive voice based on emphasis, agency, and clarity.
+**Editing guidance:** Name who made the decision when responsibility matters. Keep passive voice when the action or result is the point.
 
 **Limit:** Passive voice is often useful. Review whether it obscures responsibility rather than treating it as an authorship signal.
 
@@ -1754,7 +1812,7 @@ The phrase “so-called” is followed by quotation marks that add another layer
 
 **What to notice:** “So-called” already signals doubt. The quotation marks around “innovative” repeat that signal without explaining the objection.
 
-**Editing guidance:** Explain the criticism and attribution directly, or retain accurately justified distancing.
+**Editing guidance:** Explain the objection. For example: “The company calls the method innovative, but it uses the same process as its competitors.”
 
 **Limit:** Quotation marks can legitimately signal a disputed term. Make the basis for the skepticism clear.
 
@@ -1825,7 +1883,7 @@ Description: Phrases that make an ordinary fact sound historically important.
 | underscores its significance | The anniversary underscores its significance in the region’s history. |
 | highlights its importance | The new sign highlights its importance as a community landmark. |
 | highlights its significance | The renovation highlights its significance in the city’s evolving story. |
-| reflects broader | The shop’s new opening hours reflect broader shifts in modern society. |
+| reflects broader | The shop’s new schedule reflects broader shifts in modern society. |
 | symbolizing its ongoing | The annual picnic continues, symbolizing its ongoing commitment to togetherness. |
 | symbolizing its enduring | The bell still rings, symbolizing its enduring place in community life. |
 | symbolizing its lasting | The club meets each month, symbolizing its lasting influence on the town. |
@@ -1853,12 +1911,12 @@ Description: Phrases that advertise media attention without explaining what was 
 | --- | --- |
 | independent coverage | The founder has attracted independent coverage for her contributions to the industry. |
 | local media outlets | Local media outlets have highlighted the company’s growing influence. |
-| regional media outlets |  |
-| national media outlets |  |
-| media outlets in a named country |  |
-| music outlets |  |
-| business outlets |  |
-| tech outlets |  |
+| regional media outlets | Regional media outlets have celebrated the founder’s remarkable achievements. |
+| national media outlets | National media outlets have recognized the company as a force for change. |
+| media outlets in [country] | Media outlets in Canada have praised the project’s growing influence. |
+| music outlets | Music outlets have hailed the album as a landmark achievement. |
+| business outlets | Business outlets have described the founder as a visionary leader. |
+| tech outlets | Tech outlets have called the service a breakthrough in modern working life. |
 | trade publications | The project has been featured in prominent trade publications. |
 | cited in | Her work has been cited in several respected publications. |
 | featured in | The startup has been featured in leading business outlets. |
@@ -1927,9 +1985,9 @@ Description: Phrases that leave a person’s actual role unexplained.
 | Word or phrase | Example sentence |
 | --- | --- |
 | in connection with | She was mentioned in connection with the institute’s leadership. |
-| in connection to |  |
+| in connection to | His name appears in connection to several prominent initiatives. |
 | connected with | He was connected with several major cultural initiatives. |
-| connected to |  |
+| connected to | She was connected to a number of important cultural projects. |
 | in association with | The work was developed in association with regional leaders. |
 | associated with | She was associated with the company during a period of growth. |
 | particularly associated | The artist is particularly associated with the city’s creative scene. |
@@ -1941,7 +1999,7 @@ Source: S01. Wikipedia: Signs of AI writing.
 
 Title: Unnamed experts and observers
 
-Description: Claims assigned to experts, observers or reports that are never named.
+Description: Unnamed experts, vague sources and wording that makes a small set of examples sound like broader evidence.
 
 | Word or phrase | Example sentence |
 | --- | --- |
@@ -1951,7 +2009,7 @@ Description: Claims assigned to experts, observers or reports that are never nam
 | some critics argue | Some critics argue that the decision marks a turning point. |
 | several sources | Several sources describe the scheme as a remarkable success. |
 | several publications | Several publications have praised the company’s approach. |
-| such as | The only two sites, such as the north depot and south depot, have closed. |
+| such as | The investigation covered only two depots. It found problems at facilities such as the north and south depots. |
 
 ### Challenges and prospects
 
@@ -2027,7 +2085,7 @@ Description: Longer substitutes for “is” and “has” can make straightforw
 | features | The office features two windows. |
 | maintains | The club maintains an active membership of twelve people. |
 | offers | The park offers a small playground. |
-| refers to | The term refers to the process of recording expenses. |
+| refers to | Westford Library refers to a community hub with four reading rooms. |
 | ventured into politics as a candidate | She ventured into politics as a candidate for the town council. |
 | began his career as | He began his career as a clerk in the records office. |
 
@@ -2064,13 +2122,13 @@ Description: Stock phrases about unavailable information, search results or trai
 | up to my last training update | Up to my last training update, no further details were available. |
 | as of my last knowledge update | As of my last knowledge update, the project was still in development. |
 | specific details are limited | While specific details are limited, the organization appears to remain active. |
-| specific details are scarce |  |
+| specific details are scarce | Specific details are scarce, but the project appears to have had a lasting influence. |
 | not widely available | Information about her early career is not widely available. |
-| not widely documented |  |
-| not widely disclosed |  |
+| not widely documented | His early work is not widely documented, though its importance is clear. |
+| not widely disclosed | The figures are not widely disclosed, but the business is believed to be thriving. |
 | in the provided sources | In the provided sources, the date is not clearly established. |
-| in the available sources |  |
-| in the search results |  |
+| in the available sources | In the available sources, the date is unclear. |
+| in the search results | No opening date appears in the search results. |
 | should be treated as | This claim should be treated as an estimate rather than a confirmed result. |
 | based on available information | Based on available information, the company continues to operate. |
 | maintains a low profile | Little is known about his family because he maintains a low profile. |
@@ -2082,7 +2140,7 @@ Source: S01. Wikipedia: Signs of AI writing.
 
 Title: Claims that an edit meets every standard
 
-Description: Phrases that claim a document has improved without naming an actual correction.
+Description: Editing notes that praise the revised document but do not say what changed.
 
 | Word or phrase | Example sentence |
 | --- | --- |
@@ -2096,15 +2154,15 @@ Description: Phrases that claim a document has improved without naming an actual
 | in compliance with | The article is now in compliance with all relevant guidelines. |
 | complies with | The text complies with the required editorial standards. |
 | editorial guidelines | Revised the article to meet the editorial guidelines. |
-| editorial style |  |
-| editorial standards |  |
-| revised |  |
-| verifiability |  |
-| neutrality |  |
-| neutral tone |  |
-| encyclopedic tone |  |
-| clarity |  |
-| flow |  |
+| editorial style | Adjusted the editorial style to ensure a polished and professional result. |
+| editorial standards | Updated the document to meet the highest editorial standards. |
+| revised | Revised the text to improve its overall effectiveness. |
+| verifiability | Improved verifiability throughout the article by strengthening its foundation. |
+| neutrality | Enhanced neutrality while retaining the article’s essential character. |
+| neutral tone | Ensured a neutral tone across all sections. |
+| encyclopedic tone | Refined the language to maintain a consistent encyclopedic tone. |
+| clarity | Improved clarity to provide a more effective reading experience. |
+| flow | Enhanced the flow while preserving the document’s original intent. |
 
 ### Edit summary procedural language
 
@@ -2112,7 +2170,7 @@ Source: S01. Wikipedia: Signs of AI writing.
 
 Title: Listing what stayed the same
 
-Description: Phrases about the parts an editor preserved or avoided changing.
+Description: Editing notes that spend more time listing what stayed the same than explaining the change.
 
 | Word or phrase | Example sentence |
 | --- | --- |
@@ -2133,26 +2191,26 @@ Source: S01. Wikipedia: Signs of AI writing.
 
 Title: Saying the work has sources
 
-Description: Phrases that praise the sources without explaining what they establish.
+Description: Editing notes that announce reliable sourcing without identifying a source or the fact it supports.
 
 | Word or phrase | Example sentence |
 | --- | --- |
 | added sourced information | Added sourced information to improve the article’s reliability. |
-| added sourced content |  |
-| added sourced infobox |  |
-| added sourced section |  |
+| added sourced content | Added sourced content to provide a more comprehensive account. |
+| added sourced infobox | Added sourced infobox details to improve the overview. |
+| added sourced section | Added a sourced section to strengthen the article. |
 | added verified information | Added verified information from reliable publications. |
-| added verified content |  |
-| added verified infobox |  |
-| added verified section |  |
-| added coverage |  |
+| added verified content | Added verified content to improve accuracy and depth. |
+| added verified infobox | Added verified infobox details for a clearer summary. |
+| added verified section | Added a verified section to improve the coverage. |
+| added coverage | Added coverage of the subject’s broader impact. |
 | added citations | Added citations to ensure comprehensive sourcing. |
-| added references |  |
+| added references | Added references to ensure comprehensive support. |
 | improved attribution | Improved attribution throughout the article. |
 | independent sources | Strengthened the article with independent sources. |
-| secondary sources |  |
-| third-party sources |  |
-| peer-reviewed sources |  |
+| secondary sources | Strengthened the account through the use of secondary sources. |
+| third-party sources | Incorporated third-party sources to support the article’s reliability. |
+| peer-reviewed sources | Added peer-reviewed sources to ensure a rigorous account. |
 
 ### Historical didactic disclaimers
 
@@ -2167,12 +2225,12 @@ Description: Stock introductions that delay the point.
 | it’s important to note | It’s important to note that results may vary. |
 | it’s important to remember | It’s important to remember that every situation is unique. |
 | it’s important to consider | It’s important to consider the broader context. |
-| it’s critical to note |  |
-| it’s critical to remember |  |
-| it’s critical to consider |  |
-| it’s crucial to note |  |
-| it’s crucial to remember |  |
-| it’s crucial to consider |  |
+| it’s critical to note | It’s critical to note that teamwork makes a difference. |
+| it’s critical to remember | It’s critical to remember that change takes time. |
+| it’s critical to consider | It’s critical to consider the many factors at play. |
+| it’s crucial to note | It’s crucial to note that every situation is different. |
+| it’s crucial to remember | It’s crucial to remember the value of a shared vision. |
+| it’s crucial to consider | It’s crucial to consider the wider implications of this decision. |
 | worth noting | It is worth noting that several factors may influence the outcome. |
 | may vary | Individual experiences may vary depending on the circumstances. |
 
@@ -2186,9 +2244,9 @@ Description: Familiar openings for conclusions that repeat what the reader just 
 
 | Word or phrase | Example sentence |
 | --- | --- |
-| In summary | In summary, the project demonstrates the importance of collaboration and shared purpose. |
-| In conclusion | In conclusion, this topic plays a crucial role in our understanding of the world. |
-| Overall | Overall, the initiative highlights the value of a comprehensive approach. |
+| In summary | The team benefited from working together. In summary, the project demonstrates the importance of collaboration and shared purpose. |
+| In conclusion | This topic helps us understand the world. In conclusion, it plays a crucial role in our understanding of the world. |
+| Overall | The initiative shows the value of a comprehensive approach. Overall, taking a comprehensive approach proved valuable. |
 
 ### Historical refusals
 
@@ -2241,9 +2299,9 @@ Description: Words that became familiar in earlier chatbot responses, from “de
 | fostering | The program is fostering a culture of meaningful collaboration. |
 | highlighting | The museum added a room, highlighting its profound commitment to access. |
 | showcasing | The event celebrates local talent, showcasing a remarkable spirit of creativity. |
-| causal |  |
-| empirical |  |
-| correlate |  |
+| causal | The study found a correlation, but it did not establish a causal link. |
+| empirical | We need empirical evidence before choosing between the two explanations. |
+| correlate | Sales and advertising spend may correlate without one causing the other. |
 
 ### Comment formulas and profile headings
 
@@ -2251,26 +2309,26 @@ Source: S01. Wikipedia: Signs of AI writing.
 
 Title: Stock replies and profile headings
 
-Description: Familiar openings and labels that can make unrelated messages sound alike.
+Description: Repeated greetings, stock replies and profile labels. A familiar heading is ordinary; a whole message assembled from these formulas can feel impersonal.
 
 | Word or phrase | Example sentence |
 | --- | --- |
 | I understand your concerns | I understand your concerns about the quality of my contribution. |
 | I understand that my contributions may be perceived as | I understand that my contributions may be perceived as overly formal. |
 | can enhance the article | These changes can enhance the article’s clarity and readability. |
-| could enhance the article |  |
-| will enhance the article |  |
-| would enhance the article |  |
+| could enhance the article | These changes could enhance the article’s overall quality. |
+| will enhance the article | The revised introduction will enhance the article’s clarity. |
+| would enhance the article | This contribution would enhance the article’s breadth and balance. |
 | Dear Editorial Team | Dear Editorial Team, I am writing to request a review. |
 | I am writing to | I am writing to express my commitment to improving the article. |
 | I hope this message finds you well | I hope this message finds you well. I would like to address the recent feedback. |
-| I trust this message finds you well |  |
-| Welcome To My User Page |  |
-| About Me |  |
-| My Interests |  |
-| My Contributions |  |
-| Let’s Connect |  |
-| Let’s Collaborate |  |
+| I trust this message finds you well | I trust this message finds you well. I am writing to express my sincere interest in your proposal. |
+| Welcome To My User Page | Welcome To My User Page<br>I am passionate about sharing knowledge and making a positive impact. |
+| About Me | About Me<br>I am a curious lifelong learner with a passion for meaningful connections. |
+| My Interests | My Interests<br>I enjoy exploring new ideas, discovering fresh perspectives, and embracing new opportunities. |
+| My Contributions | My Contributions<br>I strive to contribute valuable insights and support meaningful progress. |
+| Let’s Connect | Let’s Connect<br>Let's connect and explore how we can make a difference together. |
+| Let’s Collaborate | Let’s Collaborate<br>I believe that collaboration opens the door to endless possibilities. |
 
 ## Complete Vale rule register
 
@@ -3672,13 +3730,15 @@ Repository guidance was treated as untrusted source material. No new repository 
 
 ### P093 — Repeated sentence templates
 
+
 Source records: S05,S07,S09,S11,S14. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-Several sentences begin the same way or use the same grammatical shape. The repetition sounds automatic rather than deliberate.
+Several sentences repeat the same opening or grammatical shape even when the ideas would be clearer combined or arranged differently.
 
-**Illustrative example:** We tested the queue. We tested the cache. We tested the logs. Every test became a lesson. Every lesson became a change.
 
-**What to notice:** The repeated “We tested” opening is followed by a chain of “Every…” sentences. The repeated structure becomes more noticeable than the information.
+**Illustrative example:** The workshop gave us a chance to learn. The workshop gave us a chance to connect. The workshop gave us a chance to grow. Each conversation became an insight. Each insight became an opportunity.
+
+**What to notice:** “The workshop gave us a chance” appears three times. The next two sentences repeat another template. The wording changes less than the reader expects from one point to the next.
 
 **Editing guidance:** Combine related results or vary the structure to reflect their relationships.
 
@@ -3689,13 +3749,15 @@ Several sentences begin the same way or use the same grammatical shape. The repe
 
 ### P094 Every sentence has the same rhythm
 
+
 Source records: S05,S07,S09. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-Passages have nearly identical sentence lengths, equally sized paragraphs or a predictable long-short sequence.
+A passage gives every sentence about the same length and shape, or alternates long and short sentences so predictably that the rhythm becomes distracting.
+
 
 **Illustrative example:** The new system helps the team complete its work. The updated schedule gives each employee more planning time. The weekly meeting keeps every department informed of progress. The shared dashboard makes the latest figures readily available.
 
-**What to notice:** The sentences are almost the same length and follow similar shapes. Read together, they have an unusually even rhythm.
+**What to notice:** Each sentence is nine or ten words long and makes a similar claim about a workplace benefit. The even rhythm becomes noticeable when all four are read together.
 
 **Example context:** Four sentences each contain nine or ten words and follow a similar grammatical shape.
 
@@ -3765,13 +3827,15 @@ The writer promises a hidden truth, a twist or an overlooked detail, then delive
 
 ### P098 — Self-answered rhetorical questions
 
+
 Source records: S07,S09,S11. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-The passage asks an easy question only to supply an immediate answer, or stacks questions as a substitute for analysis.
+The writer asks a question and immediately answers it, often in a repeated question-and-answer rhythm that leaves the reasoning unexplained.
+
 
 **Illustrative example:** Is the process perfect? No. Does it work? Absolutely.
 
-**What to notice:** The writer asks questions that require little thought, then supplies emphatic answers. The exchange substitutes rhythm for explanation.
+**What to notice:** The writer asks two broad questions and answers them with “No” and “Absolutely.” Nothing explains how well the process works or where it falls short.
 
 **Editing guidance:** Explain the result and its limits directly.
 
@@ -3797,17 +3861,19 @@ The writer repeatedly announces that they are being honest or tells the reader t
 
 <a id="p100"></a>
 
-### P100 Pretending to know the reader
+### P100 Assuming the reader's thoughts and feelings
+
 
 Source records: S07,S09,S11. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-The narrator claims to know the reader's private thoughts or invites a simulated shared experience.
+A writer tells readers what they already know, think or feel without establishing any shared experience.
+
 
 **Illustrative example:** You already know what the dashboard is hiding. We have all felt it.
 
 **What to notice:** The narrator assumes knowledge of the reader's thoughts and feelings without having been told them.
 
-**Editing guidance:** Address the reader's actual task without inventing shared feelings.
+**Editing guidance:** Describe the situation or ask what the reader thinks. Do not assign feelings to someone you do not know.
 
 **Limit:** Established relationships and personal essays may justify familiarity.
 
@@ -3820,9 +3886,9 @@ Source records: S07,S09,S11. Practitioner heuristic unless a study-specific qual
 
 The response validates feelings or offers comfort even though the reader has not asked for emotional support.
 
-**Illustrative example:** Your spreadsheet anxiety is real. You are not alone. Sit with that.
+**Illustrative example:** Question: How do I freeze the top row in my spreadsheet?<br>Answer: Your spreadsheet anxiety is valid. You are not alone in this journey, and it is okay to take things one step at a time.
 
-**What to notice:** The response treats a spreadsheet problem as an emotional experience needing validation. No one has asked for that reassurance.
+**What to notice:** The question asks for a software instruction. The answer invents anxiety and offers emotional support instead of the requested steps.
 
 **Editing guidance:** Offer relevant help; retain reassurance when the context calls for it.
 
@@ -3833,9 +3899,11 @@ The response validates feelings or offers comfort even though the reader has not
 
 ### P102 — Presenting one idea as the whole answer
 
+
 Source records: S09,S11. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-The entire problem, the whole point or the only answer compresses a complex issue into a slogan.
+A complex question is reduced to “the whole point,” “the only answer” or another sweeping claim that leaves the practical work unexplained.
+
 
 **Illustrative example:** The entire strategy is trust. That is the whole game.
 
@@ -3854,11 +3922,11 @@ Source records: S09,S11. Practitioner heuristic unless a study-specific qualific
 
 A stock first-person endorsement lends authority without supplying experience or reasons.
 
-**Illustrative example:** The only dashboard I trust is the one that makes me uncomfortable.
+**Illustrative example:** This is the only planning app I trust. Once you have tried it, nothing else comes close.
 
-**What to notice:** The narrator offers a personal endorsement without describing any experience that would justify it.
+**What to notice:** The endorsement sounds personal, but it gives no experience, feature or comparison that explains the preference.
 
-**Editing guidance:** Explain the criteria used to judge the dashboard.
+**Editing guidance:** Explain what worked, what you used it for and why you preferred it.
 
 **Limit:** A real personal preference is not suspicious by itself.
 
@@ -3871,9 +3939,9 @@ Source records: S09,S11. Practitioner heuristic unless a study-specific qualific
 
 A request to check the claim is used as a rhetorical flourish without giving a useful way to do so.
 
-**Illustrative example:** Do not take my word for it. The results speak for themselves.
+**Illustrative example:** Our approach delivers better results. Do not take my word for it; the numbers speak for themselves.
 
-**What to notice:** The sentence invites verification, then supplies no result or source that the reader can check.
+**What to notice:** The writer appeals to numbers but supplies none. The invitation to verify the claim gives readers nothing to check.
 
 **Editing guidance:** Provide the actual results and a usable source.
 
@@ -3888,11 +3956,11 @@ Source records: S09,S11. Practitioner heuristic unless a study-specific qualific
 
 A software description promises that everything will be simple without explaining what the product does or what setup it needs.
 
-**Illustrative example:** It fits in your head, just works and comes with batteries included.
+**Illustrative example:** The app just works. Everything is built in, so you can go from idea to impact without the usual complexity.
 
-**What to notice:** The promises suggest easy software without describing setup, limitations or actual features.
+**What to notice:** “Just works” and “everything is built in” promise convenience without naming a feature or explaining the setup.
 
-**Editing guidance:** List the supported workflow, included components and configuration defaults.
+**Editing guidance:** Name the task the software handles, the components it includes and any setup the user must complete.
 
 **Limit:** These idioms are common in longstanding human software documentation.
 
@@ -3939,22 +4007,24 @@ Source records: S09,S11. Practitioner heuristic unless a study-specific qualific
 
 The second half of a contrast ends with a short verb such as “did,” “was” or “does.” Repeating this device gives ordinary statements a dramatic finish.
 
-**Illustrative example:** The forecast failed. The team did not.
+**Illustrative example:** The forecast failed. The team did not. The old process collapsed. Their resolve did not. The plan changed. Their commitment did not.
 
-**What to notice:** The second sentence borrows its meaning from the first and ends abruptly. The contrast gives the statement a polished, dramatic finish.
+**What to notice:** Three contrasts end with the same short “did not.” The repeated finish turns each point into a slogan without explaining how the team responded.
 
-**Editing guidance:** Use the ellipsis only when its meaning is clear and its emphasis earned.
+**Editing guidance:** Check that the omitted verb is easy to recover. Use a fuller sentence when the short ending obscures what actually happened.
 
-**Limit:** This is ordinary English ellipsis, not an authorship test.
+**Limit:** This is a normal way to avoid repeating a verb. Repetition of the device matters more than a single use.
 
 
 <a id="p109"></a>
 
 ### P109 Turning routine work into a life lesson
 
+
 Source records: S07,S11. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-A work incident is forced into a personal growth story, humble announcement or leadership moral. Includes privilege of, taught me and not in the job description.
+A routine work story ends with a broad lesson about leadership, gratitude or personal growth that the incident has not established.
+
 
 **Illustrative example:** I had the privilege of fixing a printer. It taught me what leadership really means.
 
@@ -3969,13 +4039,15 @@ A work incident is forced into a personal growth story, humble announcement or l
 
 ### P110 Empty invitations to react
 
+
 Source records: S11. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-A generic request for reactions or a one-of-those opening simulates conversation while adding little information.
+A post ends with a generic invitation such as “Thoughts?” or “Curious what others think” without identifying anything readers could usefully discuss.
 
-**Illustrative example:** It was one of those days. Curious what others think.
 
-**What to notice:** “One of those days” assumes a shared experience without describing the day. The request for reactions has little for readers to respond to.
+**Illustrative example:** A productive day with the team. Good conversations, fresh perspectives and plenty to think about. Curious what others think.
+
+**What to notice:** Readers have not been told what happened or what decision needs their input. The invitation creates the appearance of a conversation without starting one.
 
 **Editing guidance:** State the experience; ask a question with a clear purpose if feedback is needed.
 
@@ -4007,9 +4079,9 @@ Source records: S05,S07,S11. Practitioner heuristic unless a study-specific qual
 
 Conflict gives way to generic hope, togetherness, belonging or a tidy happy ending regardless of the preceding evidence.
 
-**Illustrative example:** Whatever came next, they would face it together. For now, that was enough.
+**Illustrative example:** The family still could not pay the rent, and no one had found another job. Yet they knew that, together, they could weather any storm. For now, that was enough.
 
-**What to notice:** The ending offers hope and togetherness without resolving the particular problem in the story.
+**What to notice:** The financial problem remains unchanged. The ending replaces that unresolved situation with a ready-made message about togetherness.
 
 **Editing guidance:** End at the actual outcome, including unresolved matters.
 
@@ -4083,9 +4155,9 @@ Source records: S03,S05,S07. Practitioner heuristic unless a study-specific qual
 
 The narrator explains an emotion or moral already apparent from the action, leaving little for the reader to infer.
 
-**Illustrative example:** She returned his unopened letters. This showed that she no longer trusted him.
+**Illustrative example:** She tore up his letters and told him never to contact her again. This showed that she was angry and wanted him out of her life.
 
-**What to notice:** Returning the letters already suggests damaged trust. The next sentence tells the reader how to interpret it.
+**What to notice:** The action and dialogue have already made her feelings clear. The final sentence explains what the reader has just understood.
 
 **Editing guidance:** Let the action carry the inference unless explanation adds necessary context.
 
@@ -4096,9 +4168,11 @@ The narrator explains an emotion or moral already apparent from the action, leav
 
 ### P117 Missing specific details
 
+
 Source records: S03,S05. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-A passage substitutes generalized descriptions for observed particulars, motives, memories or the character's own perception.
+The writing names an emotion or situation only in broad terms, leaving readers unable to picture what happened or why it mattered.
+
 
 **Illustrative example:** He felt many complex emotions about the difficult situation.
 
@@ -4123,7 +4197,7 @@ The passage repeats its point, preferred words or transitions without adding evi
 
 **Example context:** Each sentence returns to the same claim.
 
-**Editing guidance:** Remove duplicate propositions and keep repetition that serves comprehension.
+**Editing guidance:** Keep the clearest statement of the point. Use the next sentence for a result, an example or a qualification that adds something.
 
 **Limit:** Technical terminology should remain consistent rather than being replaced with synonyms.
 
@@ -4132,9 +4206,11 @@ The passage repeats its point, preferred words or transitions without adding evi
 
 ### P119 General statements that say little
 
+
 Source records: S08,S12. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-Long passages offer statements broad enough to fit almost any topic, with little usable information.
+A sentence sounds reasonable but could fit almost any subject. It names no specific action, cause, result or decision.
+
 
 **Illustrative example:** Many factors influence outcomes, and considering them can support better decisions.
 
@@ -4142,7 +4218,7 @@ Long passages offer statements broad enough to fit almost any topic, with little
 
 **Editing guidance:** Name the factor, decision and evidence relevant to this case.
 
-**Limit:** A high-level overview can be useful if it is the requested deliverable.
+**Limit:** An overview can be useful when it names the subject and gives readers a direction. Breadth alone is not the problem.
 
 
 <a id="p120"></a>
@@ -4168,9 +4244,11 @@ The text discusses the broad subject while failing to address the reader's quest
 
 ### P121 Smooth transitions between unrelated ideas
 
+
 Source records: S03,S08. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-Sentences sound related but do not develop a coherent argument or consistent narrative.
+Words such as “therefore” or “furthermore” make adjacent sentences sound connected even though the argument does not explain the connection.
+
 
 **Illustrative example:** The server is slow. Furthermore, customers value trust. Consequently, the office needs more light.
 
@@ -4221,11 +4299,13 @@ Different speakers sound like the narrator or each other, with identical polish,
 
 ### P124 — A tone that does not fit the situation
 
+
 Source records: S05,S08,S14. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-The voice stays formal, detached or promotional in contexts requiring a different tone; contractions, slang and ordinary abbreviations disappear.
+The wording does not fit the relationship or occasion: a casual request becomes a formal notice, or a serious problem receives a cheerful sales pitch.
 
-**Illustrative example:** Please be advised that our household milk supply has been depleted. Your attention to replenishment would be greatly appreciated.
+
+**Illustrative example:** Message to a housemate: Please be advised that our household milk supply has been depleted. Your attention to replenishment would be greatly appreciated.
 
 **What to notice:** A request to buy milk sounds like a formal notice. The wording does not fit an ordinary conversation between housemates.
 
@@ -4237,22 +4317,26 @@ The voice stays formal, detached or promotional in contexts requiring a differen
 
 **Additional examples:**
 
-- **Avoiding contractions:** It is time to review the plan. We do not need another meeting. There is no reason to wait.
+- **Avoiding contractions:** Message to a housemate: I am writing to inform you that we do not have milk. It would be appreciated if you would obtain some on your return.
 
 Source records: S22 and S23; supplied variants merged into this entry.
+
+- **A sales pitch in an apology:** We are excited to turn your missing delivery into an opportunity to demonstrate our commitment to customer care.
 
 
 <a id="p125"></a>
 
 ### P125 Making every experience sound positive
 
+
 Source records: S05,S14. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-Every situation is handled with neutral or positive phrasing, without the humour, discomfort, anger or ambiguity the subject would warrant.
+A painful or difficult event is recast as growth, opportunity or a positive shared experience before the writing acknowledges what happened.
 
-**Illustrative example:** The argument left the siblings with valuable opportunities for growth and a deeper appreciation of their shared journey.
 
-**What to notice:** The family argument becomes a cheerful opportunity for growth. The wording avoids the hurt or disagreement the situation would normally involve.
+**Illustrative example:** After the argument, Maya moved out and refused to speak to her brother. The experience gave them valuable opportunities for growth and a deeper appreciation of their shared journey.
+
+**What to notice:** Moving out and refusing contact are the only consequences shown. The next sentence turns the dispute into personal growth without explaining how either sibling reached that point.
 
 **Example context:** A painful family dispute is smoothed into cheerful, generic language.
 
@@ -4265,13 +4349,15 @@ Every situation is handled with neutral or positive phrasing, without the humour
 
 ### P126 — Giving both sides equal weight by default
 
+
 Source records: S05,S08,S14. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-The text presents equal sides mechanically or avoids a justified perspective. The opposite problem is a confident one-sided claim without support.
+The writer gives opposing claims equal weight without considering whether the evidence supports them equally.
 
-**Illustrative example:** The delivery was due on Monday and arrived on Friday. Both sides offer equally valid perspectives on whether it was late.
 
-**What to notice:** The dates establish that the delivery was late. The appeal to “equally valid perspectives” creates an unnecessary balance.
+**Illustrative example:** The delivery was due on Monday and arrived four days later. Both sides offer equally valid perspectives on whether it was late.
+
+**What to notice:** The delivery arrived four days after its due date. Calling both positions “equally valid” introduces doubt that the stated facts do not support.
 
 **Example context:** The second sentence manufactures uncertainty despite the dates already given.
 
@@ -4284,9 +4370,11 @@ The text presents equal sides mechanically or avoids a justified perspective. Th
 
 ### P127 Descriptions that could fit any place
 
+
 Source records: S05,S14. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-Examples and stories avoid specific cultural references, personal observations, callbacks or surprising but relevant details.
+A description relies on friendly people, welcoming streets or community spirit without naming anything that distinguishes the place.
+
 
 **Illustrative example:** Our neighborhood is a place where friendly people come together. Its welcoming streets reflect a strong sense of community and a shared commitment to the future.
 
@@ -4311,24 +4399,26 @@ The same person is repeatedly introduced by full name or title, or every authori
 
 **What to notice:** The full name and title repeat in every sentence, even though the reader already knows who is being discussed.
 
-**Editing guidance:** After a clear introduction, use the appropriate shorter reference.
+**Editing guidance:** Introduce the person clearly, then use a surname, role or pronoun where the reference remains clear.
 
 **Limit:** Professional and legal conventions may require repetition. Name ethnicity is not an acceptable authorship cue.
 
 
 <a id="p129"></a>
 
-### P129 — Nouns piled on nouns
+### P129 — Actions buried in abstract nouns
+
 
 Source records: S11. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-Actions are turned into abstract nouns and stacked together. It becomes hard to see who is doing what.
+Actions become nouns such as “implementation” and “evaluation.” Stacking them makes it harder to see who needs to do what.
 
-**Illustrative example:** Implementation of the optimisation requires coordination of the evaluation of the integration.
 
-**What to notice:** “Implementation,” “coordination,” “evaluation” and “integration” turn actions into a chain of nouns. It is hard to see who needs to do what.
+**Illustrative example:** Completion of the implementation requires coordination of the evaluation of the new booking process.
 
-**Editing guidance:** Name the actor and use a verb where it improves clarity.
+**What to notice:** “Completion,” “implementation,” “coordination” and “evaluation” obscure a simple question: who needs to review and finish the booking process?
+
+**Editing guidance:** Name the person or team, then use direct verbs: “The booking team must review the process before finishing the rollout.”
 
 **Limit:** Technical and legal nouns often carry necessary precision.
 
@@ -4337,40 +4427,46 @@ Actions are turned into abstract nouns and stacked together. It becomes hard to 
 
 ### P130 Punctuation that makes the passage hard to follow
 
+
 Source records: S05,S11,S14. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-Sentences repeatedly leave out helpful punctuation or use the same punctuation pattern regardless of their meaning.
+The punctuation gives readers too little help separating the main point from qualifications, interruptions or additional claims.
 
-**Illustrative example:** The proposal which the team discussed last week and which the manager revised after the meeting will go ahead if the budget that finance approved is still available.
 
-**What to notice:** Several long qualifications interrupt the main point without punctuation to guide the reader.
+**Illustrative example:** After the meeting ended the director thanked the team everyone assumed the proposal had been approved nobody checked the minutes.
 
-**Example context:** Several interruptions are left unmarked, making the sentence harder to follow.
+**What to notice:** Three separate events run together: the director thanks the team, people assume approval, and nobody checks the record. Sentence breaks would make those events easier to follow.
+
+**Example context:** Several complete claims run together without sentence breaks.
 
 **Editing guidance:** Punctuate for meaning; examine the passage rather than counting one symbol.
 
-**Limit:** The sources disagree on punctuation direction. Treat these as corpus-specific measurements.
+**Limit:** Punctuation varies by genre and writer. Look for a reading problem before treating a punctuation habit as a defect.
 
 **Additional examples:**
 
-- **The same punctuation throughout:** The hotel offers a pool and a restaurant. Guests can visit the beach. The rooms provide comfortable accommodation. The area has several attractions.
+- **The same punctuation throughout:** The team met. On Tuesday. To review the plan. Which had changed. Since Monday. The manager approved it. Without the figures. That would show the cost.
 
 Source records: S22 and S23; supplied variants merged into this entry.
+
+- **Separate claims run together:** The plan is ready, the team has approved it, the supplier has agreed, we can start on Monday, everything is in place.
 
 
 <a id="p131"></a>
 
 ### P131 — Sentences too long for their content
 
+
 Source records: S03,S05,S11. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-Long clause chains or run-on sentences obscure the main claim.
+Several clauses interrupt or extend a sentence until readers lose track of its main action.
+
 
 **Illustrative example:** The team, which reviewed the logs, which had arrived late, which complicated the review, approved the change.
 
 **What to notice:** Three “which” clauses delay the main action: the team approved the change.
 
-**Editing guidance:** Separate distinct claims and preserve necessary dependencies.
+**Editing guidance:** Put the main action near the start. Give a separate sentence to background information that deserves its own point.
 
 **Limit:** Sentence length depends strongly on genre, language and intended readership.
 
@@ -4413,9 +4509,11 @@ Every, always, never or nobody is used for rhetorical force where the evidence s
 
 ### P134 Announcing what the document will say
 
+
 Source records: S07,S11,S14. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-The writer describes what the article will discuss or how the reader should follow it instead of advancing the subject.
+The writer previews an explanation instead of giving it, sometimes repeating what the heading has already made clear.
+
 
 **Illustrative example:** In this section, we will explore the points that will be discussed below.
 
@@ -4430,17 +4528,19 @@ The writer describes what the article will discuss or how the reader should foll
 
 ### P135 — Trying to address everyone at once
 
+
 Source records: S11. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-Whether-you-are openings or think-of-it-as metaphors promise universal relevance without examining the audience.
+An opening claims to suit beginners, experts and everyone in between, but never identifies the reader’s actual task or level of experience.
 
-**Illustrative example:** Whether you are a beginner or an expert, think of the budget as a compass.
 
-**What to notice:** The opening addresses beginners and experts together, then uses a familiar compass metaphor. It gives neither group specific help.
+**Illustrative example:** Whether you are a complete beginner or an experienced professional, this guide will give you everything you need to take your work to the next level.
 
-**Editing guidance:** Specify who needs the advice and explain the actual mechanism.
+**What to notice:** The promise covers every reader and every need. It does not say what the guide teaches or who will find it useful.
 
-**Limit:** A well-chosen analogy can make a difficult idea accessible.
+**Editing guidance:** Identify the task the guide covers and the experience or knowledge readers need. Let sections for different audiences say who they serve.
+
+**Limit:** A guide can serve beginners and experts when it gives each group suitable material. The empty promise is the problem, not the breadth of the audience.
 
 
 <a id="p136"></a>
@@ -4462,30 +4562,34 @@ A small concession is immediately followed by reassurance, making the qualificat
 
 <a id="p137"></a>
 
-### P137 The same group of words keeps appearing
+### P137 Stock vocabulary repeated across a passage
+
 
 Source records: S11,S13. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-A passage draws repeatedly on a particular group of words. A pattern across the whole passage can be more revealing than any single word, especially when comparing writing on the same subject.
+Across several paragraphs, the writing keeps returning to the same words of praise. Each word may be harmless on its own; the repeated combination can give a long piece a uniform, generic voice.
 
-**Illustrative example:** The boundary is load-bearing. The fallback silently absorbs the mismatch. The invariant remains intact, but the abstraction leaks at the call site.
 
-**What to notice:** The passage packs together terms from software development. Many have precise technical uses; the observation concerns a repeated cluster, not a banned-word list.
+**Illustrative example:** The plan offers a thoughtful way to make meaningful progress.<br><br>Its phased approach creates a dependable path to steady improvement, with thoughtful support at every step.<br><br>Together, these meaningful changes lay a dependable foundation for steady progress.
 
-**Example context:** The interest is in the concentration of vocabulary. Each term can also be correct technical language.
+**What to notice:** “Thoughtful,” “meaningful,” “dependable” and “steady” recur across the paragraphs. The praise continues, but the reader still does not know what the plan involves.
 
-**Editing guidance:** Use the measurement only within its validated population, if any. Review actual meaning before editing.
+**Example context:** The same words of praise recur across three paragraphs.
 
-**Limit:** A fitted list is not a banned-word list and does not establish authorship.
+**Editing guidance:** Replace general praise with the actual action or result. Keep any listed word that communicates a precise meaning.
+
+**Limit:** Vocabulary measurements concern combinations and rates within particular writing samples. They do not make each word a sign of AI.
 
 
 <a id="p138"></a>
 
 ### P138 Too many linking phrases
 
+
 Source records: S05,S07,S11,S14. Practitioner heuristic unless a study-specific qualification is given in the evidence notes below.
 
-The passage repeatedly inserts a transition regardless of whether it expresses a real relationship.
+Transitions arrive so often that the passage sounds like a sequence of introductions. The words connect sentences without adding a clear relationship between the ideas.
+
 
 **Illustrative example:** Furthermore, the plan supports growth. Additionally, it encourages progress. Moreover, it creates opportunities. Ultimately, these benefits demonstrate its value.
 
@@ -4493,7 +4597,7 @@ The passage repeatedly inserts a transition regardless of whether it expresses a
 
 **Example context:** Transitions keep arriving, but the claims remain broad and repetitive.
 
-**Editing guidance:** Use a transition only where it identifies the logical relationship.
+**Editing guidance:** Keep a transition when it tells readers something useful, such as a cause, contrast or sequence. Remove one that only announces another sentence.
 
 **Limit:** An isolated transition is weak evidence; see P075.
 
@@ -4544,11 +4648,11 @@ Description: Repeated ways to dismiss one description and announce another.
 
 | Word or phrase | Example sentence |
 | --- | --- |
-| not because X, because Y | The plan failed not because we lacked ideas, but because we lacked courage. |
+| not because X, but because Y | The plan failed not because we lacked ideas, but because we lacked courage. |
 | answer and question reversal | The answer is not a better tool. The question is whether we are asking enough of ourselves. |
 | feels like X, actually is Y | It feels like a setback. It is actually an invitation to grow. |
 | stops being X, starts being Y | The meeting stops being a routine and starts being a catalyst. |
-| means X, does not mean Y | Moving quickly means choosing priorities; it does not mean abandoning standards. |
+| means X, does not mean Y | Leadership means embracing the journey; it does not mean simply reaching a destination. |
 | do not do X, do Y | Do not chase productivity. Build a system that makes it inevitable. |
 | feature, not a bug | The constraint is a feature, not a bug. |
 | negation and restatement | This is not a schedule; it is a promise to your future self. |
@@ -4565,7 +4669,7 @@ Description: Formatting habits that become conspicuous when repeated.
 | echoing triads | We planned with care, worked with purpose and finished with pride. We learned with curiosity, grew with confidence and moved with hope. |
 | ALL-CAPS headings | BACKGROUND<br>FINDINGS<br>RECOMMENDATIONS |
 | generic headings | Introduction<br>Key considerations<br>Challenges and opportunities<br>Conclusion |
-| title case | The Importance Of Meaningful Collaboration |
+| title case | The Importance of Meaningful Collaboration |
 | bold labels | **Benefits:** Faster work. **Challenges:** Limited time. **Outlook:** Continued growth. |
 | evenly sized paragraphs | The program helps teams work together. It offers a clear path forward.<br><br>The framework supports continuous improvement. It creates space for meaningful progress. |
 | quotations at paragraph ends | The group announced a revised plan. “This represents a positive step,” the chair said.<br><br>The office also changed its hours. “This reflects our commitment,” the manager said. |
@@ -4676,11 +4780,11 @@ The original source inventories are retained. Examples are original illustration
 
 ### load-bearing
 
-Source: S11. 1337 displayed words or phrases; 8 non-word tokens retained in the appendix. Lexicon breadth; ordinary terms are not individually prohibited. Snapshot inspected 2026-10-02.
+Source: S11. 1334 displayed words or phrases; 11 unhelpful tokens retained in the appendix. Ordinary words are included for research context, not as individual warning signs. Snapshot inspected 2026-10-02.
 
 Title: Words in software change notes
 
-Description: Words found together in notes about proposed software changes. Many are technical terms with ordinary uses.
+Description: A research list built from software change notes. It studies which words occur together across a passage; individual words such as “asked” or “three” are not writing faults.
 
 | Word or phrase | Example sentence |
 | --- | --- |
@@ -4694,7 +4798,7 @@ Description: Words found together in notes about proposed software changes. Many
 | accident |  |
 | accumulator | The accumulator becomes the single source of truth for the result. |
 | acted |  |
-| actually | This is what a robust implementation actually looks like. |
+| actually | This is what progress actually looks like. |
 | additive | The change is additive, preserving the existing behavior while opening new possibilities. |
 | additively |  |
 | adjudicated |  |
@@ -5036,7 +5140,6 @@ Description: Words found together in notes about proposed software changes. Many
 | drove |  |
 | durability |  |
 | dying |  |
-| e1 |  |
 | early-returns |  |
 | earned |  |
 | earns |  |
@@ -5048,7 +5151,7 @@ Description: Words found together in notes about proposed software changes. Many
 | emits |  |
 | emitted |  |
 | emitter |  |
-| empirical |  |
+| empirical | We need empirical evidence before choosing between the two explanations. |
 | empirically |  |
 | emptied |  |
 | empties |  |
@@ -5225,7 +5328,7 @@ Description: Words found together in notes about proposed software changes. Many
 | hole |  |
 | holes |  |
 | honest |  |
-| honestly |  |
+| honestly | Honestly, this is a turning point for the whole community. |
 | honesty |  |
 | honored |  |
 | honors |  |
@@ -5311,7 +5414,7 @@ Description: Words found together in notes about proposed software changes. Many
 | lifts |  |
 | likewise |  |
 | literal |  |
-| literally |  |
+| literally | This one conversation will literally change everything. |
 | live-verified |  |
 | lived |  |
 | lives |  |
@@ -5782,7 +5885,6 @@ Description: Words found together in notes about proposed software changes. Many
 | stand-in |  |
 | standing |  |
 | stands |  |
-| started_at |  |
 | starved |  |
 | stashed |  |
 | stashing |  |
@@ -5863,7 +5965,6 @@ Description: Words found together in notes about proposed software changes. Many
 | tier-1 |  |
 | tier-2 |  |
 | ties |  |
-| tobe |  |
 | today |  |
 | told |  |
 | tolerated |  |
@@ -6026,9 +6127,9 @@ Description: Words found together in notes about proposed software changes. Many
 
 Source: S11. 250 terms or phrases. Lexicon breadth; ordinary terms are not individually prohibited. Snapshot inspected 2026-10-02.
 
-Title: More words in software change notes
+Title: A second software vocabulary study
 
-Description: A larger collection of words from public notes about changes to software.
+Description: A separate research list of 250 words from public software change notes. It includes ordinary words because it compares vocabulary across whole passages.
 
 | Word or phrase | Example sentence |
 | --- | --- |
@@ -6287,9 +6388,9 @@ Description: A larger collection of words from public notes about changes to sof
 
 Source: S21. 407 terms or phrases. All style-labelled rows in excess_words.csv, spanning the study's 2013–2024 selection. This is NOT the 2024-only excess-word list and NOT a list of individually diagnostic words.
 
-Title: Words that increased in medical research summaries
+Title: Vocabulary tracked in medical research summaries
 
-Description: Words whose use rose above earlier trends in short summaries of biomedical research.
+Description: Words tracked in a study of medical research summaries from 2013 to 2024. The measurements below describe particular words and years, rather than every item in this list.
 
 | Word or phrase | Example sentence |
 | --- | --- |
@@ -6707,13 +6808,13 @@ Source: S05. 132 terms or phrases. Direction reported by source; not an individu
 
 Title: Words readers associated with AI
 
-Description: Words noticed by people comparing AI-generated and human-written articles.
+Description: Words readers noticed while comparing AI-generated and human-written articles. The sentences illustrate how the words can be used; an individual word does not identify the writer.
 
 | Word or phrase | Example sentence |
 | --- | --- |
 | additionally | Additionally, the initiative offers a range of meaningful opportunities. |
 | aptly |  |
-| as we verb the topic | As we explore the topic, a deeper understanding begins to emerge. |
+| as we explore the topic | As we explore the topic, a deeper understanding begins to emerge. |
 | aspect |  |
 | authentic |  |
 | capturing |  |
@@ -6776,7 +6877,7 @@ Description: Words noticed by people comparing AI-generated and human-written ar
 | key | Innovation remains a key driver of our continued journey. |
 | landscape | Organizations must navigate an increasingly complex landscape. |
 | life |  |
-| manage topic issues/problems |  |
+| manage [topic] issues | The framework helps teams manage communication issues with greater confidence. |
 | manifold |  |
 | meaningful | The workshop creates opportunities for meaningful engagement. |
 | moreover |  |
@@ -6818,7 +6919,7 @@ Description: Words noticed by people comparing AI-generated and human-written ar
 | straightforward |  |
 | structured |  |
 | successfully |  |
-| such as | The only two sites, such as the north depot and south depot, have closed. |
+| such as | The investigation covered only two depots. It found problems at facilities such as the north and south depots. |
 | support |  |
 | sustainable |  |
 | tailor |  |
@@ -6840,7 +6941,7 @@ Description: Words noticed by people comparing AI-generated and human-written ar
 | vibrant | The initiative supports a vibrant ecosystem of collaboration. |
 | vivid |  |
 | weaving |  |
-| when it comes to topic |  |
+| when it comes to [topic] | When it comes to teamwork, communication is key. |
 | whimsical |  |
 | whimsy |  |
 
@@ -6850,40 +6951,40 @@ Source: S05. 31 terms or phrases. Direction reported by source; not an individua
 
 Title: Words readers associated with human writing
 
-Description: A companion list of words readers associated with human-written articles.
+Description: Words readers associated with human-written articles in the same comparison. Some appear in the AI-associated lists too: the surrounding sentence matters.
 
 | Word or phrase | Example sentence |
 | --- | --- |
-| actually | This is what a robust implementation actually looks like. |
-| and that was that |  |
-| any ___ and ___ |  |
-| blitzing |  |
-| bolstering |  |
-| chubby |  |
-| chunky |  |
-| flabby |  |
+| actually | I thought it was Thursday. It is actually Friday. |
+| and that was that | We shook hands, and that was that. |
+| any … and … | Any questions and comments are welcome. |
+| blitzing | They were blitzing the quarterback on every third down. |
+| bolstering | The returning captain is bolstering our defence. |
+| chubby | The puppy has chubby paws. |
+| chunky | The soup was full of chunky pieces of potato. |
+| flabby | I cut the flabby middle section from the draft. |
 | gonna | I’m gonna miss the bus if I don’t leave now. |
-| gross |  |
-| it can be |  |
-| may help to |  |
+| gross | Something in that fridge smells gross. |
+| it can be | It can be hard to hear the phone from the garden. |
+| may help to | It may help to turn the paper sideways. |
 | messy | The first draft was messy, so I started again. |
-| musky |  |
-| nerdy |  |
-| no chance |  |
+| musky | The coat had a musky smell after a month in the cupboard. |
+| nerdy | I have a nerdy interest in old railway maps. |
+| no chance | There was no chance of catching the last train. |
 | nope | Nope, that is not the file I sent. |
-| pretty |  |
-| quite |  |
-| really |  |
-| said |  |
-| says |  |
-| scabby |  |
-| squished |  |
-| tells |  |
-| thin |  |
-| though it can also |  |
-| to whom |  |
-| wanna |  |
-| what we do know |  |
+| pretty | The bus was pretty full by the time we reached the station. |
+| quite | I haven't quite finished the last page. |
+| really | I really thought we would catch the train. |
+| said | Maya said she would meet us outside the bakery. |
+| says | The label says to wash it in cold water. |
+| scabby | The dog had a small scabby patch behind one ear. |
+| squished | The sandwich was squished at the bottom of my bag. |
+| tells | The timetable tells us when the last bus leaves. |
+| thin | The paint is too thin to cover the old colour. |
+| though it can also | The shed is used for storing tools, though it can also hold two bicycles. |
+| to whom | To whom should I send the signed copy? |
+| wanna | Wanna get lunch after class? |
+| what we do know | What we do know is that the door was locked by six. |
 | yeah | Yeah, I can meet after lunch. |
 
 ### Stop Slop phrase inventory
@@ -6892,77 +6993,77 @@ Source: S07. 67 terms or phrases; two combined alternatives split into separate 
 
 Title: Stock phrases and emphatic words
 
-Description: Familiar expressions that add drama, certainty or emphasis.
+Description: Openings and emphatic phrases that can make an ordinary point sound like a revelation. The examples show the effect in a sentence.
 
 | Word or phrase | Example sentence |
 | --- | --- |
-| As we'll see... |  |
+| As we'll see... | As we'll see, a simple change can open the door to extraordinary possibilities. |
 | At its core | At its core, the initiative is about bringing people together. |
-| At the end of the day |  |
-| But that's another post |  |
-| Can we talk about |  |
-| Dressed up as |  |
-| Full stop. |  |
-| Period. |  |
-| Here's that [X] |  |
-| Here's the problem though |  |
-| Here's the thing: |  |
-| Here's this [X] |  |
-| Here's what I find interesting |  |
-| Here's what [X] |  |
-| Here's why [X] |  |
-| Here's why that matters |  |
-| Hint: |  |
-| I promise |  |
-| I want to explore... |  |
-| I'll say it again: |  |
-| I'm going to be honest |  |
-| In a world where |  |
-| In this section, we'll... |  |
-| In today's [X] |  |
+| At the end of the day | At the end of the day, success is about people coming together. |
+| But that's another post | The deeper question is what progress really means. But that's another post. |
+| Can we talk about | Can we talk about the quiet power of showing up? |
+| Dressed up as | It is a lack of trust dressed up as a planning problem. |
+| Full stop. | People deserve better. Full stop. |
+| Period. | Good leaders listen. Period. |
+| Here's that [X] | Here's that uncomfortable truth: the meeting needs a purpose. |
+| Here's the problem though | Here's the problem though: good intentions are not enough. |
+| Here's the thing: | Here's the thing: every challenge is also an opportunity. |
+| Here's this [X] | Here's this small but powerful idea: ask before assuming. |
+| Here's what I find interesting | Here's what I find interesting: the simplest answer was there all along. |
+| Here's what [X] | Here's what real progress looks like: a team willing to grow. |
+| Here's why [X] | Here's why this changes everything: people finally feel heard. |
+| Here's why that matters | The team spoke openly. Here's why that matters: communication builds trust. |
+| Hint: | What is the secret to success? Hint: it is not another productivity app. |
+| I promise | Small steps change everything. I promise. |
+| I want to explore... | I want to explore what it really means to lead with purpose. |
+| I'll say it again: | I'll say it again: culture is the foundation of every successful team. |
+| I'm going to be honest | I'm going to be honest: this is the conversation we need to have. |
+| In a world where | In a world where change never stops, adaptability matters more than ever. |
+| In this section, we'll... | In this section, we'll explore the key ideas that shape our understanding of the topic. |
+| In today's [X] | In today's rapidly changing world, connection is everything. |
 | It turns out | It turns out that communication is the key to every successful team. |
-| It's worth noting |  |
-| Let me be clear |  |
-| Let me walk you through... |  |
-| Let that sink in. |  |
-| Make no mistake |  |
-| Plot twist: |  |
-| Spoiler: |  |
-| The consequences are real |  |
-| The implications are significant |  |
-| The real [X] is |  |
-| The reality is |  |
-| The reasons are structural |  |
-| The rest of this essay explains... |  |
-| The stakes are high |  |
-| The truth is, |  |
-| The uncomfortable truth is |  |
-| They exist, I promise |  |
-| This is genuinely hard |  |
-| This is the deepest problem |  |
-| This is what X actually looks like |  |
-| This is what leadership actually looks like |  |
+| It's worth noting | It's worth noting that meaningful progress takes commitment. |
+| Let me be clear | Let me be clear: this is about more than a deadline. |
+| Let me walk you through... | Let me walk you through why this seemingly small decision matters so much. |
+| Let that sink in. | One conversation changed the team's entire future. Let that sink in. |
+| Make no mistake | Make no mistake: this is a defining moment for the organization. |
+| Plot twist: | Plot twist: the best tool was the one we already had. |
+| Spoiler: | Spoiler: the answer was communication all along. |
+| The consequences are real | The consequences are real, and the time to act is now. |
+| The implications are significant | The implications are significant for the future of how we work. |
+| The real [X] is | The real challenge is learning to embrace the journey. |
+| The reality is | The reality is that every setback carries a lesson. |
+| The reasons are structural | The team kept missing deadlines. The reasons are structural. |
+| The rest of this essay explains... | The rest of this essay explains why these ideas matter for the road ahead. |
+| The stakes are high | The stakes are high, and a bold response is essential. |
+| The truth is, | The truth is, meaningful change begins with a single step. |
+| The uncomfortable truth is | The uncomfortable truth is that growth requires discomfort. |
+| They exist, I promise | There are teams that have solved this problem. They exist, I promise. |
+| This is genuinely hard | This is genuinely hard, but it is where the real work begins. |
+| This is the deepest problem | This is the deepest problem: we have forgotten how to listen. |
+| This is what X actually looks like | This is what progress actually looks like: small steps and shared purpose. |
+| This is what leadership actually looks like | This is what leadership actually looks like: showing up when it matters. |
 | This matters because | This matters because it shapes how we think about the future. |
 | When it comes to | When it comes to innovation, a clear vision is essential. |
-| X is a feature, not a bug |  |
-| You already know this, but |  |
-| actually | This is what a robust implementation actually looks like. |
-| actually matters |  |
-| creeps in |  |
+| X is a feature, not a bug | The uncertainty is a feature, not a bug. |
+| You already know this, but | You already know this, but the best answers are often the simplest. |
+| actually | This is what progress actually looks like. |
+| actually matters | This is the kind of work that actually matters. |
+| creeps in | Complexity creeps in until the original purpose disappears. |
 | crucially | Crucially, this approach places people at the heart of the process. |
-| deeply |  |
-| fundamentally |  |
+| deeply | The experience was deeply meaningful for everyone involved. |
+| fundamentally | This fundamentally changes how we think about working together. |
 | genuinely | This is a genuinely transformative opportunity for the whole team. |
-| honestly |  |
-| importantly |  |
-| inevitably |  |
-| inherently |  |
-| interestingly |  |
-| just |  |
-| literally |  |
-| really |  |
-| simply |  |
-| truly |  |
+| honestly | Honestly, this is a turning point for the whole community. |
+| importantly | Importantly, this is only the beginning of the journey. |
+| inevitably | These efforts will inevitably create a brighter future. |
+| inherently | The process is inherently transformative. |
+| interestingly | Interestingly, the result reveals a deeper truth about human connection. |
+| just | The answer is just to believe in the process. |
+| literally | This one conversation will literally change everything. |
+| really | The initiative is really making a meaningful difference. |
+| simply | We simply need to embrace a new way of thinking. |
+| truly | This is a truly remarkable opportunity for lasting change. |
 
 ## Source-item concordance
 
@@ -7511,9 +7612,11 @@ Each source item maps to its canonical entry or to a context-only disposition. R
 
 ### P139 Repeatedly saying that something matters
 
+
 Source records: S22 and S23; user-supplied additions reviewed 2 October 2026.
 
-The writer repeatedly announces that a point matters before explaining its consequence. Bare importance statements, rankings and declarations that a distinction matters can add emphasis without adding information.
+The writer keeps announcing that a point matters. Those announcements take the place of explaining what changes for the people involved.
+
 
 **Illustrative example:** This matters: the launch has moved to Friday. Just as important, the team has another day to prepare. That distinction matters. Ultimately, what matters most is being ready.
 
@@ -7529,18 +7632,24 @@ The writer repeatedly announces that a point matters before explaining its conse
 - **Why this matters:** Why this matters is that the team has more time to prepare.
 - **Matters most:** What matters most is our shared commitment to doing better.
 - **Just as important:** Just as important is the opportunity to grow together.
-- **The distinction matters:** The meeting was delayed, not canceled. The distinction matters.
+- **The distinction matters:** The slide was updated, not refreshed. That distinction matters. It captures something essential about how we think about progress.
 
 Source records: S22 and S23; supplied variants merged into this entry.
+
+- **Repeating the announcement:** The meeting moved to Friday. This matters. Why does it matter? Because timing matters, and what matters most is being ready.
+
+- **Inflating a distinction:** The brochure was updated, not redesigned. That distinction matters. It is a distinction that will shape how we think about the work ahead.
 
 
 <a id="p140"></a>
 
 ### P140 — Promises without tradeoffs
 
+
 Source records: S22 and S23; user-supplied additions reviewed 2 October 2026.
 
-A benefit is paired with a promise that nothing valuable is lost or required. Repeated assurances about preserving quality, coverage or convenience can hide the conditions under which the promise holds.
+A pitch promises several benefits while insisting that nothing will cost more, take longer or become harder. It leaves the conditions and compromises unexplained.
+
 
 **Illustrative example:** Our platform cuts costs without sacrificing quality, accelerates delivery without compromising reliability, and simplifies your work without requiring you to change a thing.
 
@@ -7564,9 +7673,11 @@ Source records: S22 and S23; supplied variants merged into this entry.
 
 ### P141 Saying something is helpful without explaining why
 
+
 Source records: S22 and S23; user-supplied additions reviewed 2 October 2026.
 
-The prose repeatedly describes a tool or step as helpful, easy or useful to the reader. The claim can substitute for an explanation of what the tool does and when it helps.
+Words such as “helpful,” “easy” and “useful” repeat a promise without explaining what a tool enables someone to do.
+
 
 **Illustrative example:** The dashboard is a helpful tool for your team. Its useful features make it easier to work effectively, helping you achieve better results with greater ease.
 
@@ -7604,13 +7715,17 @@ The writer keeps adding qualifications and reassurance after the uncertainty is 
 
 **Additional examples:**
 
-- **Does not establish:** This result does not establish that the new approach caused the improvement.
-- **May provide:** The change may provide an opportunity for further progress.
-- **Can provide:** The framework can provide a useful foundation for future discussions.
-- **Not necessarily:** A positive result is not necessarily evidence of lasting success.
-- **Need not:** The reader need not feel that every question must be resolved immediately.
+- **Does not establish:** This result does not establish that the change worked. That does not mean it failed, only that success has not been established. The absence of certainty should not itself be treated as a certain conclusion.
+- **May provide:** The change may provide an opportunity for progress. Whether it provides that opportunity may depend on circumstances. Even so, it may still provide value in ways that remain to be understood.
+- **Can provide:** This framework can provide a useful foundation, although its usefulness may vary. It can provide support without suggesting that it necessarily will provide support in every case.
+- **Not necessarily:** A positive result is not necessarily evidence of lasting success. Success now may not necessarily mean success later, and what appears successful need not necessarily remain so.
+- **Need not:** The reader need not feel that every question must be resolved now. Unresolved questions need not mean that no progress was made. It is okay to leave things open without necessarily knowing what that openness means.
 
 Source records: S22 and S23; supplied variants merged into this entry.
+
+- **Repeating the same uncertainty:** The survey may suggest a preference, although it does not establish one. This need not mean there is no preference, only that a preference cannot necessarily be confirmed. Even so, it may still provide useful insight.
+
+- **Reassuring without resolving:** The change could be helpful, though it may not be helpful in every case. That does not mean it lacks value. It simply means its value may depend on circumstances that are not yet clear.
 
 
 <a id="p143"></a>
@@ -7621,9 +7736,9 @@ Source records: S22 and S23; user-supplied additions reviewed 2 October 2026.
 
 The writer repeatedly calls something the best, most powerful or most popular without defining the comparison. Words such as arguably or perhaps can soften the ranking without supplying evidence.
 
-**Illustrative example:** This is the single most common cause of the retry storm.
+**Illustrative example:** This is the single most effective way to improve any team's performance. No other approach comes close.
 
-**What to notice:** “The single most common” asserts a ranking. The sentence provides no comparison or measurement to support it.
+**What to notice:** The claim ranks one approach above every alternative without naming a comparison, a result or a measure of performance.
 
 **Editing guidance:** Specify the comparison and evidence, or replace the ranking with a concrete property.
 
@@ -7640,6 +7755,28 @@ The writer repeatedly calls something the best, most powerful or most popular wi
 
 Source records: S22 and S23; supplied variants merged into this entry.
 
+
+<a id="p144"></a>
+
+### P144 — Unnecessary hyphens
+
+Source records: S24; punctuation commentary and user-supplied cases reviewed 12 October 2026. Examples below are original.
+
+Hyphens join words that normally stay separate, or split a word that is normally written as one. Repeated forms such as team-members and news-letter can make an ordinary sentence look mechanically assembled.
+
+**Illustrative example:** The team-members checked the project-timeline before writing the news-letter.
+
+**What to notice:** “Team members” and “project timeline” are ordinary noun phrases. “Newsletter” is one word. The extra hyphens do no useful work here. A hyphen can still be needed before a noun, as in “a five-year plan.”
+
+**Editing guidance:** Check the established spelling and the word's role in the sentence. Write separate nouns separately and settled single words as single words; retain hyphens that clarify a compound modifier.
+
+**Limit:** Spelling varies by region, dictionary and context. A term can need a hyphen before a noun but not elsewhere. This spelling habit does not establish who wrote a passage, and the cited article does not measure its frequency in AI output.
+
+**Additional examples:**
+
+- **Separating ordinary nouns:** Our customer-base asked for another blog-post about refunds.
+- **Splitting a single word:** We scheduled a brain-storming session to improve the news-letter.
+- **Joining a room name:** The interview will take place in the conference-room.
 
 ## Expanded source register and reading scope
 
@@ -7828,6 +7965,14 @@ Source: https://graphite.io/five-percent/research/ai-tells-opus-5-5-update
 Article; supplied additions and model-comparison context reviewed. Published 1 October 2026; inspected 2 October 2026.
 
 Limit: Model-to-model ratios are not human-relative ratios. Observed wording is not necessarily an editing defect.
+
+### S24 — Devapratim Mohanty: The Story of the Omnipresent Hyphen
+
+Source: https://medium.com/@devapratimm/the-story-of-the-omnipresent-hyphen-why-ai-cant-get-punctuation-right-b26e88426bad
+
+Commentary published 2 July 2025; inspected 12 October 2026. Discusses punctuation habits in AI writing. The user supplied additional examples of unnecessary hyphens; those exact examples do not appear in the inspected article. P144 develops the observation with original sentences.
+
+Limit: No measured AI-versus-human frequency is provided. The article's proposed tokenization explanation is not adopted as an established cause. Ordinary compound modifiers still need hyphens in many contexts.
 
 ## Attribution and reuse of the expansion
 
@@ -8050,7 +8195,7 @@ The 47 supplied additional forms remain covered. Five descriptions previously la
 
 ## Preserved inventory details
 
-The code-review inventory originally included these eight non-word tokens: -only; -prefixed; -rn; 300s; 400s; 403s; 600s; —. They remain here for source traceability but are omitted from the public vocabulary list.
+The code-review inventory originally included these eleven unhelpful tokens: -only; -prefixed; -rn; 300s; 400s; 403s; 600s; —; e1; started_at; tobe. They remain here for source traceability but are omitted from the public vocabulary list.
 
 Wikipedia's historical groupings were: 2023 to mid-2024, labeled GPT-4, included additionally, boasts, bolstered, crucial, delve, emphasizing, enduring, garner, intricate, intricacies, interplay, key, landscape, meticulous, meticulously, pivotal, underscore, tapestry, testament, valuable and vibrant. Mid-2024 to mid-2025, labeled GPT-4o, included align with, bolstered, crucial, emphasizing, enhance, enduring, fostering, highlighting, pivotal, showcasing, underscore and vibrant. Mid-2025 onward, labeled GPT-5, included emphasizing, enhance, highlighting, showcasing and the media-coverage phrases. The source also associated causal, empirical, correlate and continued underscore use with Grok. These are approximate source observations, not a measured test of current models.
 
@@ -8058,3 +8203,16 @@ Wikipedia's historical groupings were: 2023 to mid-2024, labeled GPT-4, included
 ## Reader-facing copy review October 2026
 
 The website presents each example alongside a separately labeled explanation of what to notice. Editing guidance, research methods, source-specific cautions and earlier example notes remain in this master for reference; they are not displayed as unexplained lines on pattern pages. Research summaries retain the measured comparison. Website source attribution is collected on the Sources page, with links to the studies beside measured findings. Technical leftovers are presented as copied text errors, with their unfamiliar symbols explained in ordinary language. All 142 entries have an individually written explanation. Existing public URLs are preserved when display titles change.
+
+
+## Three-pass editorial review and checker update — 12 October 2026
+
+The site is now named AI Slop Signatures. All 143 entries and their additional examples, all 31 collections and vocabulary rows, all 17 measurement summaries, and all 24 source labels were read in three editorial passes. Reviewers exchanged entry ranges after the first pass. The last pass also checked how the site renders headings, lists, tables, code and example explanations.
+
+The first pass replaced vague descriptions and examples that did not demonstrate the claimed pattern. The second checked every additional variant and removed accusations that depended on absent facts or context. The third corrected remaining inconsistencies among titles, examples, explanatory labels and formatting. Vocabulary examples describe ordinary uses where appropriate. Research inventories are not lists of forbidden words.
+
+P144 adds unnecessary hyphens using original examples. S24 is commentary, not a source of measured prevalence or a verified explanation about tokenization. Valid compound modifiers remain distinct from unnecessary hyphens in ordinary noun phrases.
+
+The Live text checker is independently authored JavaScript. It uses local wording and structure checks, not upstream checker code, scoring formulas or statistical word lists. Its coverage register distinguishes 93 entries with observable facets, 39 requiring human review and 11 ordinary-writing cautions excluded from findings. Every entry has original test and control text. Additional audits exercise all examples and terms displayed on the site; these are behavior checks, not a study of authorship accuracy.
+
+The checker accepts 1–10,000 words and at most 80,000 UTF-16 character units. Over-limit text is rejected rather than cut off. Text remains in the current browser tab's memory and is not uploaded or saved. The dropdown below the input explains word counting, short-text thresholds, skipped code, checked quotations, limits on results and the need for human judgment.

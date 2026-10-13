@@ -1,14 +1,16 @@
 {
-  "name": "ai-writing-patterns",
+  "name": "ai-slop-signatures",
   "version": "1.0.0",
   "private": true,
-  "description": "A local-first browser of AI writing patterns",
+  "description": "AI Slop Signatures: a writing reference and private browser-based text checker",
   "license": "MIT",
   "scripts": {
     "build": "node scripts/build.cjs",
     "dev": "node scripts/serve.cjs",
     "start": "node scripts/serve.cjs",
-    "test": "node tests/content-search.test.cjs && node tests/library.test.cjs && node tests/editorial.test.cjs"
+    "test": "node tests/content-search.test.cjs && node tests/library.test.cjs && node tests/editorial.test.cjs && node tests/checker.test.cjs && node tests/checker-families.test.cjs && node tests/checker-ui.test.cjs",
+    "test:checker": "node tests/checker.test.cjs && node tests/checker-families.test.cjs && node tests/checker-ui.test.cjs",
+    "audit:checker": "node tests/checker.test.cjs --audit && node scripts/evaluate-checker.cjs"
   },
   "engines": {
     "node": ">=18"

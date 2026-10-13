@@ -1,0 +1,35 @@
+{
+  "description": "First frozen-rule evaluation, before repairing E04, E14 and E25. Preserved so subsequent regression success is not presented as unseen accuracy.",
+  "version": "2.0.0",
+  "engineHash": "1e6e548fe66f7e8b091e86045d5318dde8c97c96fb5e9ae723e427a729fef45e",
+  "fixtureHash": "fb43eca733cba33aeb6a0512cb0cbea74f6d1ea212600bbde84d7f44bc311e2a",
+  "positive": {
+    "matched": 27,
+    "total": 30
+  },
+  "control": {
+    "passed": 16,
+    "total": 16,
+    "zeroFindings": 16
+  },
+  "misses": [
+    {
+      "id": "E04",
+      "entry": "P012",
+      "text": "The ferry is more than transport. It is the island's lifeline.",
+      "matched": []
+    },
+    {
+      "id": "E14",
+      "entry": "P139",
+      "text": "Why this decision matters is simple: it changes everything.",
+      "matched": []
+    },
+    {
+      "id": "E25",
+      "entry": "P093",
+      "text": "Every workshop begins with listening. Every workshop ends with reflection. Every workshop creates new possibilities.",
+      "matched": []
+    }
+  ]
+}

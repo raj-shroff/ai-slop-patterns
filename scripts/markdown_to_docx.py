@@ -36,7 +36,8 @@ def plain(s):
  s=s.replace('<br>','\n')
  s=re.sub(r'\[([^\]]+)\]\([^)]+\)',r'\1',s)
  return re.sub(r'\*\*([^*]+)\*\*|(?<!\*)\*([^*]+)\*(?!\*)|`([^`]+)`',lambda m:next(x for x in m.groups() if x is not None),s)
-lines=source.read_text(encoding='utf-8').splitlines();i=0;code=False
+markdown=source.read_text(encoding='utf-8')
+lines=markdown.splitlines();i=0;code=False
 while i<len(lines):
  line=lines[i];i+=1
  if line.startswith('```'):code=not code;continue
@@ -80,11 +81,19 @@ while i<len(lines):
 for name in ['Title','Heading 1','Heading 2','Heading 3']:
  doc.styles[name].font.color.rgb=RGBColor(0,0,0)
 doc.core_properties.last_modified_by='raj-shroff'
+doc.core_properties.title='AI Slop Signatures'
+doc.core_properties.subject='Master reference for AI Slop Signatures'
 doc.save(target)
 check=Document(target)
 actual=[''.join('\n' if x.tag==qn('w:br') else x.text or '' for x in p.iter() if x.tag in [qn('w:t'),qn('w:br')]) for p in check._element.body.iter(qn('w:p'))]
 assert actual==expected, 'Text/order mismatch'
-assert bookmark_id-1==142
-report={'paragraphs_and_cells':len(expected),'pattern_bookmarks':142,'source_records':23,'additional_examples':47,'text_and_order_verified':True}
+entry_ids=re.findall(r'^<a id="p(\d+)"></a>',markdown,re.M)
+assert bookmark_id-1==len(entry_ids)
+source_section=markdown.split('## Expanded source register and reading scope',1)[1].split('## Attribution',1)[0]
+source_ids=re.findall(r'^### (S\d+) ',source_section,re.M)
+assert len(source_ids)==len(set(source_ids))
+entry_bodies=re.findall(r'^<a id="p\d+"></a>\s*\n### P\d+ .*?\n(.*?)(?=^<a id=|^## |\Z)',markdown,re.M|re.S)
+additional=sum(len(re.findall(r'^- \*\*',body.split('**Additional examples:**',1)[1],re.M)) for body in entry_bodies if '**Additional examples:**' in body)
+report={'paragraphs_and_cells':len(expected),'pattern_bookmarks':len(entry_ids),'source_records':len(source_ids),'additional_examples':additional,'text_and_order_verified':True}
 (root/'working/word-sync/verification.json').write_text(json.dumps(report,indent=2))
 print(report)

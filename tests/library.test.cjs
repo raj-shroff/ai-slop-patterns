@@ -4,7 +4,7 @@ test('all requested sections and inventory terms are present',()=>{
  assert.equal(data.library.length,31);
  assert.equal(data.library.filter(c=>c.group==='Phrase collections').length,19);
  assert.equal(data.library.filter(c=>c.group==='Additional forms').length,6);
- assert.deepEqual(data.library.filter(c=>c.group==='Vocabulary lists').map(c=>c.terms.length),[1337,250,407,132,31,67]);
+ assert.deepEqual(data.library.filter(c=>c.group==='Vocabulary lists').map(c=>c.terms.length),[1334,250,407,132,31,67]);
  for(const c of data.library){assert.ok(c.paragraphs.length);assert.ok(c.related.length);assert.ok(c.related.every(s=>data.entries.some(e=>e.slug===s)));assert.doesNotMatch(JSON.stringify(c),/\bP\d{3}\b/);}
 });
 test('every searchable inventory term can be found in its own collection',()=>{

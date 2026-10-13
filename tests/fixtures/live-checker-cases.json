@@ -1,0 +1,908 @@
+{
+  "description": "Original examples and controls authored for the checker. These exercise observable rules and coverage classifications, not AI-authorship accuracy.",
+  "regressions": [
+    {
+      "key": "baseball",
+      "label": "User's nineteenth-century baseball paragraph",
+      "text": "Baseball in the 1800s was, in many ways, more than simply a sport. It was a reflection of a rapidly changing American society, one in which communities were becoming increasingly connected and new forms of leisure were emerging. Although early versions of baseball varied considerably from place to place, the game gradually became more standardized, particularly after the Knickerbocker Base Ball Club established a set of influential rules in 1845. Over the course of the century, baseball continued to evolve from an informal recreational activity into an organized and increasingly professional sport. What is especially interesting is that this transformation did not happen all at once; rather, it emerged gradually through the interaction of players, clubs, spectators, newspapers, and communities. By the end of the 1800s, baseball had become deeply embedded in American culture, laying the foundation for the sport's enormous cultural significance in the centuries that followed. In this sense, the history of nineteenth-century baseball is ultimately not just a history of a game, but a story about how Americans came together around a shared activity and, in doing so, helped create something that would endure long after the century itself had ended.",
+      "expectedEntries": [
+        "P001",
+        "P011",
+        "P079"
+      ],
+      "manualLimits": "Cannot decide whether the historical significance is supported, whether the account lacks concrete history, or whether the last sentence adds information."
+    },
+    {
+      "key": "claude",
+      "label": "User's Claude-style hedging paragraph",
+      "text": "I want to be careful not to overstate this, because the distinction matters: I’m not saying this is the most Claude paragraph ever written, only that it contains several characteristics that feel unusually Claude-like. There is a tension here between wanting to answer directly and wanting to preserve the nuance necessary to avoid accidentally implying certainty where there is none, and I think the most honest way to handle that tension is to acknowledge it explicitly. That said, if the goal is a paragraph that sounds like Claude, then I’d probably start by recognizing the underlying ambiguity, gently reframing the premise, considering two or three plausible interpretations, and then arriving at a thoughtful conclusion that is both useful and appropriately caveated—while also noting that if you meant something different by “Claude,” I’d be happy to adjust.",
+      "expectedEntries": [
+        "P028",
+        "P142"
+      ],
+      "manualLimits": "Cannot judge whether the caution is excessive for the question, whether the paragraph avoids answering, or what model wrote it."
+    },
+    {
+      "key": "facebook",
+      "label": "User's Facebook ethical-breakdowns essay",
+      "text": "I think that Facebook's employees failed to act on the platform’s dangerous speech patterns because the company’s objectives and values made it hard to recognize the problem as an ethical issue. In “The Facebook Files” MSI, Facebook changed its News Feed algorithm to encourage “meaningful social interactions.” However, the change also increased the visibility of angry, controversial, and negative content. Employees recognized some of these problems, but Facebook continued using the system. The ideas from “Ethical Breakdowns” help explain why employees could see the problem without taking meaningful action to fix it.\n\nFirst, unmet goals help explain Facebook’s behavior. “Ethical Breakdowns” explain that goals can encourage unethical behavior when employees are rewarded for reaching a target without considering the consequences. Facebook wanted to increase its important interactions, so the company designed its algorithm to reward comments, reactions, and shares. The problem was that angry and controversial posts often caused those exact interactions. Employees were therefore getting what the company wanted, even though negativity got them there.\nSecond, motivated blindness helps to explain why employees may have overlooked how bad the problem actually was. According to “Ethical Breakdowns,” people can become blind to unethical behavior while trying to recognize that it conflicts with their own interests. Facebook had a strong business reason to value engagement because keeping users active on the platform was extremely important to the company. The Facebook Files showed that the MSI changes helped to improve important engagement measures. Employees could therefore focus on the positive numbers and avoid fully confronting what those numbers actually meant. Admitting that the system encouraged negative content could also mean admitting that the strategy they designed to improve the platform created serious problems.|\n\nThird, the slippery slope helps explain how Facebook reached this point in the first place. Ethical problems do not always begin with one very harmful decision. Instead, small decisions can gradually lead to much more serious consequences. Facebook did not intentionally create MSI to promote anger and negativity. The company wanted people to interact more meaningfully. However, when employees discovered that divisive, emotional content produced high engagement, the system kept rewarding that behavior instead of stopping it; each decision could seem reasonable on its own, while the overall effect became increasingly harmful.\n\nLastly, I think Facebook overvalued its outcomes, another idea from “Ethical Breakdowns.” The company could point to engagement numbers as evidence that MSI was successful. However, increasing engagement is not necessarily a positive outcome if it happens because people are being encouraged to argue, become angry, or encounter dangerous content.\n\nOverall, I don't think Facebook’s failure can be explained simply by saying its employees were bad people who didn’t care. Instead, I believe the company tried to create a situation where employees could recognize harmful effects but still had very strong reasons to keep the system running instead of shutting it down. Unmet goals, motivated blindness, and the slippery slope helped blind Facebook employees from seeing the ethical consequences of their decisions.",
+      "expectedEntries": [
+        "P015",
+        "P092",
+        "P093"
+      ],
+      "manualLimits": "Cannot validate the interpretation of the sources, decide whether paragraph organization suits the assignment, or recognize every paraphrased restatement in the conclusion."
+    },
+    {
+      "key": "copied-food-answer",
+      "label": "Copied food answer",
+      "text": "What is in one of those sabrett hot dogs?\n\nChatGPT said:\nThose classic New York City Sabrett hot dogs under the blue-and-yellow umbrellas are made primarily from beef, water, and seasonings — not pork or a mixture of mystery meats, at least for the all-beef versions. 🌭\n\nAccording to Sabrett's official ingredient list, here's what's in a typical street-cart beef hot dog.",
+      "expectedEntries": [
+        "P028",
+        "P013",
+        "P022"
+      ],
+      "manualLimits": "The label is visible conversation residue. The contrast and emoji are observable choices; the checker does not judge the ingredient claim or the author."
+    }
+  ],
+  "cases": [
+    {
+      "entryId": "P001",
+      "expectation": "match",
+      "example": "The fountain left an indelible mark on the village's enduring legacy.",
+      "control": "The fountain opened in 1932 and supplied drinking water until 1968."
+    },
+    {
+      "entryId": "P002",
+      "expectation": "match",
+      "example": "The designer has drawn praise from leading publications and independent regional media.",
+      "control": "The County Journal described the designer's flood barrier on 4 June."
+    },
+    {
+      "entryId": "P003",
+      "expectation": "match",
+      "example": "The clinic painted its waiting room, underscoring its profound commitment to patient dignity.",
+      "control": "The clinic painted its waiting room blue after patients requested a less glaring color."
+    },
+    {
+      "entryId": "P004",
+      "expectation": "match",
+      "example": "Nestled in the heart of the estuary, our resort is a beacon of excellence.",
+      "control": "The resort is beside the estuary, two miles from the ferry landing."
+    },
+    {
+      "entryId": "P005",
+      "expectation": "match",
+      "example": "Rosa played an instrumental role in the department's expansion.",
+      "control": "Rosa hired four nurses and opened the Saturday clinic."
+    },
+    {
+      "entryId": "P006",
+      "expectation": "match",
+      "example": "Experts agree that this policy will transform the neighborhood.",
+      "control": "Housing researcher Lena Ortiz estimated that the policy would fund 80 apartments."
+    },
+    {
+      "entryId": "P007",
+      "expectation": "match",
+      "example": "Despite its progress, the cooperative faces several challenges. Continued innovation points toward a bright future.",
+      "control": "The cooperative must replace its leaking roof before the winter. Members approved a repair fund."
+    },
+    {
+      "entryId": "P008",
+      "expectation": "manual",
+      "example": "Honors: The bakery is celebrated for quality and is respected throughout the region.",
+      "control": "Honors: The bakery won the county bread competition in 2021."
+    },
+    {
+      "entryId": "P009",
+      "expectation": "match",
+      "example": "Additionally, our comprehensive initiative underscores a pivotal interplay across a vibrant landscape, fostering a transformative tapestry of local connections.",
+      "control": "The council will fund two bus routes, repair the depot and hire six drivers by August."
+    },
+    {
+      "entryId": "P010",
+      "expectation": "match",
+      "example": "The depot serves as a meeting place and boasts three halls.",
+      "control": "The depot is a meeting place with three halls."
+    },
+    {
+      "entryId": "P011",
+      "expectation": "match",
+      "example": "The concert is not merely a performance; it is a bridge between generations.",
+      "control": "The concert includes songs selected by three generations of local musicians."
+    },
+    {
+      "entryId": "P012",
+      "expectation": "match",
+      "example": "The workshop is not a lesson. It is a revolution.",
+      "control": "The workshop teaches participants how to mend a torn jacket."
+    },
+    {
+      "entryId": "P013",
+      "expectation": "match",
+      "example": "The committee values visible progress rather than theoretical perfection.",
+      "control": "The committee will publish its first progress report in June."
+    },
+    {
+      "entryId": "P014",
+      "expectation": "manual",
+      "example": "List of River Ferries carries hundreds of commuters each morning.",
+      "control": "The ferries listed here carry hundreds of commuters each morning."
+    },
+    {
+      "entryId": "P015",
+      "expectation": "match",
+      "example": "Our sessions offer patience, purpose, and possibility while building trust, talent, and teamwork.",
+      "control": "The course covers pruning, planting and watering. Bring gloves and a notebook."
+    },
+    {
+      "entryId": "P016",
+      "expectation": "match",
+      "example": "Community garden\n\nCommunity garden\nThe gate opens at eight.",
+      "control": "Community garden\n\nOpening hours\nThe gate opens at eight."
+    },
+    {
+      "entryId": "P017",
+      "expectation": "match",
+      "example": "## The Future Of Community Transport\nThe council will meet tomorrow.\n## Proposed routes\nThe buses will stop at the hospital.",
+      "control": "## The Future Of Community Transport\nThe council will meet tomorrow.\n## The Proposed Local Routes\nThe buses will stop at the hospital."
+    },
+    {
+      "entryId": "P019",
+      "expectation": "match",
+      "example": "Our **vision** turns **ambition** into **action**, creating **impact** and **opportunity** for everyone.",
+      "control": "The **deadline is Friday**. Send the signed form to the office."
+    },
+    {
+      "entryId": "P020",
+      "expectation": "match",
+      "example": "- **Purpose:** Help residents.\n- **Action:** Share information.\n- **Outcome:** Build confidence.",
+      "control": "- Bring identification.\n- Sign the form.\n- Collect the key."
+    },
+    {
+      "entryId": "P021",
+      "expectation": "match",
+      "example": "The board met — at dawn — and voted — after debate — to reopen the bridge — for now.",
+      "control": "The board met at dawn and voted to reopen the bridge."
+    },
+    {
+      "entryId": "P022",
+      "expectation": "match",
+      "example": "🚀 Progress starts here\n✅ Success comes next",
+      "control": "Bring the map. The route is marked with a red arrow."
+    },
+    {
+      "entryId": "P023",
+      "expectation": "manual",
+      "example": "| Item | Description |\n| Name | Ash Hall |\n| Kind | Building |",
+      "control": "Ash Hall is a school building on Oak Street."
+    },
+    {
+      "entryId": "P024",
+      "expectation": "match",
+      "example": "“Open the gate,” said Nia. \"Bring the cart,\" said Leo.",
+      "control": "“Open the gate,” said Nia. “Bring the cart,” said Leo."
+    },
+    {
+      "entryId": "P025",
+      "expectation": "match",
+      "example": "# Field report\n### Rainfall\nThe gauge recorded 18 millimeters.",
+      "control": "# Field report\n## Rainfall\nThe gauge recorded 18 millimeters."
+    },
+    {
+      "entryId": "P026",
+      "expectation": "match",
+      "example": "# Scope\nWe checked the roof.\n# Findings\nTwo tiles were broken.\n# Repairs\nWork begins Tuesday.",
+      "control": "# Roof inspection\n## Findings\nTwo tiles were broken.\n## Repairs\nWork begins Tuesday."
+    },
+    {
+      "entryId": "P027",
+      "expectation": "match",
+      "example": "Opening\nThe door moved.\n---\nInspection\nThe hinge broke.\n---\nRepair\nWe replaced it.\n---\nResult\nThe door closed.",
+      "control": "The hinge broke. We replaced it, and the door closed."
+    },
+    {
+      "entryId": "P028",
+      "expectation": "match",
+      "example": "Certainly! Here is your requested draft for the invitation.",
+      "control": "Please join us at the hall at six on Saturday."
+    },
+    {
+      "entryId": "P029",
+      "expectation": "manual",
+      "example": "Her early work is undocumented, probably because she preferred privacy.",
+      "control": "I could not find her early work in the two archives I searched."
+    },
+    {
+      "entryId": "P030",
+      "expectation": "match",
+      "example": "Please welcome [NAME], who joined the orchestra in [YEAR].",
+      "control": "Please welcome Aisha Mensah, who joined the orchestra in 2020."
+    },
+    {
+      "entryId": "P031",
+      "expectation": "manual",
+      "example": "# Lunch menu\nTry **tomato soup** and [read more](menu.html).",
+      "control": "Lunch menu: tomato soup with bread."
+    },
+    {
+      "entryId": "P032",
+      "expectation": "manual",
+      "example": "Printed date: 2026-07-022026-07-02UNDEFINED",
+      "control": "Printed date: 2 July 2026."
+    },
+    {
+      "entryId": "P033",
+      "expectation": "match",
+      "example": "The survey reached 410 households :contentReference[oaicite:7]{index=2}.",
+      "control": "The survey reached 410 households, according to its methods section."
+    },
+    {
+      "entryId": "P034",
+      "expectation": "match",
+      "example": "The factory closed in May.[cite: 5, 19]",
+      "control": "The factory closed in May. The council recorded the closure in its June minutes."
+    },
+    {
+      "entryId": "P035",
+      "expectation": "match",
+      "example": "Attendance rose by 12 percent. grok_render_citation_card_json",
+      "control": "Attendance rose by 12 percent, from 500 to 560 visitors."
+    },
+    {
+      "entryId": "P036",
+      "expectation": "match",
+      "example": "The footbridge opened in April.【42†L10-15】",
+      "control": "The footbridge opened in April, according to the works register."
+    },
+    {
+      "entryId": "P037",
+      "expectation": "match",
+      "example": "The contract sets a four-week notice period.[attached_file:7]",
+      "control": "The contract sets a four-week notice period in section 6."
+    },
+    {
+      "entryId": "P038",
+      "expectation": "match",
+      "example": ":::writing{variant=\"letter\" id=\"67890\"}\nDear residents, the park opens on Monday.\n:::",
+      "control": "Dear residents, the park opens on Monday."
+    },
+    {
+      "entryId": "P039",
+      "expectation": "manual",
+      "example": "Inez repairs violins in a workshop beside the station.\nCategory: Marine geology",
+      "control": "Inez repairs violins in a workshop beside the station.\nCategory: Musical instrument repair"
+    },
+    {
+      "entryId": "P040",
+      "expectation": "manual",
+      "example": "Select the legacy_resident_rank box on the council's contact form.",
+      "control": "Enter your street address in the council's contact form."
+    },
+    {
+      "entryId": "P041",
+      "expectation": "manual",
+      "example": "K. Flint, Moss-Powered Railway Signals, Journal of Alpine Infrastructure, 2023.",
+      "control": "The claim refers to a source the reader can open and inspect."
+    },
+    {
+      "entryId": "P042",
+      "expectation": "match",
+      "example": "See Field Notes, ISBN 978-0-306-40615-8.",
+      "control": "See Field Notes, ISBN 978-0-306-40615-7."
+    },
+    {
+      "entryId": "P043",
+      "expectation": "manual",
+      "example": "The paper proves that the seawall stops flooding. Reference: A Survey of School Lunches.",
+      "control": "The flood survey reports water levels at both ends of the seawall."
+    },
+    {
+      "entryId": "P044",
+      "expectation": "manual",
+      "example": "The container is safe at exactly 87 degrees, according to the Packaging Handbook.",
+      "control": "The Packaging Handbook, page 46, gives an upper limit of 87 degrees for this container."
+    },
+    {
+      "entryId": "P045",
+      "expectation": "match",
+      "example": "The mill closed in 1982. {{cite book...}}",
+      "control": "The mill closed in 1982. The date appears on page 71 of the town history."
+    },
+    {
+      "entryId": "P046",
+      "expectation": "match",
+      "example": "Read https://example.org/bridge?utm_source=chatgpt.com for details.",
+      "control": "Read https://example.org/bridge?utm_source=town-bulletin for details."
+    },
+    {
+      "entryId": "P047",
+      "expectation": "match",
+      "example": "The building reopened in July.<ref name=\"minutes\" />",
+      "control": "The building reopened in July.<ref name=\"minutes\">Council minutes, July.</ref><ref name=\"minutes\" />"
+    },
+    {
+      "entryId": "P048",
+      "expectation": "manual",
+      "example": "The staff handbook requires every complaint to be erased within a week.",
+      "control": "The staff handbook says complaints must be retained for two years; see section 9."
+    },
+    {
+      "entryId": "P049",
+      "expectation": "manual",
+      "example": "Editorial reminder: Remove the unresolved evidence warning before printing.",
+      "control": "The warning remains visible because the supporting evidence has not been checked."
+    },
+    {
+      "entryId": "P050",
+      "expectation": "match",
+      "example": "# Context\nYou asked about the lock.\n## Analysis\nIt is stiff.\n## Recommendation\nTry oil.\n## Conclusion\nOil may help.",
+      "control": "Put a drop of oil on the hinge and move the door twice."
+    },
+    {
+      "entryId": "P051",
+      "expectation": "match",
+      "example": "This document fully complies with every requirement for transparency and completeness.",
+      "control": "I added the missing total and corrected the date in the second table."
+    },
+    {
+      "entryId": "P052",
+      "expectation": "match",
+      "example": "Please list the precise changes needed to bring this submission into full compliance.",
+      "control": "Does the first table need a source for the population estimate?"
+    },
+    {
+      "entryId": "P053",
+      "expectation": "manual",
+      "example": "The suggestion that I used a chatbot is speculation, and I reject it.",
+      "control": "I wrote the draft on Tuesday and can show you the revision notes."
+    },
+    {
+      "entryId": "P054",
+      "expectation": "manual",
+      "example": "We should discuss the quality of the report instead of how I produced it.",
+      "control": "The opening claim is inaccurate; I will correct it and explain how I checked it."
+    },
+    {
+      "entryId": "P055",
+      "expectation": "match",
+      "example": "Improved clarity, coherence, readability and quality throughout the response.",
+      "control": "Replaced the wrong opening date with the date in the annual report."
+    },
+    {
+      "entryId": "P056",
+      "expectation": "match",
+      "example": "Revised the brief to ensure full compliance with all applicable standards.",
+      "control": "Revised the brief to include the required emergency phone number."
+    },
+    {
+      "entryId": "P057",
+      "expectation": "match",
+      "example": "Updated the wording while preserving the structure, references and technical details.",
+      "control": "Changed the deadline in paragraph two from Thursday to Friday."
+    },
+    {
+      "entryId": "P058",
+      "expectation": "manual",
+      "example": "Added authoritative sources and verified information to the history section.",
+      "control": "Added the town register as the source for the mill's opening date."
+    },
+    {
+      "entryId": "P059",
+      "expectation": "manual",
+      "example": "Changed the fifth bullet's indentation, moved a colon and aligned the final cell.",
+      "control": "Corrected the reported cost from 30 dollars to 300 dollars."
+    },
+    {
+      "entryId": "P060",
+      "expectation": "match",
+      "example": "Addressed reviewer feedback by improving clarity and source presentation.",
+      "control": "Added the missing interview date requested by the reviewer."
+    },
+    {
+      "entryId": "P061",
+      "expectation": "manual",
+      "example": "Morning note: The valve leaks.\nEvening note: The mechanical anomaly invites a comprehensive consideration of operational resilience.",
+      "control": "Morning note: The valve leaks.\nEvening note: The new washer stopped the leak."
+    },
+    {
+      "entryId": "P062",
+      "expectation": "match",
+      "example": "Reviewer note: This document satisfies every review criterion for accuracy.",
+      "control": "The engineer checked the pressure reading against the gauge on Tuesday."
+    },
+    {
+      "entryId": "P063",
+      "expectation": "manual",
+      "example": "Working draft, not yet circulated.\nCertification: Approved by all reviewers.",
+      "control": "Working draft. Reviewer approval is still pending."
+    },
+    {
+      "entryId": "P064",
+      "expectation": "manual",
+      "example": "Profile one: Welcome to my page. Explore my contributions. Connect with me.\nProfile two: Welcome to my page. Explore my contributions. Connect with me.",
+      "control": "Profile one: I restore radios.\nProfile two: I map footpaths in the county."
+    },
+    {
+      "entryId": "P065",
+      "expectation": "manual",
+      "example": "Library note: It is a central part of our shared future.\nCanal note: It is a central part of our shared future.",
+      "control": "The library lends 300 books a week. The canal carries freight from the quarry."
+    },
+    {
+      "entryId": "P066",
+      "expectation": "manual",
+      "example": "Older draft: The museum is a cultural tapestry.\nLater draft: The museum connects people through shared experiences.",
+      "control": "Two drafts use different phrases; their authorship and model history are unknown."
+    },
+    {
+      "entryId": "P067",
+      "expectation": "manual",
+      "example": "The administration's unquestioned wisdom brought prosperity to every household.",
+      "control": "The administration reported income growth, while the independent survey found losses in two districts."
+    },
+    {
+      "entryId": "P068",
+      "expectation": "excluded",
+      "example": "The magazine printed this description of the garden in 1914.",
+      "control": "The museum holds a dated copy of the original magazine."
+    },
+    {
+      "entryId": "P069",
+      "expectation": "excluded",
+      "example": "I copied the wrong total from row six. Row seven has the correct number.",
+      "control": "I checked the receipt and corrected the amount."
+    },
+    {
+      "entryId": "P070",
+      "expectation": "excluded",
+      "example": "The pump stopped at noon and the team replaced its fuse.",
+      "control": "The rain began before breakfast."
+    },
+    {
+      "entryId": "P071",
+      "expectation": "excluded",
+      "example": "Four people entered the room. Each signed the register.",
+      "control": "The gardener watered the beds before sunrise."
+    },
+    {
+      "entryId": "P072",
+      "expectation": "excluded",
+      "example": "The instrument failed its calibration test. So that was a wasted morning.",
+      "control": "The inspection took longer than expected. We went home at seven."
+    },
+    {
+      "entryId": "P073",
+      "expectation": "excluded",
+      "example": "The permit costs eight dollars and expires after twelve months.",
+      "control": "The shop opens at ten on Sundays."
+    },
+    {
+      "entryId": "P074",
+      "expectation": "excluded",
+      "example": "The analysis estimates variation across the sampled households.",
+      "control": "The committee reviewed the application and recorded its decision."
+    },
+    {
+      "entryId": "P075",
+      "expectation": "excluded",
+      "example": "However, the replacement cable was too short.",
+      "control": "The replacement cable was too short."
+    },
+    {
+      "entryId": "P076",
+      "expectation": "excluded",
+      "example": "The lake froze overnight.",
+      "control": "Three houses stand beside the canal."
+    },
+    {
+      "entryId": "P077",
+      "expectation": "excluded",
+      "example": "We read The House at Pooh *Corner before lunch.",
+      "control": "The heading was accidentally printed in the wrong font."
+    },
+    {
+      "entryId": "P078",
+      "expectation": "excluded",
+      "example": "## Findings\nThe pipe was intact.\n\n- Valve replaced\n- Gauge checked",
+      "control": "## Repairs\nThe hinge was replaced."
+    },
+    {
+      "entryId": "P079",
+      "expectation": "match",
+      "example": "It is important to note that the new pass expires in September.",
+      "control": "The new pass expires in September."
+    },
+    {
+      "entryId": "P080",
+      "expectation": "match",
+      "example": "The door needs a new hinge.\n\nIn summary, the hinge must be replaced.\n\nThe screws are loose too.\n\nIn conclusion, the door needs work.",
+      "control": "The door needs a new hinge and two replacement screws."
+    },
+    {
+      "entryId": "P081",
+      "expectation": "match",
+      "example": "As an AI assistant, I cannot visit the building myself.",
+      "control": "I did not visit the building; I read the inspection report."
+    },
+    {
+      "entryId": "P082",
+      "expectation": "manual",
+      "example": "The delivery arrived on Friday. Inside the crate we found the",
+      "control": "The delivery arrived on Friday. Inside the crate we found the replacement valve."
+    },
+    {
+      "entryId": "P083",
+      "expectation": "manual",
+      "example": "Submitted in 2026. Accessed 14 April 2020. Accessed 14 April 2020.",
+      "control": "Submitted in 2026. The bibliography identifies the archived versions consulted."
+    },
+    {
+      "entryId": "P084",
+      "expectation": "manual",
+      "example": "The shop reopened. The retail destination welcomed customers. The commercial establishment added a bakery.",
+      "control": "The shop reopened and added a bakery."
+    },
+    {
+      "entryId": "P085",
+      "expectation": "match",
+      "example": "We should consider the various aspects of this decision.",
+      "control": "We should compare the price, warranty and delivery date."
+    },
+    {
+      "entryId": "P086",
+      "expectation": "match",
+      "example": "The furnace is one of the first of its kind.",
+      "control": "The furnace was installed in 1873."
+    },
+    {
+      "entryId": "P087",
+      "expectation": "match",
+      "example": "Without a doubt, this change will define the department's future.",
+      "control": "The change will reduce the department's rent by 800 dollars a month."
+    },
+    {
+      "entryId": "P088",
+      "expectation": "match",
+      "example": "The team produced an exceptionally polished and remarkably effective plan, offering truly impressive improvements across every part of the workshop's everyday routine.",
+      "control": "The team produced a clear plan that assigns each repair to a mechanic and gives a completion date."
+    },
+    {
+      "entryId": "P089",
+      "expectation": "match",
+      "example": "It was determined that a second inspection should be arranged.",
+      "control": "The safety officer arranged a second inspection."
+    },
+    {
+      "entryId": "P090",
+      "expectation": "match",
+      "example": "The brochure advertises a so-called “revolutionary” handle.",
+      "control": "The brochure calls the handle revolutionary but does not explain the change."
+    },
+    {
+      "entryId": "P091",
+      "expectation": "match",
+      "example": "The package offers several extras: including a spare seal.",
+      "control": "The package includes a spare seal."
+    },
+    {
+      "entryId": "P092",
+      "expectation": "match",
+      "example": "First, the project inspires progress. Second, it encourages possibility. Third, it creates opportunity.",
+      "control": "The project will add a second footpath and three benches."
+    },
+    {
+      "entryId": "P093",
+      "expectation": "match",
+      "example": "We measured the inlet. We measured the outlet. We measured the overflow.",
+      "control": "Nadia measured the inlet. The outlet was blocked, so we cleared it before checking the overflow."
+    },
+    {
+      "entryId": "P094",
+      "expectation": "match",
+      "example": "Our daily meeting gives the workshop another useful planning opportunity. Each new dashboard makes the current repair schedule readily available. Their weekly update keeps the remaining team members fully informed. Every shared folder holds the latest drawings for tomorrow's work. This revised timetable gives the small department additional preparation time. Your careful record makes the next annual inspection much easier.",
+      "control": "The train stopped. I waited beside the empty platform for nearly an hour before a bus arrived to take us home. Nobody spoke."
+    },
+    {
+      "entryId": "P095",
+      "expectation": "match",
+      "example": "One map. One road. One chance.",
+      "control": "The map showed one road. We followed it until we reached the lake."
+    },
+    {
+      "entryId": "P096",
+      "expectation": "match",
+      "example": "No guide. No shortcut. No rescue. Only the climb.",
+      "control": "There was no guide available, so we postponed the climb."
+    },
+    {
+      "entryId": "P097",
+      "expectation": "match",
+      "example": "Here is the part no one mentions: someone still has to clean the filter.",
+      "control": "Someone must clean the filter after each shift."
+    },
+    {
+      "entryId": "P098",
+      "expectation": "match",
+      "example": "Is the route easy? No. Is it worth trying? Absolutely.",
+      "control": "Is the route open? Check the noticeboard at the station."
+    },
+    {
+      "entryId": "P099",
+      "expectation": "match",
+      "example": "Let's be honest: the spreadsheet changed everything.",
+      "control": "The spreadsheet exposed a missing expense of 460 dollars."
+    },
+    {
+      "entryId": "P100",
+      "expectation": "match",
+      "example": "You already know what the meeting is really about.",
+      "control": "The meeting agenda lists the proposed pay increase."
+    },
+    {
+      "entryId": "P101",
+      "expectation": "match",
+      "example": "You are not alone. It is okay to feel uncertain about your inbox.",
+      "control": "The email asks you to confirm the delivery address by Friday."
+    },
+    {
+      "entryId": "P102",
+      "expectation": "match",
+      "example": "The entire solution is confidence. That is the whole game.",
+      "control": "The fix is to replace the cracked coupling and test the pressure again."
+    },
+    {
+      "entryId": "P103",
+      "expectation": "match",
+      "example": "The only timetable I trust is the one written in pencil.",
+      "control": "I use this timetable because it includes the Sunday service."
+    },
+    {
+      "entryId": "P104",
+      "expectation": "match",
+      "example": "Do not take my word for it. The results speak for themselves.",
+      "control": "The test reduced the restart time from six minutes to two."
+    },
+    {
+      "entryId": "P105",
+      "expectation": "match",
+      "example": "This software just works and comes with batteries included.",
+      "control": "The radio comes with batteries. Insert them before switching it on."
+    },
+    {
+      "entryId": "P106",
+      "expectation": "match",
+      "example": "The weekly report is dead. Long live the shared dashboard.",
+      "control": "The team replaced its weekly report with a shared dashboard."
+    },
+    {
+      "entryId": "P107",
+      "expectation": "match",
+      "example": "She cleared the tray. And that is why Wednesday mattered.",
+      "control": "She cleared the tray so the next batch could cool."
+    },
+    {
+      "entryId": "P108",
+      "expectation": "match",
+      "example": "The presentation failed. Our confidence did not.",
+      "control": "Our team did not receive the final figures until Tuesday."
+    },
+    {
+      "entryId": "P109",
+      "expectation": "match",
+      "example": "I had the honor of mending a stapler. The task taught me what leadership really means.",
+      "control": "I mended the stapler by removing the bent staple."
+    },
+    {
+      "entryId": "P110",
+      "expectation": "match",
+      "example": "That was my morning. Curious what everyone thinks.",
+      "control": "Which of the two bus routes would get you to the hospital sooner?"
+    },
+    {
+      "entryId": "P111",
+      "expectation": "manual",
+      "example": "Dawn spread softly over the town as a new chapter began inside the office.",
+      "control": "At six, a broken pipe flooded the office corridor."
+    },
+    {
+      "entryId": "P112",
+      "expectation": "match",
+      "example": "They packed the last crate. For now, that was enough.",
+      "control": "They packed the last crate and called the driver."
+    },
+    {
+      "entryId": "P113",
+      "expectation": "match",
+      "example": "The accusation landed. His words hung in the air for what felt like an eternity.",
+      "control": "After the accusation, she stopped folding the towel and looked at him."
+    },
+    {
+      "entryId": "P114",
+      "expectation": "match",
+      "example": "Little did she know that nothing would ever be the same.",
+      "control": "She left the keys on the desk; he took them as soon as she turned away."
+    },
+    {
+      "entryId": "P115",
+      "expectation": "manual",
+      "example": "A glittering mosaic of ambition sailed through the symphony of possibility.",
+      "control": "The proposal combines a new bus stop with a sheltered waiting area."
+    },
+    {
+      "entryId": "P116",
+      "expectation": "manual",
+      "example": "She pushed the plate away. This demonstrated her dissatisfaction with the conversation.",
+      "control": "She pushed the plate away and left before dessert."
+    },
+    {
+      "entryId": "P117",
+      "expectation": "manual",
+      "example": "The house contained many memorable features that created a distinctive atmosphere.",
+      "control": "A green stove stood beside the back door, and rain dripped into a saucepan."
+    },
+    {
+      "entryId": "P118",
+      "expectation": "match",
+      "example": "The work requires a patient hand at every stage. The work requires a patient hand when fitting the hinge. The work requires a patient hand at the final inspection.",
+      "control": "Fit the hinge slowly. Tighten each screw, then check that the lid closes."
+    },
+    {
+      "entryId": "P119",
+      "expectation": "manual",
+      "example": "Different elements affect situations, and understanding them can improve outcomes.",
+      "control": "The larger washer stopped water escaping around the bolt."
+    },
+    {
+      "entryId": "P120",
+      "expectation": "manual",
+      "example": "Question: How do I reset the timer?\nAnswer: Timers are valuable devices that support modern daily life.",
+      "control": "To reset the timer, hold the lower button for three seconds."
+    },
+    {
+      "entryId": "P121",
+      "expectation": "manual",
+      "example": "The budget is smaller. Therefore, the moon appears brighter. Moreover, honesty helps teams.",
+      "control": "The budget is smaller, so the team canceled two purchases."
+    },
+    {
+      "entryId": "P122",
+      "expectation": "manual",
+      "example": "Leila met Ana after she finished, although tomorrow she had already arrived.",
+      "control": "Leila finished work and met Ana at the station that evening."
+    },
+    {
+      "entryId": "P123",
+      "expectation": "match",
+      "example": "“We believe this new service changes everything,” said the nurse. “We believe this new service supports every family,” said the driver. “We believe this new service benefits everyone,” said the cook.",
+      "control": "“It cuts my journey by twenty minutes,” said the nurse. “I can fit another delivery in,” said the driver."
+    },
+    {
+      "entryId": "P124",
+      "expectation": "manual",
+      "example": "Kindly be informed that the cat has exhausted its nutritional provisions.",
+      "control": "Please buy cat food on your way home."
+    },
+    {
+      "entryId": "P125",
+      "expectation": "manual",
+      "example": "Losing the house gave the family wonderful opportunities to appreciate life's possibilities.",
+      "control": "The family spent the night at a neighbor's house and began looking for somewhere to rent."
+    },
+    {
+      "entryId": "P126",
+      "expectation": "manual",
+      "example": "The invoice says ten dollars, but the seller charged fifty. Both views of the price are equally valid.",
+      "control": "The invoice says ten dollars; the seller needs to explain the forty-dollar difference."
+    },
+    {
+      "entryId": "P127",
+      "expectation": "manual",
+      "example": "Our village brings people together through a shared commitment to a welcoming future.",
+      "control": "The village has one bakery, a ferry slip and a blue clock tower."
+    },
+    {
+      "entryId": "P128",
+      "expectation": "match",
+      "example": "Dr. Imani Cole entered. Dr. Imani Cole checked the forms. Dr. Imani Cole signed the register.",
+      "control": "Dr. Imani Cole entered, checked the forms and signed the register."
+    },
+    {
+      "entryId": "P129",
+      "expectation": "match",
+      "example": "Coordination of the implementation requires assessment of the integration and evaluation of the allocation.",
+      "control": "The manager must check how the new system distributes work."
+    },
+    {
+      "entryId": "P130",
+      "expectation": "match",
+      "example": "The plan that the committee discussed at the meeting last Tuesday will move forward if the funds that the treasurer promised are available when the contractor who inspected the building returns after the holiday because the roof that covers the main hall needs to be replaced before winter arrives.",
+      "control": "The roof must be replaced before winter. The contractor can start after the holiday if the funds arrive."
+    },
+    {
+      "entryId": "P131",
+      "expectation": "match",
+      "example": "The supervisor, who checked the form, which arrived late, which delayed the order, approved the purchase.",
+      "control": "The form arrived late and delayed the order. The supervisor approved the purchase after checking it."
+    },
+    {
+      "entryId": "P132",
+      "expectation": "match",
+      "example": "Our framework hoped to change the culture of the organization.",
+      "control": "The directors hoped to change the culture of the organization."
+    },
+    {
+      "entryId": "P133",
+      "expectation": "match",
+      "example": "Every successful company uses a morning dashboard.",
+      "control": "Four of the six companies in our survey used a morning dashboard."
+    },
+    {
+      "entryId": "P134",
+      "expectation": "match",
+      "example": "In this essay, we will examine the issues that surround the proposed library.",
+      "control": "The proposed library would replace the vacant garage on North Street."
+    },
+    {
+      "entryId": "P135",
+      "expectation": "match",
+      "example": "Whether you are a novice or an expert, this planner is your guide.",
+      "control": "This planner is for volunteers managing their first event."
+    },
+    {
+      "entryId": "P136",
+      "expectation": "match",
+      "example": "The policy is not perfect, but it is a promising step forward.",
+      "control": "The policy reduces waiting times but leaves the registration fee unchanged."
+    },
+    {
+      "entryId": "P137",
+      "expectation": "match",
+      "example": "The thoughtful plan creates meaningful progress with dependable support.\n\nOur thoughtful approach brings steady improvement and meaningful change.\n\nTogether, these dependable measures make steady progress feel meaningful.",
+      "control": "The fallback sends the request to the second server when the first is unavailable."
+    },
+    {
+      "entryId": "P138",
+      "expectation": "match",
+      "example": "Furthermore, the plan creates benefits. Moreover, it enables improvements. Additionally, it offers opportunities. Ultimately, it supports progress.",
+      "control": "The plan adds a bus at seven. The second service will leave at nine because fewer passengers travel then."
+    },
+    {
+      "entryId": "P139",
+      "expectation": "match",
+      "example": "This matters: the gate will close earlier. Just as important, the keys will move. That distinction matters.",
+      "control": "The gate will close at six, and the keys will be kept in reception."
+    },
+    {
+      "entryId": "P140",
+      "expectation": "match",
+      "example": "The service grows without sacrificing care and expands without compromising quality.",
+      "control": "The service can take ten more clients if it hires two nurses."
+    },
+    {
+      "entryId": "P141",
+      "expectation": "match",
+      "example": "Our planner is a helpful tool with useful features that make it easier to organize your day and help you achieve better results with greater ease.",
+      "control": "The planner has a separate page for each day and a pocket for receipts at the back."
+    },
+    {
+      "entryId": "P142",
+      "expectation": "match",
+      "example": "The measurements may suggest a change, although that change remains uncertain. This is not to say the repair failed, only that the evidence does not necessarily settle the question. That said, it may still offer a useful starting point for further work.",
+      "control": "The gauge is accurate to two millimeters. The observed change was one millimeter, so this test cannot establish an improvement."
+    },
+    {
+      "entryId": "P143",
+      "expectation": "match",
+      "example": "This is arguably the most effective policy ever written.",
+      "control": "This policy reduced the average wait from twelve days to four in the trial."
+    },
+    {
+      "entryId": "P144",
+      "expectation": "match",
+      "example": "Our team-members reviewed the project-timeline before mailing the news-letter. The brain-storming exercise took place in the conference-room.",
+      "control": "A project-timeline update and a conference-room booking appeared in the newsletter. A well-known writer led the brainstorming session."
+    }
+  ]
+}
