@@ -1,10 +1,10 @@
 # AI Slop Signatures
 
-A guide to common AI writing patterns, with examples, word lists, and a text checker.
+An evolving repository of common AI writing patterns with examples, word lists, and a text checker. The text checker is in beta and should not be used as an AI detector. It is purely for educational purposes.
 
 **[Visit the site](https://raj-shroff.github.io/ai-slop-patterns/)**
 
-The checker looks for familiar wording, repetition, and sentence structures. It runs entirely in your browser: no uploads, accounts, or API keys. It flags patterns, but cannot determine whether a person or AI wrote something.
+The checker looks for familiar wording, repetition, and sentence structures. It runs entirely in your browser with no uploads, accounts, or API keys. It flags patterns, but cannot determine whether a person or AI wrote something.
 
 Maximum input: **10,000 words or 80,000 characters, whichever comes first.** See [checker coverage and limits](docs/live-checker-coverage.md) for details.
 
@@ -31,14 +31,6 @@ Open [localhost:4173](http://127.0.0.1:4173). After editing files, run `npm run 
 Edit source files, then rebuild. Files in `dist/` are generated and will be overwritten. For content formatting, see [content conventions](docs/content-conventions.md).
 
 Run `npm test` to check the project, or `npm run test:checker` for checker tests only.
-
-## Publish to GitHub Pages
-
-1. Commit and push your changes to `main`.
-2. In the repository's **Actions** tab, select **Deploy GitHub Pages**.
-3. Click **Run workflow**, choose `main`, and confirm.
-
-The workflow tests, builds, and publishes the site. **Pushing alone does not deploy it.** For first-time setup, set **Settings → Pages → Source** to **GitHub Actions**.
 
 ## License
 
